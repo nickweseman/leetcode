@@ -7,8 +7,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/nickweseman/leetcode/tree/master/0001-two-sum) |
+| [1168-duplicate-zeros](https://github.com/nickweseman/leetcode/tree/master/1168-duplicate-zeros) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/nickweseman/leetcode/tree/master/0001-two-sum) |
+## Two Pointers
+|  |
+| ------- |
+| [1168-duplicate-zeros](https://github.com/nickweseman/leetcode/tree/master/1168-duplicate-zeros) |
 <!---LeetCode Topics End-->
