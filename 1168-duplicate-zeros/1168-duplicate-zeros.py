@@ -3,13 +3,11 @@ class Solution:
         zeroes = arr.count(0)
         n = len(arr)
 
-        for i in range(n-1, -1, -1):
+        for i in range(n-1,-1,-1):
             if zeroes + i < n:
                 arr[zeroes + i] = arr[i]
             if arr[i] == 0:
                 zeroes -= 1
                 if zeroes + i < n:
                     arr[zeroes + i] = 0
-                print(zeroes + i)
-        
         
