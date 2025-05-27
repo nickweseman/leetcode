@@ -1,8 +1,6 @@
 class Solution:
     def validPalindrome(self, s: str) -> bool:
-        def isPalindrome(s: str) -> bool:
-            left, right = 0, len(s) - 1
-
+        def isPalindrome(left: int, right: int) -> bool:
             while left < right:
                 if s[left] != s[right]:
                     return False
@@ -17,7 +15,7 @@ class Solution:
                 left += 1
                 right -= 1
             else:
-                return isPalindrome(s[left+1 : right+1]) or isPalindrome(s[left : right])
+                return isPalindrome(left + 1, right) or isPalindrome(left, right - 1)
         return True
             
         
