@@ -9,7 +9,7 @@ class Solution:
             leftSquared = nums[left] ** 2
             rightSquared = nums[right] ** 2
             
-            if left == right or leftSquared > rightSquared:
+            if leftSquared > rightSquared:
                 result[index] = leftSquared
                 left += 1
             else:
