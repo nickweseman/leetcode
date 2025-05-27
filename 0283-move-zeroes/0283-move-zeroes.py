@@ -4,6 +4,5 @@ class Solution:
 
         for fast in range(len(nums)):
             if nums[fast] != 0:
-                if slow != fast:
-                    nums[slow], nums[fast] = nums[fast], nums[slow]
+                nums[slow], nums[fast] = nums[fast], nums[slow]
                 slow += 1
