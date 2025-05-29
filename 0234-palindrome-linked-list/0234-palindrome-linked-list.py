@@ -10,29 +10,25 @@ class Solution:
             prev = None
 
             while curr:
-                tempNode = curr.next
-                curr.next = prev
-                prev = curr
-                curr = tempNode
-
+                curr.next, prev, curr = prev, curr, curr.next
             return prev
-
+        
         slow = head
         fast = head
 
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
-        
+
         tail = reversed(slow)
 
         while tail:
-            if head.val != tail.val:
+            print(f"{tail.val=} {head.val=}")
+            if tail.val != head.val:
                 return False
-            head = head.next
+
             tail = tail.next
-
+            head = head.next
         return True
-
-
+        
         
