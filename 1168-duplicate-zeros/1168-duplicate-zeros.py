@@ -4,10 +4,13 @@ class Solution:
         n = len(arr)
 
         for i in range(n-1,-1,-1):
-            if zeroes + i < n:
-                arr[zeroes + i] = arr[i]
+            if i + zeroes < n:
+                arr[i + zeroes] = arr[i]
             if arr[i] == 0:
                 zeroes -= 1
-                if zeroes + i < n:
-                    arr[zeroes + i] = 0
+                if i + zeroes < n:
+                    arr[i + zeroes] = 0
+                    
+        
+
         
