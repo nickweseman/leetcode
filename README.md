@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/nickweseman/leetcode/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/nickweseman/leetcode/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/nickweseman/leetcode/tree/master/0287-find-the-duplicate-number) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/nickweseman/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0941-sort-array-by-parity](https://github.com/nickweseman/leetcode/tree/master/0941-sort-array-by-parity) |
 | [0958-sort-array-by-parity-ii](https://github.com/nickweseman/leetcode/tree/master/0958-sort-array-by-parity-ii) |
 | [1019-squares-of-a-sorted-array](https://github.com/nickweseman/leetcode/tree/master/1019-squares-of-a-sorted-array) |
@@ -30,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0142-linked-list-cycle-ii](https://github.com/nickweseman/leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0202-happy-number](https://github.com/nickweseman/leetcode/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/nickweseman/leetcode/tree/master/0268-missing-number) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/nickweseman/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/nickweseman/leetcode/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
 ## Two Pointers
 |  |
@@ -48,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0287-find-the-duplicate-number](https://github.com/nickweseman/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0344-reverse-string](https://github.com/nickweseman/leetcode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/nickweseman/leetcode/tree/master/0345-reverse-vowels-of-a-string) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/nickweseman/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0392-is-subsequence](https://github.com/nickweseman/leetcode/tree/master/0392-is-subsequence) |
 | [0680-valid-palindrome-ii](https://github.com/nickweseman/leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0908-middle-of-the-linked-list](https://github.com/nickweseman/leetcode/tree/master/0908-middle-of-the-linked-list) |
@@ -67,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0088-merge-sorted-array](https://github.com/nickweseman/leetcode/tree/master/0088-merge-sorted-array) |
 | [0268-missing-number](https://github.com/nickweseman/leetcode/tree/master/0268-missing-number) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/nickweseman/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0941-sort-array-by-parity](https://github.com/nickweseman/leetcode/tree/master/0941-sort-array-by-parity) |
 | [0958-sort-array-by-parity-ii](https://github.com/nickweseman/leetcode/tree/master/0958-sort-array-by-parity-ii) |
 | [1019-squares-of-a-sorted-array](https://github.com/nickweseman/leetcode/tree/master/1019-squares-of-a-sorted-array) |
@@ -124,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0268-missing-number](https://github.com/nickweseman/leetcode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/nickweseman/leetcode/tree/master/0287-find-the-duplicate-number) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/nickweseman/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 ## Bit Manipulation
 |  |
 | ------- |
