@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0026-remove-duplicates-from-sorted-array](https://github.com/nickweseman/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/nickweseman/leetcode/tree/master/0027-remove-element) |
 | [0048-rotate-image](https://github.com/nickweseman/leetcode/tree/master/0048-rotate-image) |
+| [0088-merge-sorted-array](https://github.com/nickweseman/leetcode/tree/master/0088-merge-sorted-array) |
 | [0268-missing-number](https://github.com/nickweseman/leetcode/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/nickweseman/leetcode/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/nickweseman/leetcode/tree/master/0287-find-the-duplicate-number) |
@@ -37,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0026-remove-duplicates-from-sorted-array](https://github.com/nickweseman/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/nickweseman/leetcode/tree/master/0027-remove-element) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/nickweseman/leetcode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+| [0088-merge-sorted-array](https://github.com/nickweseman/leetcode/tree/master/0088-merge-sorted-array) |
 | [0125-valid-palindrome](https://github.com/nickweseman/leetcode/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/nickweseman/leetcode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/nickweseman/leetcode/tree/master/0142-linked-list-cycle-ii) |
@@ -63,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/nickweseman/leetcode/tree/master/0088-merge-sorted-array) |
 | [0268-missing-number](https://github.com/nickweseman/leetcode/tree/master/0268-missing-number) |
 | [0941-sort-array-by-parity](https://github.com/nickweseman/leetcode/tree/master/0941-sort-array-by-parity) |
 | [0958-sort-array-by-parity-ii](https://github.com/nickweseman/leetcode/tree/master/0958-sort-array-by-parity-ii) |
