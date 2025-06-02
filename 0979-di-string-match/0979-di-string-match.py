@@ -1,16 +1,15 @@
 class Solution:
     def diStringMatch(self, s: str) -> List[int]:
-        ran = list(range(len(s) + 1))
-        left, right = 0, len(ran) - 1
+        left, right = 0, len(s)
         output = []
 
         for c in s:
             if c == "I":
-                output.append(ran[left])
+                output.append(left)
                 left += 1
             else: # c == "D"
-                output.append(ran[right])
+                output.append(right)
                 right -= 1
-        output.append(ran[left])
+        output.append(left)
         return output
         
