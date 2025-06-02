@@ -7,4 +7,3 @@ class Solution:
                 need += 1
             scan += 1
         return need == len(s)
-        
