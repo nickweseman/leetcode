@@ -1,19 +1,16 @@
 class Solution:
     def isLongPressedName(self, name: str, typed: str) -> bool:
-        need = scan = 0
-        ignore_char = None
+        i = j = 0
 
-        while need < len(name) and scan < len(typed):
-            if name[need] == typed[scan]:
-                need += 1
-                ignore_char = typed[scan]
+        while i < len(name) and j < len(typed):
+            if name[i] == typed[j]:
+                i += 1
             else:
-                if typed[scan] != ignore_char:
+                if i == 0 or typed[j] != name[i - 1]:
                     return False
-            scan += 1
-        while scan < len(typed):
-            if typed[scan] != ignore_char:
+            j += 1
+        while j < len(typed):
+            if typed[j] != name[i - 1]:
                 return False
-            scan += 1
-        return need == len(name)
-        
+            j += 1
+        return i == len(name)
