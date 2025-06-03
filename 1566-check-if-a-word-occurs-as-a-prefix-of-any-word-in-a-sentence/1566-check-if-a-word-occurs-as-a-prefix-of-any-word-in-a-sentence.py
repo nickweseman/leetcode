@@ -1,11 +1,9 @@
 class Solution:
     def isPrefixOfWord(self, sentence: str, searchWord: str) -> int:
-        scan = 0
-        sentence_words = sentence.split(" ")
+        words = sentence.split()
 
-        while scan < len(sentence_words):
-            if sentence_words[scan].startswith(searchWord):
-                return scan + 1
-            scan += 1
+        for idx, word in enumerate(words):
+            if word.startswith(searchWord):
+                return idx+1
         return -1
         
