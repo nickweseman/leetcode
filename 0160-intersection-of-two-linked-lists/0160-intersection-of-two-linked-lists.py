@@ -9,10 +9,14 @@ class Solution:
         ptrA = headA
         ptrB = headB
 
-        while ptrA != ptrB:
-            ptrA = headB if ptrA is None else ptrA.next
-            ptrB = headA if ptrB is None else ptrB.next
+        while ptrA is not ptrB:
+            if ptrA:
+                ptrA = ptrA.next
+            else:
+                ptrA = headB
             
-        # ptrA (or ptrB) is now the intersection node, or None if no intersection.
-        return ptrA 
-        
+            if ptrB:
+                ptrB = ptrB.next
+            else:
+                ptrB = headA
+        return ptrA
