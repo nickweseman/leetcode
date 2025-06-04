@@ -5,11 +5,13 @@ class Solution:
         s = str(num)
 
         while right < len(s):
+            while (right - left + 1) > k:
+                left += 1
+
             div = int(s[left:right+1])
-            print(f"{div=}")
             if div != 0 and num % div == 0:
                 beauties += 1
-            left += 1
+            
             right += 1
         return beauties
         
