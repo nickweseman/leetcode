@@ -1,44 +1,39 @@
-from collections import Counter, defaultdict
-
+from collections import defaultdict, Counter
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
-        window = defaultdict(int)   
-        target = Counter(t)   
+        window = defaultdict(int)
+        target = Counter(t)
 
-        have = 0           # distinct chars satisfied
-        need = len(target) # distinct chars we must satisfy
-        
         left = right = 0
-        
-        best_len   = float('inf')
-        best_start = 0
+        best_left, best_right = 0, -1
 
-        def add(c):
+        have = 0
+        need = len(target)
+
+        def add(c: str):
             nonlocal have
             window[c] += 1
             if window[c] == target[c]:
                 have += 1
-        
-        def remove(c):
+    
+        def remove(c: str):
             nonlocal have
             if window[c] == target[c]:
                 have -= 1
             window[c] -= 1
         
-        def update_answer(l, r):
-            nonlocal best_len, best_start
-            if r - l + 1 < best_len:
-                best_len   = r - l + 1
-                best_start = l
+        def update_answer(l: int, r: int):
+            nonlocal best_left, best_right
+            if r - l < best_right - best_left or best_right == -1:
+                best_left, best_right = l, r
         
         while right < len(s):
-            add(s[right])                       
-            
+            add(s[right])
+
             while left <= right and have == need:
-                update_answer(left, right)      
-                remove(s[left])                 
+                update_answer(left, right)
+                remove(s[left])
                 left += 1
-            
             right += 1
-        
-        return "" if best_len == float('inf') else s[best_start : best_start + best_len]
+        print(f"{best_right}")
+        return "" if best_right == -1 else s[best_left: best_right + 1]
