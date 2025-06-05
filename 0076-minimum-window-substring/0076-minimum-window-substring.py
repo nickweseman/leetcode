@@ -2,15 +2,13 @@ from collections import Counter, defaultdict
 
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
-        target = Counter(t)            # required character counts
-        need   = len(target)           # distinct chars we must satisfy
+        window = defaultdict(int)   
+        target = Counter(t)   
+
+        have = 0           # distinct chars satisfied
+        need = len(target) # distinct chars we must satisfy
         
-        window = defaultdict(int)      # current window counts
-        have   = 0                     # distinct chars satisfied
-        
-        left = 0
-        right = 0
-        n = len(s)
+        left = right = 0
         
         best_len   = float('inf')
         best_start = 0
@@ -33,7 +31,7 @@ class Solution:
                 best_len   = r - l + 1
                 best_start = l
         
-        while right < n:
+        while right < len(s):
             add(s[right])                       
             
             while left <= right and have == need:
