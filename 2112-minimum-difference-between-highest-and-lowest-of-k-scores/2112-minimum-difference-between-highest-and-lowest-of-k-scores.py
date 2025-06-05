@@ -6,10 +6,10 @@ class Solution:
         nums.sort()
 
         while right < len(nums):
-            if right - left > k - 1:
+            if right - left + 1 > k:
                 left += 1
 
-            if right - left == k - 1:
+            if right - left + 1 == k:
                 min_diff = min(min_diff, nums[right] - nums[left])
             right += 1
         return min_diff
