@@ -1,15 +1,8 @@
 class Solution:
     def findMaxK(self, nums: List[int]) -> int:
-        nums.sort()
+        numset = set(nums)
 
-        left, right = 0, len(nums) - 1
+        candidates = [k for k in nums if k > 0 and -k in numset]
 
-        while left < right and nums[left] < 0 and nums[right] > 0:
-            if abs(nums[left]) < abs(nums[right]):
-                right -= 1
-            elif abs(nums[left]) > abs(nums[right]):
-                left += 1
-            else:
-                return nums[right]
-        return -1
+        return max(candidates) if candidates else -1
         
