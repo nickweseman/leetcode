@@ -5,17 +5,10 @@ class Solution:
         max_length = float('-inf')
         window = defaultdict(int)
 
-        def window_valid() -> bool:
-            nonlocal window
-            for freq in window.values():
-                if freq > 2:
-                    return False
-            return True
-
         while right < len(s):
             window[s[right]] += 1
 
-            while left < right and not window_valid():
+            while left < right and window[s[right]] > 2:
                 window[s[left]] -= 1
                 left += 1
             
