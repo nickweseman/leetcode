@@ -93,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2634-minimum-common-value](https://github.com/nickweseman/leetcode/tree/master/2634-minimum-common-value) |
 | [2698-find-the-array-concatenation-value](https://github.com/nickweseman/leetcode/tree/master/2698-find-the-array-concatenation-value) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/nickweseman/leetcode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
+| [2816-lexicographically-smallest-palindrome](https://github.com/nickweseman/leetcode/tree/master/2816-lexicographically-smallest-palindrome) |
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/nickweseman/leetcode/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
 ## Sorting
 |  |
@@ -130,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/nickweseman/leetcode/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
 | [2093-check-if-string-is-a-prefix-of-array](https://github.com/nickweseman/leetcode/tree/master/2093-check-if-string-is-a-prefix-of-array) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/nickweseman/leetcode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
+| [2816-lexicographically-smallest-palindrome](https://github.com/nickweseman/leetcode/tree/master/2816-lexicographically-smallest-palindrome) |
 | [3349-maximum-length-substring-with-two-occurrences](https://github.com/nickweseman/leetcode/tree/master/3349-maximum-length-substring-with-two-occurrences) |
 ## Greedy
 |  |
@@ -138,6 +140,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/nickweseman/leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0979-di-string-match](https://github.com/nickweseman/leetcode/tree/master/0979-di-string-match) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/nickweseman/leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
+| [2816-lexicographically-smallest-palindrome](https://github.com/nickweseman/leetcode/tree/master/2816-lexicographically-smallest-palindrome) |
 ## Linked List
 |  |
 | ------- |
