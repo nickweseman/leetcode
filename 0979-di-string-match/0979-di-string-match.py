@@ -7,9 +7,8 @@ class Solution:
             if c == "I":
                 output.append(left)
                 left += 1
-            else: # c == "D"
+            else:
                 output.append(right)
                 right -= 1
         output.append(left)
         return output
-        
