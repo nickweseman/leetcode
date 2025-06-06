@@ -5,5 +5,7 @@ class Solution:
         while need < len(s) and scan < len(t):
             if s[need] == t[scan]:
                 need += 1
+
             scan += 1
         return need == len(s)
+            
