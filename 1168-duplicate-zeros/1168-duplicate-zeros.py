@@ -1,10 +1,9 @@
 class Solution:
     def duplicateZeros(self, arr: List[int]) -> None:
-        n = len(arr)
         zeroes = arr.count(0)
-        i = n - 1
+        n = len(arr)
 
-        while i >= 0:
+        for i in range(n-1,-1,-1):
             if arr[i] == 0:
                 if zeroes + i < n:
                     arr[zeroes + i] = arr[i]
@@ -13,5 +12,3 @@ class Solution:
                     arr[zeroes + i] = 0
             elif zeroes + i < n:
                 arr[zeroes + i] = arr[i]
-            i -= 1
-        
