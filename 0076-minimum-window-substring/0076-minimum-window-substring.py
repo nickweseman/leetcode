@@ -1,39 +1,44 @@
-from collections import defaultdict, Counter
+from collections import Counter, defaultdict
+
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
-        window = defaultdict(int)
         target = Counter(t)
-
-        left = right = 0
-        best_left, best_right = 0, -1
+        window = defaultdict(int)
 
         have = 0
         need = len(target)
 
-        def add(c: str):
+        left, right = 0, 0
+        best_left, best_right = 0, float('inf')
+
+        def add(c: str) -> None:
             nonlocal have
             window[c] += 1
             if window[c] == target[c]:
                 have += 1
-    
-        def remove(c: str):
+        
+        def remove(c: str) -> None:
             nonlocal have
             if window[c] == target[c]:
                 have -= 1
             window[c] -= 1
+
+        def window_valid() -> bool:
+            nonlocal have, need
+            return have == need
         
-        def update_answer(l: int, r: int):
+        def update_answer(l: int, r: int) -> None:
             nonlocal best_left, best_right
-            if r - l < best_right - best_left or best_right == -1:
+            if r - l < best_right - best_left:
                 best_left, best_right = l, r
         
         while right < len(s):
             add(s[right])
 
-            while left <= right and have == need:
+            while left <= right and window_valid():
                 update_answer(left, right)
                 remove(s[left])
                 left += 1
             right += 1
-        print(f"{best_right}")
-        return "" if best_right == -1 else s[best_left: best_right + 1]
+        return "" if best_right == float('inf') else s[best_left: best_right + 1]
+        
