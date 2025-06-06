@@ -5,16 +5,13 @@ class Solution:
         window = Counter()
         left = right = 0
         longest = 0
-
-        def window_invalid() -> bool:
-            most_common_freq = window.most_common(1)[0][1]
-            
-            return (right - left + 1) - most_common_freq > k
+        max_freq = 0
 
         while right < len(s):
             window[s[right]] += 1
+            max_freq = max(max_freq, window[s[right]])
 
-            while left <= right and window_invalid():
+            while left <= right and (right - left + 1) - max_freq > k:
                 window[s[left]] -= 1
                 left += 1
             
