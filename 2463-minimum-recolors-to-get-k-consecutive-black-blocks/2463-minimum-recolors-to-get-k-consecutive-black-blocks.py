@@ -1,22 +1,20 @@
-from collections import defaultdict
-
 class Solution:
     def minimumRecolors(self, blocks: str, k: int) -> int:
+        min_whites = float('inf')
+        window = 0
         left = right = 0
-        window_whites = 0
-        min_recolors = float('inf')
 
         while right < len(blocks):
             if blocks[right] == "W":
-                window_whites += 1
-
+                window += 1
+            
             if right - left + 1 > k:
                 if blocks[left] == "W":
-                    window_whites -= 1
+                    window -= 1
                 left += 1
             
             if right - left + 1 == k:
-                min_recolors = min(window_whites, min_recolors)
+                min_whites = min(min_whites, window)
             right += 1
-        return min_recolors
+        return min_whites
         
