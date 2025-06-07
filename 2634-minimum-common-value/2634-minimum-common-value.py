@@ -1,10 +1,6 @@
 class Solution:
     def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
-        nums1.sort()
-        nums2.sort()
-
         i = j = 0
-        minn = float('-inf')
 
         while i < len(nums1) and j < len(nums2):
             if nums1[i] < nums2[j]:
@@ -14,3 +10,4 @@ class Solution:
             else:
                 return nums1[i]
         return -1
+        
