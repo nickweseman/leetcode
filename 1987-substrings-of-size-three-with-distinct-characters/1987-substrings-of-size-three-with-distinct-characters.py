@@ -1,16 +1,12 @@
 from collections import defaultdict
 class Solution:
     def countGoodSubstrings(self, s: str) -> int:
-        left = right = 0
         window = defaultdict(int)
+        left = right = 0
         substrings = 0
 
-        def is_valid() -> bool:
-            nonlocal window
-            for freq in window.values():
-                if freq > 1:
-                    return False
-            return True
+        def window_valid() -> bool:
+            return all(freq < 2 for freq in window.values())
 
         while right < len(s):
             window[s[right]] += 1
@@ -18,8 +14,8 @@ class Solution:
             if right - left + 1 > 3:
                 window[s[left]] -= 1
                 left += 1
-            
-            if right - left + 1 == 3 and is_valid():
+            if right - left + 1 == 3 and window_valid():
                 substrings += 1
             right += 1
         return substrings
+        
