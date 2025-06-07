@@ -8,12 +8,9 @@ class Solution:
         while right < len(s):
             window[s[right]] += 1
 
-            while window[s[right]] > 1:
+            while left <= right and window[s[right]] > 1:
                 window[s[left]] -= 1
                 left += 1
-            
             longest = max(longest, right - left + 1)
             right += 1
         return longest
-
-        
