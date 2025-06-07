@@ -10,7 +10,7 @@ class Solution:
             if right - left > k:
                 window[nums[left]] -= 1
                 left += 1
-            if left < right and right - left <= k and window[nums[right]] > 1:
+            if window[nums[right]] > 1:
                 return True
             right += 1
         return False
