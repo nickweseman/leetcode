@@ -11,5 +11,5 @@ class Solution:
                 nums1[write] = nums2[j]
                 j -= 1
             write -= 1
-        
-        
+            
+            
