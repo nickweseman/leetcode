@@ -1,18 +1,15 @@
 class Solution:
-    def backspaceCompare(self, s: str, t: str) -> bool:
-        def execute(ss: str) -> str:
-            i: int = 0
-            output: list[str] = []
+    def backspaceCompare(self, s: str, t: str) -> bool:     
+        def execute(st: str) -> str:
+            keyboard = []
+            i = 0
 
-            while i < len(ss):
-                if ss[i] != "#":
-                    output.append(ss[i])
+            while i < len(st):
+                if st[i] == "#":
+                    if keyboard:
+                        keyboard.pop()
                 else:
-                    if output:
-                        output.pop()
+                    keyboard.append(st[i])
                 i += 1
-            return "".join(output)
-        
+            return "".join(keyboard)
         return execute(s) == execute(t)
-
-        
