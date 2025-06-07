@@ -4,10 +4,10 @@ class Solution:
 
         while need < len(words) and scan < len(s):
             word = words[need]
-            if s[scan:scan+len(word)] == word:
+            if words[need] == s[scan:scan + len(word)]:
                 need += 1
-                scan += len(word)
             else:
                 return False
+            scan += len(word)
+            print(f"{scan=} {need=}")
         return scan == len(s)
-        
