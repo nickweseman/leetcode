@@ -1,8 +1,8 @@
+from collections import Counter
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         nums1.sort()
         nums2.sort()
-
         i = j = 0
         output = []
 
@@ -16,4 +16,3 @@ class Solution:
                 i += 1
                 j += 1
         return output
-        
