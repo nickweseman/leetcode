@@ -7,10 +7,11 @@ class Solution:
         while right < len(nums):
             window[nums[right]] += 1
 
-            if right - left > k:
+            while right - left > k:
                 window[nums[left]] -= 1
                 left += 1
             if window[nums[right]] > 1:
                 return True
             right += 1
         return False
+        
