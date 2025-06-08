@@ -19,8 +19,6 @@ class Solution:
                 if window[s[left]] == target[s[left]]:
                     matches -= 1
                 window[s[left]] -= 1
-                if window[s[left]] == 0:
-                    del window[s[left]]
                 left += 1
 
             if right - left + 1 == len(p) and matches == required_matches:
