@@ -146,6 +146,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0953-reverse-only-letters](https://github.com/nickweseman/leetcode/tree/master/0953-reverse-only-letters) |
 | [0961-long-pressed-name](https://github.com/nickweseman/leetcode/tree/master/0961-long-pressed-name) |
 | [0979-di-string-match](https://github.com/nickweseman/leetcode/tree/master/0979-di-string-match) |
+| [1321-get-equal-substrings-within-budget](https://github.com/nickweseman/leetcode/tree/master/1321-get-equal-substrings-within-budget) |
 | [1430-find-the-k-beauty-of-a-number](https://github.com/nickweseman/leetcode/tree/master/1430-find-the-k-beauty-of-a-number) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/nickweseman/leetcode/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
 | [1894-merge-strings-alternately](https://github.com/nickweseman/leetcode/tree/master/1894-merge-strings-alternately) |
@@ -206,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/nickweseman/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0713-subarray-product-less-than-k](https://github.com/nickweseman/leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [1046-max-consecutive-ones-iii](https://github.com/nickweseman/leetcode/tree/master/1046-max-consecutive-ones-iii) |
+| [1321-get-equal-substrings-within-budget](https://github.com/nickweseman/leetcode/tree/master/1321-get-equal-substrings-within-budget) |
 | [2634-minimum-common-value](https://github.com/nickweseman/leetcode/tree/master/2634-minimum-common-value) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/nickweseman/leetcode/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 ## Bit Manipulation
@@ -244,6 +246,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0643-maximum-average-subarray-i](https://github.com/nickweseman/leetcode/tree/master/0643-maximum-average-subarray-i) |
 | [0713-subarray-product-less-than-k](https://github.com/nickweseman/leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [1046-max-consecutive-ones-iii](https://github.com/nickweseman/leetcode/tree/master/1046-max-consecutive-ones-iii) |
+| [1321-get-equal-substrings-within-budget](https://github.com/nickweseman/leetcode/tree/master/1321-get-equal-substrings-within-budget) |
 | [1430-find-the-k-beauty-of-a-number](https://github.com/nickweseman/leetcode/tree/master/1430-find-the-k-beauty-of-a-number) |
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/nickweseman/leetcode/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/nickweseman/leetcode/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
@@ -261,4 +264,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0209-minimum-size-subarray-sum](https://github.com/nickweseman/leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0713-subarray-product-less-than-k](https://github.com/nickweseman/leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [1046-max-consecutive-ones-iii](https://github.com/nickweseman/leetcode/tree/master/1046-max-consecutive-ones-iii) |
+| [1321-get-equal-substrings-within-budget](https://github.com/nickweseman/leetcode/tree/master/1321-get-equal-substrings-within-budget) |
 <!---LeetCode Topics End-->
