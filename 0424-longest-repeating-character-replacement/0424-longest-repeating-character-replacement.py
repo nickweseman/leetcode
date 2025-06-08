@@ -6,21 +6,13 @@ class Solution:
         window = defaultdict(int)
         longest = 0
 
-        def window_invalid() -> bool:
-            return len(s[left:right+1]) - max_freq > k
-
-        def update_answer() -> None:
-            nonlocal longest
-            longest = max(longest, right - left + 1)
-
         while right < len(s):
             window[s[right]] += 1
             max_freq = max(max_freq, window[s[right]])
 
-            while window_invalid():
-                print(f"{left=}")
+            while right - left + 1 - max_freq > k:
                 window[s[left]] -= 1
                 left += 1
-            update_answer()
+            longest = max(longest, right - left + 1)
             right += 1
         return longest
