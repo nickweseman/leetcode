@@ -2,9 +2,9 @@ from collections import defaultdict
 class Solution:
     def countSubarrays(self, nums: List[int], k: int) -> int:
         total_subarrays = (len(nums) * (len(nums) + 1)) // 2
+        maxx = max(nums)
         
         def atMostK(kk: int) -> int:
-            maxx = max(nums)
             window = defaultdict(int)
             left = right = 0
             subarrays = 0
