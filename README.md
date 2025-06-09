@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1046-max-consecutive-ones-iii](https://github.com/nickweseman/leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1168-duplicate-zeros](https://github.com/nickweseman/leetcode/tree/master/1168-duplicate-zeros) |
 | [1370-count-number-of-nice-subarrays](https://github.com/nickweseman/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
+| [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/nickweseman/leetcode/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [2093-check-if-string-is-a-prefix-of-array](https://github.com/nickweseman/leetcode/tree/master/2093-check-if-string-is-a-prefix-of-array) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/nickweseman/leetcode/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/nickweseman/leetcode/tree/master/2231-find-first-palindromic-string-in-the-array) |
@@ -261,6 +262,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1321-get-equal-substrings-within-budget](https://github.com/nickweseman/leetcode/tree/master/1321-get-equal-substrings-within-budget) |
 | [1370-count-number-of-nice-subarrays](https://github.com/nickweseman/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1430-find-the-k-beauty-of-a-number](https://github.com/nickweseman/leetcode/tree/master/1430-find-the-k-beauty-of-a-number) |
+| [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/nickweseman/leetcode/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/nickweseman/leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/nickweseman/leetcode/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/nickweseman/leetcode/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
