@@ -9,7 +9,7 @@ class Solution:
             if s[right] in vowels:
                 window += 1
 
-            while right - left + 1 > k:
+            if right - left + 1 > k:
                 if s[left] in vowels:
                     window -= 1
                 left += 1
