@@ -5,15 +5,17 @@ class Solution:
         maxx = max(nums)
         
         def atMostK(kk: int) -> int:
-            window = defaultdict(int)
+            window = 0 # only need to track the number of times max occurs
             left = right = 0
             subarrays = 0
 
             while right < len(nums):
-                window[nums[right]] += 1
+                if nums[right] == maxx:
+                    window += 1
 
-                while left <= right and window[maxx] > kk:
-                    window[nums[left]] -= 1
+                while left <= right and window > kk:
+                    if nums[left] == maxx:
+                        window -= 1
                     left += 1
                 subarrays += right - left + 1
                 right += 1
