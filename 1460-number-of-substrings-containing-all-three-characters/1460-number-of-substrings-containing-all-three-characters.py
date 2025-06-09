@@ -5,18 +5,16 @@ class Solution:
             window = defaultdict(int)
             left = right = 0
             subarrays = 0
-
-            def distinctK() -> bool:
-                total = 0
-                for freq in window.values():
-                    if freq > 0:
-                        total += 1
-                return total
+            distinct = 0
 
             while right < len(s):
                 window[s[right]] += 1
+                if window[s[right]] == 1:
+                    distinct += 1
 
-                while left <= right and distinctK() > k:
+                while left <= right and distinct > k:
+                    if window[s[left]] == 1:
+                        distinct -= 1
                     window[s[left]] -= 1
                     left += 1
                 subarrays += right - left + 1
