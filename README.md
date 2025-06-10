@@ -221,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/nickweseman/leetcode/tree/master/0268-missing-number) |
 | [1370-count-number-of-nice-subarrays](https://github.com/nickweseman/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1430-find-the-k-beauty-of-a-number](https://github.com/nickweseman/leetcode/tree/master/1430-find-the-k-beauty-of-a-number) |
+| [2383-add-two-integers](https://github.com/nickweseman/leetcode/tree/master/2383-add-two-integers) |
 ## Matrix
 |  |
 | ------- |
