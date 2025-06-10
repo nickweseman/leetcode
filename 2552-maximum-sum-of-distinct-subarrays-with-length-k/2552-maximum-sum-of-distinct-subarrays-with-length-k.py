@@ -1,9 +1,8 @@
-from collections import defaultdict
 class Solution:
     def maximumSubarraySum(self, nums: List[int], k: int) -> int:
-        window = defaultdict(int)
-        left = right = 0
         total = max_total = 0
+        left = right = 0
+        window = collections.defaultdict(int)
 
         while right < len(nums):
             window[nums[right]] += 1
