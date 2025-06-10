@@ -1,15 +1,13 @@
-from collections import Counter
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
-        window = Counter()
-        target = Counter(p)
+        anagrams = []
+        left = right = 0
+
+        window = collections.defaultdict(int)
+        target = collections.Counter(p)
 
         have = 0
         need = len(target)
-
-        left = right = 0
-
-        anagrams = []
 
         while right < len(s):
             window[s[right]] += 1
@@ -21,8 +19,7 @@ class Solution:
                     have -= 1
                 window[s[left]] -= 1
                 left += 1
-            
-            if right - left + 1 == len(p) and have == need:
+            if have == need:
                 anagrams.append(left)
             right += 1
         return anagrams
