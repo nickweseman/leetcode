@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1168-duplicate-zeros](https://github.com/nickweseman/leetcode/tree/master/1168-duplicate-zeros) |
 | [1370-count-number-of-nice-subarrays](https://github.com/nickweseman/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/nickweseman/leetcode/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
+| [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/nickweseman/leetcode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/nickweseman/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1813-maximum-erasure-value](https://github.com/nickweseman/leetcode/tree/master/1813-maximum-erasure-value) |
 | [2093-check-if-string-is-a-prefix-of-array](https://github.com/nickweseman/leetcode/tree/master/2093-check-if-string-is-a-prefix-of-array) |
@@ -204,6 +205,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/nickweseman/leetcode/tree/master/0234-palindrome-linked-list) |
 | [0496-next-greater-element-i](https://github.com/nickweseman/leetcode/tree/master/0496-next-greater-element-i) |
 | [0874-backspace-string-compare](https://github.com/nickweseman/leetcode/tree/master/0874-backspace-string-compare) |
+| [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/nickweseman/leetcode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 ## Recursion
 |  |
 | ------- |
@@ -307,4 +309,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0496-next-greater-element-i](https://github.com/nickweseman/leetcode/tree/master/0496-next-greater-element-i) |
+| [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/nickweseman/leetcode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 <!---LeetCode Topics End-->
