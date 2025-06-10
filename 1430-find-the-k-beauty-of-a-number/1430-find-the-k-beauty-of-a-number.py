@@ -1,8 +1,8 @@
 class Solution:
     def divisorSubstrings(self, num: int, k: int) -> int:
-        substrings = 0
-        left = right = 0
         s = str(num)
+        left = right = 0
+        substrings = 0
 
         while right < len(s):
             if right - left + 1 > k:
@@ -12,4 +12,3 @@ class Solution:
                 substrings += 1
             right += 1
         return substrings
-        
