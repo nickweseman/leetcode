@@ -8,22 +8,23 @@ class Solution:
         def reverse(h: ListNode) -> ListNode:
             curr = h
             prev = None
-
             while curr:
-                curr.next, prev, curr = prev, curr, curr.next
+                curr.next, curr, prev = prev, curr.next, curr
             return prev
         
-        slow = fast = head
+        fast = slow = head
 
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
+        
         tail = reverse(slow)
 
         while tail:
-            if head.val != tail.val:
+            if tail.val != head.val:
                 return False
-            head = head.next
             tail = tail.next
+            head = head.next
         return True
+        
         
