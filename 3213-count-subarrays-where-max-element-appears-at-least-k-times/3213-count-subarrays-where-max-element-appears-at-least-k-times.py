@@ -1,24 +1,23 @@
-from collections import defaultdict
 class Solution:
     def countSubarrays(self, nums: List[int], k: int) -> int:
-        total_subarrays = (len(nums) * (len(nums) + 1)) // 2
-        maxx = max(nums)
-        
-        def atMostK(kk: int) -> int:
-            window = 0 # only need to track the number of times max occurs
+        n = len(nums)
+        total_subarrays = (n * (n + 1)) // 2
+
+        def helper() -> int:
+            maxx = max(nums)
+            max_count = 0
             left = right = 0
             subarrays = 0
 
             while right < len(nums):
                 if nums[right] == maxx:
-                    window += 1
-
-                while left <= right and window > kk:
+                    max_count += 1
+                
+                while max_count > k - 1:
                     if nums[left] == maxx:
-                        window -= 1
+                        max_count -= 1
                     left += 1
                 subarrays += right - left + 1
                 right += 1
             return subarrays
-        return total_subarrays - atMostK(k - 1)
-        
+        return total_subarrays - helper()
