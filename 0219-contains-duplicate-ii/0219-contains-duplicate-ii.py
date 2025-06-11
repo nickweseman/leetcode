@@ -1,7 +1,6 @@
-from collections import defaultdict
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
-        window = defaultdict(int)
+        window = collections.defaultdict(int)
         left = right = 0
 
         while right < len(nums):
@@ -14,4 +13,3 @@ class Solution:
                 return True
             right += 1
         return False
-        
