@@ -2,14 +2,7 @@ class Solution:
     def minimumRecolors(self, blocks: str, k: int) -> int:
         whites = 0
         left = right = 0
-        min_whites = float('inf')
-
-        def window_valid() -> bool:
-            return True
-        
-        def update_answer() -> None:
-            nonlocal min_whites
-            min_whites = min(min_whites, whites)
+        min_operations = float('inf')
 
         while right < len(blocks):
             if blocks[right] == "W":
@@ -19,8 +12,7 @@ class Solution:
                 if blocks[left] == "W":
                     whites -= 1
                 left += 1
-            
-            if right - left + 1 == k and window_valid():
-                update_answer()
+            if right - left + 1 == k:
+                min_operations = min(min_operations, whites)
             right += 1
-        return min_whites
+        return min_operations
