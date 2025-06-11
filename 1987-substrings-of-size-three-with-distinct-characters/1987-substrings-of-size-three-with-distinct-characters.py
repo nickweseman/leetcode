@@ -1,21 +1,22 @@
-from collections import defaultdict
 class Solution:
     def countGoodSubstrings(self, s: str) -> int:
-        window = defaultdict(int)
+        window = collections.defaultdict(int)
         left = right = 0
         substrings = 0
-
-        def window_valid() -> bool:
-            return all(freq < 2 for freq in window.values())
+        distinct = 0
 
         while right < len(s):
             window[s[right]] += 1
+            if window[s[right]] == 1:
+                distinct += 1
 
             if right - left + 1 > 3:
+                if window[s[left]] == 1:
+                    distinct -= 1
                 window[s[left]] -= 1
                 left += 1
-            if right - left + 1 == 3 and window_valid():
+            if right - left + 1 == 3 and distinct == 3:
                 substrings += 1
             right += 1
         return substrings
-        
+            
