@@ -1,7 +1,7 @@
 class Solution:
     def equalSubstring(self, s: str, t: str, maxCost: int) -> int:
-        left = right = 0
         cost = 0
+        left = right = 0
         max_length = 0
 
         while right < len(s):
@@ -13,3 +13,5 @@ class Solution:
             max_length = max(max_length, right - left + 1)
             right += 1
         return max_length
+            
+        
