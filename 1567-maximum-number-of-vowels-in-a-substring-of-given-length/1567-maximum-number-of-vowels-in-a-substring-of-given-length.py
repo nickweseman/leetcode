@@ -2,13 +2,11 @@ class Solution:
     def maxVowels(self, s: str, k: int) -> int:
         vowels = set("aeiou")
         left = right = 0
-        num_vowels = 0
-        max_vowels = 0
+        num_vowels = max_vowels = 0
 
         while right < len(s):
             if s[right] in vowels:
                 num_vowels += 1
-            
             if right - left + 1 > k:
                 if s[left] in vowels:
                     num_vowels -= 1
