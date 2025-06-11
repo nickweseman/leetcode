@@ -1,9 +1,8 @@
-from collections import defaultdict
 class Solution:
     def maximumLengthSubstring(self, s: str) -> int:
-        left = right = 0
         max_length = float('-inf')
-        window = defaultdict(int)
+        left = right = 0
+        window = collections.defaultdict(int)
 
         while right < len(s):
             window[s[right]] += 1
@@ -14,3 +13,4 @@ class Solution:
             max_length = max(max_length, right - left + 1)
             right += 1
         return max_length
+        
