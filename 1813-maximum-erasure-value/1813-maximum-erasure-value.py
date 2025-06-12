@@ -1,23 +1,25 @@
 class Solution:
     def maximumUniqueSubarray(self, nums: List[int]) -> int:
-        max_total = 0
-        total = 0
+        score = 0
+        max_score = float('-inf')
         left = right = 0
-        distinct = 0
         window = collections.defaultdict(int)
+        distinct = 0
 
         while right < len(nums):
             window[nums[right]] += 1
             if window[nums[right]] == 1:
                 distinct += 1
-            total += nums[right]
+            score += nums[right]
             
-            while right - left + 1 > distinct:
+            while distinct < right - left + 1:
                 if window[nums[left]] == 1:
                     distinct -= 1
                 window[nums[left]] -= 1
-                total -= nums[left]
+                score -= nums[left]
                 left += 1
-            max_total = max(max_total, total)
+            max_score = max(max_score, score)
             right += 1
-        return max_total
+        return max_score
+
+        
