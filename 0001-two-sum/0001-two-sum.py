@@ -6,7 +6,6 @@ class Solution:
             goal = target - num
             
             if goal in num_map:
-                i2 = num_map[goal]
-                if i != i2:
-                    return [i, i2]
+                return [i, num_map[goal]]
+
             num_map[num] = i
