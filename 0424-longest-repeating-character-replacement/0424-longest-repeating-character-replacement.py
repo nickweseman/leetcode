@@ -1,16 +1,15 @@
-from collections import defaultdict
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
-        max_freq = 0
+        most_freq = 0
         left = right = 0
-        window = defaultdict(int)
         longest = 0
+        window = collections.defaultdict(int)
 
         while right < len(s):
             window[s[right]] += 1
-            max_freq = max(max_freq, window[s[right]])
+            most_freq = max(most_freq, window[s[right]])
 
-            while right - left + 1 - max_freq > k:
+            while right - left + 1 - most_freq > k:
                 window[s[left]] -= 1
                 left += 1
             longest = max(longest, right - left + 1)
