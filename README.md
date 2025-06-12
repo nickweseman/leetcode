@@ -215,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/nickweseman/leetcode/tree/master/0503-next-greater-element-ii) |
 | [0739-daily-temperatures](https://github.com/nickweseman/leetcode/tree/master/0739-daily-temperatures) |
 | [0874-backspace-string-compare](https://github.com/nickweseman/leetcode/tree/master/0874-backspace-string-compare) |
+| [0937-online-stock-span](https://github.com/nickweseman/leetcode/tree/master/0937-online-stock-span) |
 | [1072-next-greater-node-in-linked-list](https://github.com/nickweseman/leetcode/tree/master/1072-next-greater-node-in-linked-list) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/nickweseman/leetcode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 ## Recursion
@@ -325,6 +326,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/nickweseman/leetcode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/nickweseman/leetcode/tree/master/0503-next-greater-element-ii) |
 | [0739-daily-temperatures](https://github.com/nickweseman/leetcode/tree/master/0739-daily-temperatures) |
+| [0937-online-stock-span](https://github.com/nickweseman/leetcode/tree/master/0937-online-stock-span) |
 | [1072-next-greater-node-in-linked-list](https://github.com/nickweseman/leetcode/tree/master/1072-next-greater-node-in-linked-list) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/nickweseman/leetcode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 ## Queue
@@ -339,4 +341,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/nickweseman/leetcode/tree/master/0239-sliding-window-maximum) |
+## Design
+|  |
+| ------- |
+| [0937-online-stock-span](https://github.com/nickweseman/leetcode/tree/master/0937-online-stock-span) |
+## Data Stream
+|  |
+| ------- |
+| [0937-online-stock-span](https://github.com/nickweseman/leetcode/tree/master/0937-online-stock-span) |
 <!---LeetCode Topics End-->
