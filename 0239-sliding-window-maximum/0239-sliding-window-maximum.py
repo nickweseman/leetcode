@@ -22,4 +22,3 @@ class Solution:
                 result.append(nums[window[0]])
             right += 1
         return result
-        
