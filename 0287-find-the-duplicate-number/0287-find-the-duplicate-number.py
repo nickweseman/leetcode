@@ -10,10 +10,9 @@ class Solution:
                 break
         slow = 0
 
-        while True:
+        while slow != fast:
             slow = nums[slow]
             fast = nums[fast]
 
-            if slow == fast:
-                return slow
+        return slow
         
