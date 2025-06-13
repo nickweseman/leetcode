@@ -4,5 +4,6 @@ class Solution:
         idx = word.find(ch)
 
         if idx != -1:
-            w = w[:idx+1][::-1] + w[idx+1:]
-        return "".join(w)
+            return word[:idx+1][::-1] + word[idx+1:]
+        else:
+            return word
