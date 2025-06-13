@@ -7,11 +7,10 @@ class Solution:
     def nextLargerNodes(self, head: Optional[ListNode]) -> List[int]:
         stack = []
         values = []
-        
+
         while head:
             values.append(head.val)
             head = head.next
-
         result = [0] * len(values)
         
         for i, num in enumerate(values):
