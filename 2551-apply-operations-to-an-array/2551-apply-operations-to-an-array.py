@@ -4,13 +4,11 @@ class Solution:
             if nums[i] == nums[i + 1]:
                 nums[i] *= 2
                 nums[i + 1] = 0
-        
-        slow = 0
-
-        for fast in range(len(nums)):
-            if nums[fast] != 0:
-                nums[slow], nums[fast] = nums[fast], nums[slow]
-                slow += 1 
+            
+        read = write = 0
+        while read < len(nums):
+            if nums[read] != 0:
+                nums[read], nums[write] = nums[write], nums[read]
+                write += 1
+            read += 1
         return nums
-
-        
