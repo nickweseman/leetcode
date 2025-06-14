@@ -14,14 +14,14 @@ class Solution:
 
             if right - left + 1 > len(s1):
                 #print(f"entering if loop what was {right=} {left=}")
-                if window[s2[left]] == 1:
+                if window[s2[left]] == target[s2[left]]:
                     have -= 1
                 window[s2[left]] -= 1
                 if window[s2[left]] == 0:
                     del window[s2[left]]
                 left += 1
             #print(locals())
-            if right - left + 1 == len(s1) and window == target:
+            if right - left + 1 == len(s1) and have == need:
                 return True
             right += 1
         return False
