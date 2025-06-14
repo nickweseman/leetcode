@@ -1,9 +1,9 @@
 class Solution:
     def numberOfSubarrays(self, nums: List[int], k: int) -> int:
         def helper(kk: int) -> int:
-            subarrays = 0
-            left = right = 0
             odds = 0
+            left = right = 0
+            subarrays = 0
 
             while right < len(nums):
                 if nums[right] % 2 == 1:
