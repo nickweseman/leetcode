@@ -10,14 +10,12 @@ class Solution:
         ptrB = headB
 
         while ptrA != ptrB:
-            if not ptrA:
-                ptrA = headB
-            else:
+            if ptrA:
                 ptrA = ptrA.next
-            if not ptrB:
-                ptrB = headA
             else:
+                ptrA = headB
+            if ptrB:
                 ptrB = ptrB.next
+            else:
+                ptrB = headA
         return ptrA
-        
-        
