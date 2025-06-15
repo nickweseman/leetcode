@@ -1,10 +1,9 @@
 class Solution:
     def sortArrayByParity(self, nums: List[int]) -> List[int]:
-        read = write = 0
-
-        while read < len(nums):
-            if nums[read] % 2 == 0:
-                nums[read], nums[write] = nums[write], nums[read]
-                write += 1
-            read += 1
+        left, right = 0, 0
+        while right < len(nums):
+            if nums[right] % 2 == 0:
+                nums[right], nums[left] = nums[left], nums[right]
+                left += 1
+            right += 1
         return nums
