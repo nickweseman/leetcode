@@ -1,9 +1,9 @@
 class Solution:
     def numSubarraysWithSum(self, nums: List[int], goal: int) -> int:
         def helper(g: int) -> int:
-            subarrays = 0
             left = right = 0
             total = 0
+            subarrays = 0
 
             while right < len(nums):
                 total += nums[right]
