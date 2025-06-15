@@ -11,4 +11,3 @@ class Solution:
         while curr:
             curr.next, curr, prev = prev, curr.next, curr
         return prev
-        
