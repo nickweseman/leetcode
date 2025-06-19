@@ -2,12 +2,11 @@ class Solution:
     def isPrefixString(self, s: str, words: List[str]) -> bool:
         need = scan = 0
 
-        while need < len(words) and scan < len(s):
+        while scan < len(s) and need < len(words):
             word = words[need]
-            if words[need] == s[scan:scan + len(word)]:
+            if word == s[scan:scan + len(word)]:
                 need += 1
             else:
                 return False
             scan += len(word)
-            print(f"{scan=} {need=}")
         return scan == len(s)
