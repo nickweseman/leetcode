@@ -1,11 +1,13 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        num_map = {}
-
+        nummap = {}
         for i, num in enumerate(nums):
-            goal = target - num
-            
-            if goal in num_map:
-                return [i, num_map[goal]]
+            nummap[num] = i
+        for i, num in enumerate(nums):
+            j = target - num
+            if j in nummap:
+                jnum = nummap[j]
+                if i != jnum:
+                    return [i, jnum]
 
-            num_map[num] = i
+
