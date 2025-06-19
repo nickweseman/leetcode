@@ -1,11 +1,13 @@
 class Solution:
     def captureForts(self, forts: List[int]) -> int:
-        last_fort_index = 0
-        max_forts = 0
+        current_index = 0
+        max_zeroes = 0
+        last_fort_index = -1
 
-        for fort_index, fort_value in enumerate(forts):
-            if fort_value != 0:
-                if forts[last_fort_index] * fort_value == -1:
-                    max_forts = max(max_forts, fort_index - last_fort_index - 1)
-                last_fort_index = fort_index
-        return max_forts
+        while current_index < len(forts):
+            if forts[current_index] in (1, -1):
+                if last_fort_index != -1 and forts[last_fort_index] * forts[current_index] == -1:
+                    max_zeroes = max(max_zeroes, current_index - last_fort_index - 1)
+                last_fort_index = current_index
+            current_index += 1
+        return max_zeroes
