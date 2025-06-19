@@ -5,16 +5,16 @@ class Solution:
         result = []
 
         def add() -> None:
-            while window and window[-1] < nums[right]:
+            while window and nums[window[-1]] < nums[right]:
                 window.pop()
-            window.append(nums[right])
+            window.append(right)
         def remove() -> None:
-            if window and nums[left] == window[0]:
+            if window and left == window[0]:
                 window.popleft()
         def validWindow() -> bool:
             return True
         def updateAnswer() -> None:
-            result.append(window[0])
+            result.append(nums[window[0]])
         while right < len(nums):
             add()
             if right - left + 1 > k:
