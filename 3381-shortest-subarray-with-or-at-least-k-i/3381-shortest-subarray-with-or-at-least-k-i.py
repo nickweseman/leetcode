@@ -1,40 +1,29 @@
 class Solution:
     def minimumSubarrayLength(self, nums: List[int], k: int) -> int:
-        NUM_BITS = 6
-        bits = [0] * NUM_BITS
         left = right = 0
         shortest = float('inf')
+        NUM_BITS = 6
+        bits = [0] * NUM_BITS
 
-        def add(n: int) -> None:
+        def add() -> None:
             for i in range(NUM_BITS):
-                if n >> i & 1:
+                if nums[right] >> i & 1:
                     bits[i] += 1
-        
-        def remove(n: int) -> None:
+        def remove() -> None:
             for i in range(NUM_BITS):
-                if n >> i & 1:
+                if nums[left] >> i & 1:
                     bits[i] -= 1
-        
-        def windowValid() -> bool:
+        def total_or() -> int:
             total = 0
             for i in range(NUM_BITS):
                 if bits[i]:
-                    total |= 1 << i
-            return total >= k
-        
-        def updateAnswer(left: int, right: int) -> None:
-            nonlocal shortest
-            shortest = min(shortest, right - left + 1)
-
+                    total += 1 << i
+            return total
         while right < len(nums):
-            add(nums[right])
-
-            while left <= right and windowValid():
-                updateAnswer(left, right)
-                remove(nums[left])
+            add()
+            while left <= right and total_or() >= k:
+                shortest = min(shortest, right - left + 1)
+                remove()
                 left += 1
-            print(f"{left=} {right=} {shortest=} {bits=}")
             right += 1
         return -1 if shortest == float('inf') else shortest
-
-        
