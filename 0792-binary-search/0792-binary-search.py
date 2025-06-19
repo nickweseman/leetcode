@@ -4,12 +4,10 @@ class Solution:
 
         while left < right:
             mid = (left + right) // 2
-            if nums[mid] < target:
-                left = mid + 1
-            else:
+            if nums[mid] <= target:
                 if nums[mid] == target:
                     return mid
-                else:
-                    right = mid
-        #return left if left < len(nums) and nums[left] == target else -1
+                left = mid + 1
+            else:
+                right = mid
         return -1
