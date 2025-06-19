@@ -17,7 +17,7 @@ class Solution:
             total = 0
             for i in range(NUM_BITS):
                 if bits[i]:
-                    total += 1 << i
+                    total |= 1 << i
             return total
         while right < len(nums):
             add()
