@@ -1,26 +1,18 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
-        def f(n: int):
-            output = 0
+        def happy(x: int) -> int:
+            total = 0
 
-            while n:
-                output += (n % 10) ** 2    
-                n = n // 10
-
-            return output
+            while x:
+                total += (x % 10) ** 2
+                x //= 10
+            return total
         
-        slow = f(n)
-        fast = f(f(n))
+        fast = slow = happy(n)
 
-        while f(n) and f(f(n)):
-            if fast == slow:
-                return slow == 1 or fast == 1
+        while True:
+            slow = happy(slow)
+            fast = happy(happy(fast))
 
-            slow = f(slow)
-            fast = f(f(fast))
-                   
-        return slow == 1 or fast == 1
-
-
-    
-        
+            if slow == fast:
+                return slow == 1
