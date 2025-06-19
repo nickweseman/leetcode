@@ -5,20 +5,22 @@ class Solution:
         result = []
 
         def add() -> None:
-            while window and nums[window[-1]] < nums[right]:
+            while window and window[-1] < nums[right]:
                 window.pop()
-            window.append(right)
+            window.append(nums[right])
         def remove() -> None:
-            if window[0] == left:
+            if window and nums[left] == window[0]:
                 window.popleft()
-        
+        def validWindow() -> bool:
+            return True
+        def updateAnswer() -> None:
+            result.append(window[0])
         while right < len(nums):
             add()
-
             if right - left + 1 > k:
                 remove()
                 left += 1
-            if right - left + 1 == k:
-                result.append(nums[window[0]])
+            if right - left + 1 == k and validWindow():
+                updateAnswer()
             right += 1
         return result
