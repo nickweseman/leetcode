@@ -1,10 +1,10 @@
 class Solution:
-    def removeElement(self, nums: List[int], val: int) -> int:   
-        slowIndex = 0
+    def removeElement(self, nums: List[int], val: int) -> int:
+        read = write = 0
 
-        for fastIndex in range(len(nums)):
-            if nums[fastIndex] != val:
-                nums[slowIndex] = nums[fastIndex]
-                slowIndex += 1
-        return slowIndex
-        
+        while read < len(nums):
+            if nums[read] != val:
+                nums[read], nums[write] = nums[write], nums[read]
+                write += 1
+            read += 1
+        return write
