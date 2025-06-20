@@ -15,4 +15,3 @@ class Solution:
             else:
                 current = current.next
         return dummy.next
-        
