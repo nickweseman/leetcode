@@ -16,7 +16,6 @@ class Solution:
                 current.next = list2
                 list2 = list2.next
             current = current.next
-        
         current.next = list1 or list2
-
         return dummy.next
+        
