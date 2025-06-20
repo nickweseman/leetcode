@@ -9,4 +9,4 @@ class Solution:
                 left = mid + 1
             else:
                 right = mid
-        return letters[left % n] # handles the case where left = n gracefully
+        return letters[0] if left == n else letters[left]
