@@ -8,5 +8,4 @@ class Solution:
                 left = mid + 1
             else:
                 right = mid
-            print(locals())
         return letters[0] if left in (0, len(letters)) else letters[left]
