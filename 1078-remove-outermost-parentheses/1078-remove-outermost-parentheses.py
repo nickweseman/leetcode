@@ -8,8 +8,8 @@ class Solution:
                 if stack:
                     result.append(char)
                 stack.append(char)
-            elif char == ")":
+            else:
                 stack.pop()
                 if stack:
-                    result.append(char) 
+                    result.append(char)
         return "".join(result)
