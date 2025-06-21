@@ -18,4 +18,3 @@ class Solution:
             current = current.next
         current.next = list1 or list2
         return dummy.next
-        
