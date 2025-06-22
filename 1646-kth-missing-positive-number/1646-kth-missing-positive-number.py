@@ -4,9 +4,8 @@ class Solution:
 
         while left < right:
             mid = (left + right) // 2
-            
-            missing_numbers = arr[mid] - (mid + 1)
 
+            missing_numbers = arr[mid] - (mid + 1)
             if missing_numbers < k:
                 left = mid + 1
             else:
