@@ -1,11 +1,12 @@
 class Solution:
     def pivotInteger(self, n: int) -> int:
-        # x^2 = (n^2 + n) / 2
-        target = (n ** 2 + n) / 2
-        x = math.sqrt(target)
+        left_sum = 0
+        right_sum = grand_sum = sum(range(n+1))
         
-        # Check if x is a whole number. 
-        if x == int(x):
-            return int(x)
-        else:
-            return -1
+        for i in range(1, n + 1):
+            right_sum = grand_sum - left_sum
+            left_sum += i
+            if left_sum == right_sum:
+                return i
+        return -1
+
