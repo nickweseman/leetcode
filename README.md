@@ -68,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2634-minimum-common-value](https://github.com/nickweseman/leetcode/tree/master/2634-minimum-common-value) |
 | [2698-find-the-array-concatenation-value](https://github.com/nickweseman/leetcode/tree/master/2698-find-the-array-concatenation-value) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/nickweseman/leetcode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
+| [2714-left-and-right-sum-differences](https://github.com/nickweseman/leetcode/tree/master/2714-left-and-right-sum-differences) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/nickweseman/leetcode/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/nickweseman/leetcode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
 | [3381-shortest-subarray-with-or-at-least-k-i](https://github.com/nickweseman/leetcode/tree/master/3381-shortest-subarray-with-or-at-least-k-i) |
@@ -382,6 +383,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2102-find-the-middle-index-in-array](https://github.com/nickweseman/leetcode/tree/master/2102-find-the-middle-index-in-array) |
 | [2469-longest-subsequence-with-limited-sum](https://github.com/nickweseman/leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
 | [2571-find-the-pivot-integer](https://github.com/nickweseman/leetcode/tree/master/2571-find-the-pivot-integer) |
+| [2714-left-and-right-sum-differences](https://github.com/nickweseman/leetcode/tree/master/2714-left-and-right-sum-differences) |
 ## Monotonic Stack
 |  |
 | ------- |
