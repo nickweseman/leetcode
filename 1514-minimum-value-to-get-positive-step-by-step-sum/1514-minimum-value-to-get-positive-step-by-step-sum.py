@@ -1,9 +1,8 @@
 class Solution:
     def minStartValue(self, nums: List[int]) -> int:
-        left_sum = 0
-        min_left_sum = float('inf')
+        prefix_sum = min_prefix_sum = 0
 
         for num in nums:
-            left_sum += num
-            min_left_sum = min(min_left_sum, left_sum)
-        return abs(min_left_sum) + 1 if min_left_sum < 0 else 1
+            prefix_sum += num
+            min_prefix_sum = min(min_prefix_sum, prefix_sum)
+        return 1 - min_prefix_sum
