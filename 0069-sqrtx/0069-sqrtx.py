@@ -4,7 +4,6 @@ class Solution:
 
         while left < right:
             mid = (left + right) // 2
-
             if mid * mid <= x:
                 left = mid + 1
             else:
