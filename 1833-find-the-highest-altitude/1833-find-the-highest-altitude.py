@@ -1,6 +1,6 @@
 class Solution:
     def largestAltitude(self, gain: List[int]) -> int:
-        altitude = highest_altitude = 0
+        highest_altitude = altitude = 0
 
         for num in gain:
             altitude += num
