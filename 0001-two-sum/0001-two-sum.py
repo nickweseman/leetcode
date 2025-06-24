@@ -7,3 +7,4 @@ class Solution:
             if goal in nummap:
                 return [i, nummap[goal]]
             nummap[num] = i
+        
