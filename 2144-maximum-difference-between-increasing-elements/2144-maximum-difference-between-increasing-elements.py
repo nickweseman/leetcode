@@ -1,7 +1,7 @@
 class Solution:
     def maximumDifference(self, nums: List[int]) -> int:
         left, right = 0, 1
-        max_diff = float('-inf')
+        max_diff = -1
 
         while right < len(nums):
             if nums[left] < nums[right]:
@@ -9,4 +9,4 @@ class Solution:
             else:
                 left = right
             right += 1
-        return -1 if max_diff == float('-inf') else max_diff
+        return max_diff
