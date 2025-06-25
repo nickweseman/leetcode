@@ -1,13 +1,13 @@
 class Solution:
     def maxScore(self, s: str) -> int:
-        zeroes = 0
-        ones = s.count("1")
-        max_score = 0
+        left_sum, right_sum = 0, s.count("1")
+        max_score = float('-inf')
 
-        for char in s[:-1]:
-            if char == "0":
-                zeroes += 1
+        for i, num in enumerate(s[:-1]):
+            if num == "1":
+                right_sum -= 1
             else:
-                ones -= 1
-            max_score = max(max_score, zeroes + ones)
+                left_sum += 1
+            max_score = max(max_score, left_sum + right_sum)
         return max_score
+            
