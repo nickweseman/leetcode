@@ -216,6 +216,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2128-reverse-prefix-of-word](https://github.com/nickweseman/leetcode/tree/master/2128-reverse-prefix-of-word) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/nickweseman/leetcode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/nickweseman/leetcode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
+| [2576-minimum-penalty-for-a-shop](https://github.com/nickweseman/leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
 | [2816-lexicographically-smallest-palindrome](https://github.com/nickweseman/leetcode/tree/master/2816-lexicographically-smallest-palindrome) |
 | [3349-maximum-length-substring-with-two-occurrences](https://github.com/nickweseman/leetcode/tree/master/3349-maximum-length-substring-with-two-occurrences) |
 | [3543-count-substrings-that-satisfy-k-constraint-i](https://github.com/nickweseman/leetcode/tree/master/3543-count-substrings-that-satisfy-k-constraint-i) |
@@ -399,6 +400,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2358-number-of-ways-to-split-array](https://github.com/nickweseman/leetcode/tree/master/2358-number-of-ways-to-split-array) |
 | [2469-longest-subsequence-with-limited-sum](https://github.com/nickweseman/leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
 | [2571-find-the-pivot-integer](https://github.com/nickweseman/leetcode/tree/master/2571-find-the-pivot-integer) |
+| [2576-minimum-penalty-for-a-shop](https://github.com/nickweseman/leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
 | [2714-left-and-right-sum-differences](https://github.com/nickweseman/leetcode/tree/master/2714-left-and-right-sum-differences) |
 ## Monotonic Stack
 |  |
