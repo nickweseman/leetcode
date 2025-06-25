@@ -1,7 +1,8 @@
 class Solution:
     def isValid(self, s: str) -> bool:
+        mappings = {"(":")", "[":"]", "{":"}"}
         stack = []
-        mappings = {"(":")", "{":"}", "[":"]"}
+
         for char in s:
             if char in mappings:
                 stack.append(char)
