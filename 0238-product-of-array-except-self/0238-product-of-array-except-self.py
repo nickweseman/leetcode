@@ -9,7 +9,7 @@ class Solution:
             prefix_product *= nums[i]
             
         postfix_product = 1
-        for i in range(n - 1, -1, -1):
+        for i in reversed(range(n)):
             answer[i] *= postfix_product
             postfix_product *= nums[i]
         
