@@ -3,9 +3,9 @@ class Solution:
         answer = []
         nums.sort()
         
-        prefix_sum = [0]
-        for num in nums:
-            prefix_sum.append(prefix_sum[-1] + num)
+        prefix_sum = [nums[0]]
+        for i in range(1, len(nums)):
+            prefix_sum.append(prefix_sum[-1] + nums[i])
 
         for q in queries:
             left, right = 0, len(prefix_sum)
@@ -17,5 +17,5 @@ class Solution:
                     left = mid + 1
                 else:
                     right = mid
-            answer.append(left - 1)
+            answer.append(left)
         return answer
