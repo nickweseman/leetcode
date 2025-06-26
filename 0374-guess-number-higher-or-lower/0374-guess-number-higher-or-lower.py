@@ -11,10 +11,13 @@ class Solution:
 
         while left <= right:
             mid = (left + right) // 2
+
             my_guess = guess(mid)
+
             if my_guess == 0:
                 return mid
             elif my_guess == 1:
                 left = mid + 1
             else:
                 right = mid - 1
+        
