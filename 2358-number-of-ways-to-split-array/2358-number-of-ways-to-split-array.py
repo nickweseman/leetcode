@@ -1,12 +1,12 @@
 class Solution:
     def waysToSplitArray(self, nums: List[int]) -> int:
-        valid_splits = 0
         left_sum, right_sum = 0, sum(nums)
+        valid_splits = 0
 
-        for i, num in enumerate(nums):
-            right_sum -= num
-            left_sum += num
+        for i in range(len(nums) - 1):
+            right_sum -= nums[i]
+            left_sum += nums[i]
 
-            if left_sum >= right_sum and i < len(nums) - 1:
+            if left_sum >= right_sum:
                 valid_splits += 1
         return valid_splits
