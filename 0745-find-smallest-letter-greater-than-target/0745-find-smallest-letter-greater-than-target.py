@@ -1,10 +1,13 @@
 class Solution:
     def nextGreatestLetter(self, letters: List[str], target: str) -> str:
-        smallest_index, smallest_value = -1, math.inf
+        left, right = 0, len(letters)
+        n = len(letters)
 
-        for i, c in enumerate(letters):
-            diff = ord(c) - ord(target)
-            if 0 < diff < smallest_value:
-                smallest_value = diff
-                smallest_index = i
-        return letters[0] if smallest_value == math.inf else letters[smallest_index]
+        while left < right:
+            mid = (left + right) // 2
+
+            if letters[mid] <= target:
+                left = mid + 1
+            else:
+                right = mid
+        return letters[left % n]
