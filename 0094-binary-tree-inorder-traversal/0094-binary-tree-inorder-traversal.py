@@ -18,4 +18,3 @@ class Solution:
             result.append(curr.val)
             curr = curr.right
         return result
-        
