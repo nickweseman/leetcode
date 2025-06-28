@@ -7,11 +7,15 @@
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         result = []
-        def dfs(node) -> None:
-            if node:
-                dfs(node.left)
-                result.append(node.val)
-                dfs(node.right)
-        dfs(root)
+        stack = []
+        curr = root
+
+        while stack or curr:
+            while curr:
+                stack.append(curr)
+                curr = curr.left
+            curr = stack.pop()
+            result.append(curr.val)
+            curr = curr.right
         return result
         
