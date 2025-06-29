@@ -105,6 +105,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0438-find-all-anagrams-in-a-string](https://github.com/nickweseman/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0496-next-greater-element-i](https://github.com/nickweseman/leetcode/tree/master/0496-next-greater-element-i) |
 | [0567-permutation-in-string](https://github.com/nickweseman/leetcode/tree/master/0567-permutation-in-string) |
+| [0652-find-duplicate-subtrees](https://github.com/nickweseman/leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0966-binary-subarrays-with-sum](https://github.com/nickweseman/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1034-subarrays-with-k-different-integers](https://github.com/nickweseman/leetcode/tree/master/1034-subarrays-with-k-different-integers) |
 | [1370-count-number-of-nice-subarrays](https://github.com/nickweseman/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
@@ -472,6 +473,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0144-binary-tree-preorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0572-subtree-of-another-tree](https://github.com/nickweseman/leetcode/tree/master/0572-subtree-of-another-tree) |
+| [0652-find-duplicate-subtrees](https://github.com/nickweseman/leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0904-leaf-similar-trees](https://github.com/nickweseman/leetcode/tree/master/0904-leaf-similar-trees) |
@@ -484,6 +486,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0144-binary-tree-preorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0572-subtree-of-another-tree](https://github.com/nickweseman/leetcode/tree/master/0572-subtree-of-another-tree) |
+| [0652-find-duplicate-subtrees](https://github.com/nickweseman/leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0904-leaf-similar-trees](https://github.com/nickweseman/leetcode/tree/master/0904-leaf-similar-trees) |
@@ -496,6 +499,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0144-binary-tree-preorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0572-subtree-of-another-tree](https://github.com/nickweseman/leetcode/tree/master/0572-subtree-of-another-tree) |
+| [0652-find-duplicate-subtrees](https://github.com/nickweseman/leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0904-leaf-similar-trees](https://github.com/nickweseman/leetcode/tree/master/0904-leaf-similar-trees) |
 ## Breadth-First Search
 |  |
