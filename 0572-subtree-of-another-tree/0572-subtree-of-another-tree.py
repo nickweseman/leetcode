@@ -10,12 +10,15 @@ class Solution:
             return True
         if not root:
             return False
-        def compareTrees(node1, node2) -> bool:
-            if not node1 and not node2:
-                return True
-            if not node1 or not node2 or node1.val != node2.val:
-                return False
-            return compareTrees(node1.left, node2.left) and compareTrees(node1.right, node2.right)
-        if compareTrees(root, subRoot):
-            return True
-        return self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot)
+        def serialize(node):
+            parts = []
+            def preorder(n):
+                if not n:
+                    parts.append("#")
+                    return
+                parts.append(f",{n.val},")
+                preorder(n.left)
+                preorder(n.right)
+            preorder(node)
+            return "".join(parts)
+        return serialize(subRoot) in serialize(root)  
