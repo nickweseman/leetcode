@@ -6,15 +6,13 @@
 class Solution:
     def nextLargerNodes(self, head: Optional[ListNode]) -> List[int]:
         values = []
-        stack = []
-
         while head:
             values.append(head.val)
             head = head.next
-        result = [0] * len(values)
-
+        answer = [0] * len(values)
+        stack = []
         for i, num in enumerate(values):
             while stack and values[stack[-1]] < num:
-                result[stack.pop()] = num
+                answer[stack.pop()] = num
             stack.append(i)
-        return result
+        return answer
