@@ -1,8 +1,8 @@
 class Solution:
     def minStartValue(self, nums: List[int]) -> int:
-        prefix_sum = lowest_sum = 0
+        min_sum = summ = 0
 
-        for i, num in enumerate(nums):
-            prefix_sum += num
-            lowest_sum = min(lowest_sum, prefix_sum)
-        return 1 - lowest_sum
+        for num in nums:
+            summ += num
+            min_sum = min(min_sum, summ)
+        return 1 - min_sum
