@@ -16,9 +16,9 @@ class Solution:
                 if not n:
                     parts.append("#")
                     return
-                parts.append(f",{n.val},")
+                parts.append(str(n.val))
                 preorder(n.left)
                 preorder(n.right)
             preorder(node)
-            return "".join(parts)
+            return "," + ",".join(parts) + ","
         return serialize(subRoot) in serialize(root)  
