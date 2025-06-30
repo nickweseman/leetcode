@@ -478,6 +478,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0145-binary-tree-postorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0257-binary-tree-paths](https://github.com/nickweseman/leetcode/tree/master/0257-binary-tree-paths) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0404-sum-of-left-leaves](https://github.com/nickweseman/leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0572-subtree-of-another-tree](https://github.com/nickweseman/leetcode/tree/master/0572-subtree-of-another-tree) |
 | [0652-find-duplicate-subtrees](https://github.com/nickweseman/leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0775-n-ary-tree-preorder-traversal) |
@@ -494,6 +495,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0145-binary-tree-postorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0257-binary-tree-paths](https://github.com/nickweseman/leetcode/tree/master/0257-binary-tree-paths) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0404-sum-of-left-leaves](https://github.com/nickweseman/leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0572-subtree-of-another-tree](https://github.com/nickweseman/leetcode/tree/master/0572-subtree-of-another-tree) |
 | [0652-find-duplicate-subtrees](https://github.com/nickweseman/leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0775-n-ary-tree-preorder-traversal) |
@@ -510,6 +512,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0145-binary-tree-postorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0257-binary-tree-paths](https://github.com/nickweseman/leetcode/tree/master/0257-binary-tree-paths) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0404-sum-of-left-leaves](https://github.com/nickweseman/leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0572-subtree-of-another-tree](https://github.com/nickweseman/leetcode/tree/master/0572-subtree-of-another-tree) |
 | [0652-find-duplicate-subtrees](https://github.com/nickweseman/leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0904-leaf-similar-trees](https://github.com/nickweseman/leetcode/tree/master/0904-leaf-similar-trees) |
@@ -520,6 +523,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0101-symmetric-tree](https://github.com/nickweseman/leetcode/tree/master/0101-symmetric-tree) |
 | [0112-path-sum](https://github.com/nickweseman/leetcode/tree/master/0112-path-sum) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0404-sum-of-left-leaves](https://github.com/nickweseman/leetcode/tree/master/0404-sum-of-left-leaves) |
 ## Hash Function
 |  |
 | ------- |
