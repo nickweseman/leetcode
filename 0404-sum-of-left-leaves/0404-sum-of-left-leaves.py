@@ -7,13 +7,14 @@
 class Solution:
     def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
         left_sum = 0
-        def dfs(node: TreeNode, is_left: bool) -> None:
+        def dfs(node, is_left) -> None:
             nonlocal left_sum
-            if node:
-                if is_left and not node.left and not node.right:
-                    left_sum += node.val
+            if not node:
+                return
+            if not node.left and not node.right and is_left:
+                left_sum += node.val
+            else:
                 dfs(node.left, True)
                 dfs(node.right, False)
         dfs(root, False)
         return left_sum
-        
