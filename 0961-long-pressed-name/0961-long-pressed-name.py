@@ -6,11 +6,11 @@ class Solution:
             if name[need] == typed[scan]:
                 need += 1
             else:
-                if need == 0 or name[need - 1] != typed[scan]:
+                if need == 0 or typed[scan] != name[need - 1]:
                     return False
             scan += 1
         while scan < len(typed):
-            if need == 0 or name[need - 1] != typed[scan]:
+            if need == 0 or typed[scan] != name[need - 1]:
                 return False
-            scan += 1
+            scan += 1    
         return need == len(name)
