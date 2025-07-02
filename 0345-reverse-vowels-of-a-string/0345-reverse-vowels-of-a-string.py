@@ -5,9 +5,9 @@ class Solution:
         ss = list(s)
 
         while left < right:
-            if s[left] not in vowels:
+            if ss[left] not in vowels:
                 left += 1
-            elif s[right] not in vowels:
+            elif ss[right] not in vowels:
                 right -= 1
             else:
                 ss[left], ss[right] = ss[right], ss[left]
