@@ -8,7 +8,7 @@ class Solution:
 
         while i < len(players) and j < len(trainers):
             if players[i] <= trainers[j]:
-                matches += 1
                 i += 1
+                matches += 1
             j += 1
         return matches
