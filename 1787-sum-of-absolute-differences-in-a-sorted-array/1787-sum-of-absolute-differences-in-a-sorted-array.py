@@ -6,9 +6,10 @@ class Solution:
 
         for i, num in enumerate(nums):
             right_sum -= num
-            left_sum += num
-
-            left_total = (num * (i + 1)) - left_sum
+            
+            left_total = (num * i) - left_sum
             right_total = right_sum - (num * (n - i - 1))
             result.append(left_total + right_total)
+            
+            left_sum += num
         return result
