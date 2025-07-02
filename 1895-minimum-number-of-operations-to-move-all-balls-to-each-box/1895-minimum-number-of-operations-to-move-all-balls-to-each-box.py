@@ -9,7 +9,7 @@ class Solution:
             if boxes[i] == "1":
                 left_balls += 1
             left_moves += left_balls
-
+        
         right_balls = right_moves = 0
         for i in reversed(range(n)):
             answer[i] += right_moves
