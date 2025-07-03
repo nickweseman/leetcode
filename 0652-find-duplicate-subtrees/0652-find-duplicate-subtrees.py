@@ -6,30 +6,27 @@
 #         self.right = right
 class Solution:
     def findDuplicateSubtrees(self, root: Optional[TreeNode]) -> List[Optional[TreeNode]]:
-        subtrees = collections.defaultdict(int)
         result = []
-
-        def dfs(n):
-            if not n:
+        subtrees = collections.defaultdict(int)
+        def dfs(node) -> None:
+            if not node:
                 return
-            s = self.serialize(n)
+            s = self.serialize(node)
             subtrees[s] += 1
             if subtrees[s] == 2:
-                result.append(n)
-            dfs(n.left)
-            dfs(n.right)
+                result.append(node)
+            dfs(node.left)
+            dfs(node.right)
         dfs(root)
         return result
-
-    def serialize(self, node) -> str:
+    def serialize(self, root: TreeNode) -> str:
         result = []
-        def dfs(n) -> None:
-            if not n:
+        def dfs(node) -> None:
+            if not node:
                 result.append("#")
                 return
-            else:
-                result.append(str(n.val))
-                dfs(n.left)
-                dfs(n.right)
-        dfs(node)
+            result.append(str(node.val))
+            dfs(node.left)
+            dfs(node.right)
+        dfs(root)
         return "," + ",".join(result) + ","
