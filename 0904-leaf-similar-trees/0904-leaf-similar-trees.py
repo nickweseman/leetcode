@@ -6,20 +6,15 @@
 #         self.right = right
 class Solution:
     def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
-        def tree_iter(root) -> Iterator[int]:
-            if not root:
+        def get_leaves(node) -> Iterator[int]:
+            if not node:
                 return
-            stack = [root]
-            while stack:
-                curr = stack.pop()
-                if not curr.left and not curr.right:
-                    yield curr.val
-                else:
-                    if curr.left:
-                        stack.append(curr.left)
-                    if curr.right:
-                        stack.append(curr.right)
-        for node1, node2 in itertools.zip_longest(tree_iter(root1), tree_iter(root2), fillvalue=object()):
-            if node1 != node2:
+            if not node.left and not node.right:
+                yield node.val
+            else:
+                yield from get_leaves(node.left)
+                yield from get_leaves(node.right)
+        for leaf1, leaf2 in itertools.zip_longest(get_leaves(root1), get_leaves(root2), fillvalue=object()):
+            if leaf1 != leaf2:
                 return False
         return True
