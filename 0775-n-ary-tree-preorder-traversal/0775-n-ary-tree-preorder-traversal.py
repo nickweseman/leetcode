@@ -9,10 +9,18 @@ class Node:
 class Solution:
     def preorder(self, root: 'Node') -> List[int]:
         result = []
-        def dfs(node) -> Node:
-            if node:
-                result.append(node.val)
-                for child in node.children:
-                    dfs(child)
+        def dfs(node) -> None:
+            if not node:
+                return
+            stack = [node]
+            while stack:
+                curr = stack.pop()
+                result.append(curr.val)
+                for child in reversed(curr.children):
+                    stack.append(child)
         dfs(root)
         return result
+
+            
+        
+        
