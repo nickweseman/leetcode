@@ -7,7 +7,7 @@
 class Solution:
     def findTilt(self, root: Optional[TreeNode]) -> int:
         total_tilt = 0
-        def dfs_sum(node) -> int:
+        def dfs_sum(node) -> None:
             nonlocal total_tilt
             if not node:
                 return 0
