@@ -2,20 +2,17 @@ class Solution:
     def answerQueries(self, nums: List[int], queries: List[int]) -> List[int]:
         answer = []
         nums.sort()
+        prefix_sums = [0]
+        for num in nums:
+            prefix_sums.append(prefix_sums[-1] + num)
         
-        prefix_sum = [nums[0]]
-        for i in range(1, len(nums)):
-            prefix_sum.append(prefix_sum[-1] + nums[i])
-
         for q in queries:
-            left, right = 0, len(prefix_sum)
-
+            left, right = 0, len(prefix_sums)
             while left < right:
                 mid = (left + right) // 2
-
-                if prefix_sum[mid] <= q:
+                if prefix_sums[mid] <= q:
                     left = mid + 1
                 else:
                     right = mid
-            answer.append(left)
+            answer.append(left - 1)
         return answer
