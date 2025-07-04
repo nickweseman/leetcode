@@ -11,4 +11,6 @@ class Solution:
             return None
         if original is target:
             return cloned
-        return self.getTargetCopy(original.left, cloned.left, target) or self.getTargetCopy(original.right, cloned.right, target)
+        left_val = self.getTargetCopy(original.left, cloned.left, target)
+        right_val = self.getTargetCopy(original.right, cloned.right, target)
+        return left_val or right_val
