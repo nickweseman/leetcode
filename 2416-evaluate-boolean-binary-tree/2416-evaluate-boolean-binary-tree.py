@@ -8,10 +8,10 @@ class Solution:
     def evaluateTree(self, root: Optional[TreeNode]) -> bool:
         if not root.left and not root.right:
             return root.val == 1
+        left_val = self.evaluateTree(root.left)
+        right_val = self.evaluateTree(root.right)
         if root.val == 2:
-            return (root.left and self.evaluateTree(root.left)) or (root.right and self.evaluateTree(root.right))
+            return left_val or right_val
         if root.val == 3:
-            left_val = not root.left or self.evaluateTree(root.left)
-            right_val = not root.right or self.evaluateTree(root.right)
             return left_val and right_val
             
