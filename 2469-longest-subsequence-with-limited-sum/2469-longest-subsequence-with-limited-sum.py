@@ -2,9 +2,7 @@ class Solution:
     def answerQueries(self, nums: List[int], queries: List[int]) -> List[int]:
         answer = []
         nums.sort()
-        prefix_sums = [0]
-        for num in nums:
-            prefix_sums.append(prefix_sums[-1] + num)
+        prefix_sums = list(itertools.accumulate(nums))
         
         for q in queries:
             left, right = 0, len(prefix_sums)
@@ -14,5 +12,5 @@ class Solution:
                     left = mid + 1
                 else:
                     right = mid
-            answer.append(left - 1)
+            answer.append(left)
         return answer
