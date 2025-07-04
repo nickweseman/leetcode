@@ -1,6 +1,6 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        mappings = {"(":")", "[":"]", "{":"}"}
+        mappings = {'(':')', '{':'}', '[':']'}
         stack = []
 
         for char in s:
@@ -9,4 +9,4 @@ class Solution:
             else:
                 if not stack or mappings[stack.pop()] != char:
                     return False
-        return len(stack) == 0
+        return not stack
