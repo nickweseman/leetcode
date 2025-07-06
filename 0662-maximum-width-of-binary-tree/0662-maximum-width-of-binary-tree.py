@@ -11,13 +11,12 @@ class Solution:
         queue = collections.deque([(root, 1)])
         max_width = -math.inf
         while queue:
-            leftmost_pos = queue[0][1]
-            rightmost_pos = queue[-1][1]
-            max_width = max(max_width, rightmost_pos - leftmost_pos + 1)
+            max_width = max(max_width, queue[-1][1] - queue[0][1] + 1)
             for _ in range(len(queue)):
-                node, pos = queue.popleft()
-                if node.left:
-                    queue.append((node.left, 2 * pos))
-                if node.right:
-                    queue.append((node.right, 2 * pos + 1))
+                curr, pos = queue.popleft()
+                if curr.left:
+                    queue.append((curr.left, pos << 1))
+                if curr.right:
+                    queue.append((curr.right, (pos << 1) + 1))             
         return max_width
+        
