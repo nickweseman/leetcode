@@ -11,13 +11,13 @@ class Solution:
         queue = collections.deque([root])
         result = []
         while queue:
-            n = len(queue)
-            for i in range(n):
-                node = queue.popleft()
-                if i == n - 1:
-                    result.append(node.val)
-                if node.left:
-                    queue.append(node.left)
-                if node.right:
-                    queue.append(node.right)
+            for _ in range(len(queue)):
+                curr = queue.popleft()
+                last = curr.val
+                if curr.left:
+                    queue.append(curr.left)
+                if curr.right:
+                    queue.append(curr.right)
+            result.append(last)
         return result
+        
