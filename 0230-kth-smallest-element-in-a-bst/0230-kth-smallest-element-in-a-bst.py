@@ -6,17 +6,12 @@
 #         self.right = right
 class Solution:
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
-        count = 0
-        def dfs(node) -> int:
-            nonlocal count
+        def inorder_generator(node) -> Iterator[int]:
             if node:
-                left = dfs(node.left)
-                if left is not None:
-                    return left
-                count += 1
-                if count == k:
-                    return node.val
-                right = dfs(node.right)
-                if right is not None:
-                    return right
-        return dfs(root)
+                yield from inorder_generator(node.left)
+                yield node.val
+                yield from inorder_generator(node.right)
+        gen = inorder_generator(root)
+        for _ in range(k - 1):
+            next(gen)
+        return next(gen)
