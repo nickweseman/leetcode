@@ -17,6 +17,6 @@ class Solution:
                 if curr.left:
                     queue.append((curr.left, pos << 1))
                 if curr.right:
-                    queue.append((curr.right, (pos << 1) + 1))             
+                    queue.append((curr.right, (pos << 1) | 1))             
         return max_width
         
