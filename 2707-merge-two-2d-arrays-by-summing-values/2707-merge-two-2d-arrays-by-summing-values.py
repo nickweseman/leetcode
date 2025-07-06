@@ -21,4 +21,3 @@ class Solution:
             result.append(nums2[j])
             j += 1
         return result
-            
