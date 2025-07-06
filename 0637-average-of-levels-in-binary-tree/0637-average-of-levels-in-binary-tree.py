@@ -11,14 +11,14 @@ class Solution:
         queue = collections.deque([root])
         result = []
         while queue:
-            n = len(queue)
             total = 0
+            n = len(queue)
             for _ in range(n):
-                node = queue.popleft()
-                total += node.val
-                if node.left:
-                    queue.append(node.left)
-                if node.right:
-                    queue.append(node.right)
+                curr = queue.popleft()
+                total += curr.val
+                if curr.left:
+                    queue.append(curr.left)
+                if curr.right:
+                    queue.append(curr.right)
             result.append(total / n)
         return result
