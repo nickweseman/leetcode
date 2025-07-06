@@ -3,7 +3,6 @@ class Solution:
         zeroes = 0
         left = right = 0
         longest = 0
-
         while right < len(nums):
             if nums[right] == 0:
                 zeroes += 1
