@@ -8,18 +8,17 @@ class Solution:
     def findDuplicateSubtrees(self, root: Optional[TreeNode]) -> List[Optional[TreeNode]]:
         subtrees = collections.defaultdict(int)
         result = []
-        
-        def serialize(node) -> str:
+        def serialize(node):
             if not node:
                 return "#"
             left = serialize(node.left)
             right = serialize(node.right)
-
-            s = f"{node.val},{left},{right}"
-            subtrees[s] += 1
-            if subtrees[s] == 2:
+            # Create a tuple instead of string
+            subtree_id = (node.val, left, right)
+            subtrees[subtree_id] += 1
+            if subtrees[subtree_id] == 2:
                 result.append(node)
-            return s
+            return subtree_id
         serialize(root)
         return result
         
