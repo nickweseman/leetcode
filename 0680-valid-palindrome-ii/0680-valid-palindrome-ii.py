@@ -1,6 +1,6 @@
 class Solution:
     def validPalindrome(self, s: str) -> bool:
-        def isPalindrome(l: int, r: int) -> bool:
+        def is_palindrome(l, r) -> bool:
             while l < r:
                 if s[l] != s[r]:
                     return False
@@ -8,11 +8,9 @@ class Solution:
                 r -= 1
             return True
         left, right = 0, len(s) - 1
-
         while left < right:
             if s[left] != s[right]:
-                return isPalindrome(left + 1, right) or isPalindrome(left, right - 1)
+                return is_palindrome(left+1, right) or is_palindrome(left, right-1)
             left += 1
             right -= 1
         return True
-        
