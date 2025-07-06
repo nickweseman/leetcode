@@ -6,25 +6,26 @@
 #         self.right = right
 class Solution:
     def isCousins(self, root: Optional[TreeNode], x: int, y: int) -> bool:
+        if not root:
+            return False
         queue = collections.deque([(root, None)])
         while queue:
             x_node = y_node = None
             for _ in range(len(queue)):
-                node, parent = queue.popleft()
-                if node.val == x:
-                    x_node = node
+                curr, parent = queue.popleft()
+                if curr.val == x:
                     x_parent = parent
-                elif node.val == y:
-                    y_node = node
+                    x_node = curr
+                elif curr.val == y:
                     y_parent = parent
-
-                if node.left:
-                    queue.append((node.left, node))
-                if node.right:
-                    queue.append((node.right, node))
+                    y_node = curr
+                if curr.left:
+                    queue.append((curr.left, curr))
+                if curr.right:
+                    queue.append((curr.right, curr))
             if x_node and y_node and x_parent is not y_parent:
                 return True
             if x_node or y_node:
                 return False
-        return False
+                
         
