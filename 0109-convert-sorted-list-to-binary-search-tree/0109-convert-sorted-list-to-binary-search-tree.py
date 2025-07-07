@@ -12,16 +12,12 @@
 class Solution:
     def sortedListToBST(self, head: Optional[ListNode]) -> Optional[TreeNode]:
         arr = []
-        curr = head
-        while curr:
-            arr.append(curr.val)
-            curr = curr.next
+        while head:
+            arr.append(head.val)
+            head = head.next
         def create_tree(left, right) -> Optional[TreeNode]:
             if left > right:
                 return None
             mid = (left + right) // 2
-            node = TreeNode(arr[mid])
-            node.left = create_tree(left, mid - 1)
-            node.right = create_tree(mid + 1, right)
-            return node
+            return TreeNode(val=arr[mid], left=create_tree(left, mid - 1), right=create_tree(mid + 1, right))
         return create_tree(0, len(arr) - 1)
