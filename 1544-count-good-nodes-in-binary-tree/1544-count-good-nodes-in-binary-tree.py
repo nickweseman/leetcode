@@ -9,11 +9,12 @@ class Solution:
         num_good = 0
         def dfs(node, largest) -> None:
             nonlocal num_good
-            if node:
-                if node.val >= largest:
-                    num_good += 1
-                    largest = max(largest, node.val)
-                dfs(node.left, largest)
-                dfs(node.right, largest)
+            if not node:
+                return None
+            if node.val >= largest:
+                num_good += 1
+                largest = node.val
+            dfs(node.left, largest)
+            dfs(node.right, largest)
         dfs(root, -math.inf)
         return num_good
