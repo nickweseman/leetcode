@@ -9,9 +9,9 @@ class Solution:
         def dfs(node) -> Tuple[int, int]: # (with_root, without_root)
             if not node:
                 return (0, 0)
-            left_with_root, left_without_root = dfs(node.left)
-            right_with_root, right_without_root = dfs(node.right)
-            without_me = max(left_with_root, left_without_root) + max(right_with_root, right_without_root)
-            with_me = left_without_root + right_without_root + node.val
+            left_rob, left_skip = dfs(node.left)
+            right_rob, right_skip = dfs(node.right)
+            without_me = max(left_rob, left_skip) + max(right_rob, right_skip)
+            with_me = left_skip + right_skip + node.val
             return (with_me, without_me)
         return max(dfs(root))
