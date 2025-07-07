@@ -19,7 +19,7 @@ class Solution:
                         return False
             return True
         def create_tree(x, y, size) -> Optional[Node]:
-            if size == 1 or is_uniform(x, y, size):
+            if is_uniform(x, y, size):
                 return Node(val=grid[x][y], isLeaf=True)
             node = Node(val=grid[x][y], isLeaf=False)
             half = size // 2
