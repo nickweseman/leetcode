@@ -11,6 +11,5 @@ class Solution:
         curr = root
         while curr.right and curr.right.val > val:
             curr = curr.right
-        node = TreeNode(val, left=curr.right)
-        curr.right = node
+        curr.right = TreeNode(val, left=curr.right)
         return root
