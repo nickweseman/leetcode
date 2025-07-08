@@ -13,5 +13,5 @@ class Solution:
         right = self.getTargetCopy(original.right, cloned.right, target)
         if left or right:
             return left or right
-        if target.val == cloned.val:
+        if original is target:
             return cloned
