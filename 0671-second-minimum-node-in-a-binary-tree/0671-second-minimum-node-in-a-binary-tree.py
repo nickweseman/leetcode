@@ -9,13 +9,17 @@ class Solution:
         if not root:
             return -1
         min1 = root.val
-        min2 = math.inf
-        def dfs(node) -> None:
-            nonlocal min2
-            if node:
-                if node.val > min1:
-                    min2 = min(min2, node.val)
-                dfs(node.left)
-                dfs(node.right)
-        dfs(root)
+        def dfs(node) -> int:
+            if not node:
+                return math.inf
+            if not node.right and not node.left and node.val != min1:
+                if node.val != min1:
+                    return node.val
+                else:
+                    return math.inf
+            left = dfs(node.left)
+            right = dfs(node.right)
+            return min(left, right)
+        min2 = dfs(root)
         return -1 if min2 == math.inf else min2
+        
