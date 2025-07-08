@@ -6,8 +6,6 @@
 #         self.right = right
 class Solution:
     def findSecondMinimumValue(self, root: Optional[TreeNode]) -> int:
-        if not root:
-            return -1
         min1 = root.val
         min2 = math.inf
         def dfs(node) -> int:
