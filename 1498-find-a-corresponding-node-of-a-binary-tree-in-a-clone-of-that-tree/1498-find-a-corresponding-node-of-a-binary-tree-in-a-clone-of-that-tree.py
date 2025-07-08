@@ -9,8 +9,9 @@ class Solution:
     def getTargetCopy(self, original: TreeNode, cloned: TreeNode, target: TreeNode) -> TreeNode:
         if not original:
             return None
-        if original is target:
+        left = self.getTargetCopy(original.left, cloned.left, target)
+        right = self.getTargetCopy(original.right, cloned.right, target)
+        if left or right:
+            return left or right
+        if target.val == cloned.val:
             return cloned
-        left_val = self.getTargetCopy(original.left, cloned.left, target)
-        right_val = self.getTargetCopy(original.right, cloned.right, target)
-        return left_val or right_val
