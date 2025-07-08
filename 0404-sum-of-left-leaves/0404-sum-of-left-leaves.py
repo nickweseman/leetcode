@@ -6,14 +6,14 @@
 #         self.right = right
 class Solution:
     def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
-        left_sum = 0
-        def dfs(node: TreeNode, is_left: bool) -> None:
-            nonlocal left_sum
+        total = 0
+        def dfs(node, is_left) -> None:
+            nonlocal total
             if not node:
-                return
+                return None
             if not node.left and not node.right and is_left:
-                left_sum += int(node.val)
+                total += node.val
             dfs(node.left, True)
             dfs(node.right, False)
         dfs(root, False)
-        return left_sum
+        return total
