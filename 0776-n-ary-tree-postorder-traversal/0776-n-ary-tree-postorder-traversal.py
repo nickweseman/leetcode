@@ -14,8 +14,8 @@ class Solution:
         stack = [root]
         while stack:
             curr = stack.pop()
-            for child in curr.children:
-                if child:
-                    stack.append(child)
             result.append(curr.val)
+            for child in curr.children:
+                stack.append(child)
         return result[::-1]
+        
