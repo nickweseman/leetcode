@@ -6,12 +6,12 @@
 #         self.right = right
 class Solution:
     def rob(self, root: Optional[TreeNode]) -> int:
-        def dfs(node) -> Tuple[int, int]: # (with_root, without_root)
+        def dfs(node) -> Tuple[int, int]: # rob, skip
             if not node:
                 return (0, 0)
             left_rob, left_skip = dfs(node.left)
             right_rob, right_skip = dfs(node.right)
-            without_me = max(left_rob, left_skip) + max(right_rob, right_skip)
-            with_me = left_skip + right_skip + node.val
-            return (with_me, without_me)
+            me_rob = left_skip + right_skip + node.val
+            me_skip = max(left_rob, left_skip) + max(right_rob, right_skip)
+            return (me_rob, me_skip)
         return max(dfs(root))
