@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution:
     def removeLeafNodes(self, root: Optional[TreeNode], target: int) -> Optional[TreeNode]:
-        def dfs(node) -> Optional[TreeNode]:
+        def dfs(node) -> TreeNode:
             if not node:
                 return None
             node.left = dfs(node.left)
