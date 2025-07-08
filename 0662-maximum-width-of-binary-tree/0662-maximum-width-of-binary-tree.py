@@ -8,15 +8,19 @@ class Solution:
     def widthOfBinaryTree(self, root: Optional[TreeNode]) -> int:
         if not root:
             return 0
-        queue = collections.deque([(root, 1)])
+        queue = collections.deque([(root, 1)]) # Node, pos
         max_width = -math.inf
         while queue:
-            max_width = max(max_width, queue[-1][1] - queue[0][1] + 1)
+            leftmost_pos = math.inf
+            rightmost_pos = -math.inf
             for _ in range(len(queue)):
                 curr, pos = queue.popleft()
+                leftmost_pos = min(leftmost_pos, pos)
+                rightmost_pos = max(rightmost_pos, pos)
                 if curr.left:
-                    queue.append((curr.left, pos << 1))
+                    queue.append((curr.left, 2 * pos))
                 if curr.right:
-                    queue.append((curr.right, (pos << 1) | 1))             
+                    queue.append((curr.right, 2 * pos + 1))
+            max_width = max(max_width, rightmost_pos - leftmost_pos + 1)
         return max_width
-        
+            
