@@ -7,7 +7,7 @@
 class Solution:
     def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
         result = []
-        def dfs(node: TreeNode, path: List[str]) -> None:
+        def dfs(node, path) -> None:
             if not node:
                 return
             path.append(str(node.val))
