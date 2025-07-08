@@ -6,23 +6,21 @@
 #         self.right = right
 class Solution:
     def addOneRow(self, root: Optional[TreeNode], val: int, depth: int) -> Optional[TreeNode]:
-        if depth == 1:
+        if not root or depth == 1:
             return TreeNode(val, left=root)
-        queue = collections.deque([root])
-        current_depth = 1
-
-        while current_depth < depth - 1:
-            for _ in range(len(queue)):
-                node = queue.popleft()
-                if node.left:
-                    queue.append(node.left)
-                if node.right:
-                    queue.append(node.right)
-            current_depth += 1
-        
+        queue = collections.deque([(root, 1)]) # node, curr_depth
         while queue:
-            parent = queue.popleft()
-            parent.left = TreeNode(val, left=parent.left)
-            parent.right = TreeNode(val, right=parent.right)
+            for _ in range(len(queue)):
+                curr, curr_depth = queue.popleft()
+                if curr_depth == depth - 1:
+                    curr.left = TreeNode(val, left=curr.left)
+                    curr.right = TreeNode(val, right=curr.right)
+                else:
+                    if curr.left:
+                        queue.append((curr.left, curr_depth + 1))
+                    if curr.right:
+                        queue.append((curr.right, curr_depth + 1))
         return root
+        
+        
         
