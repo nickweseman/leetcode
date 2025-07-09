@@ -89,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2714-left-and-right-sum-differences](https://github.com/nickweseman/leetcode/tree/master/2714-left-and-right-sum-differences) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/nickweseman/leetcode/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/nickweseman/leetcode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
+| [3226-minimum-number-game](https://github.com/nickweseman/leetcode/tree/master/3226-minimum-number-game) |
 | [3381-shortest-subarray-with-or-at-least-k-i](https://github.com/nickweseman/leetcode/tree/master/3381-shortest-subarray-with-or-at-least-k-i) |
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/nickweseman/leetcode/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
 ## Hash Table
@@ -195,6 +196,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/nickweseman/leetcode/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
 | [2561-number-of-distinct-averages](https://github.com/nickweseman/leetcode/tree/master/2561-number-of-distinct-averages) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/nickweseman/leetcode/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
+| [3226-minimum-number-game](https://github.com/nickweseman/leetcode/tree/master/3226-minimum-number-game) |
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/nickweseman/leetcode/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
 ## String
 |  |
@@ -360,6 +362,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/nickweseman/leetcode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2551-apply-operations-to-an-array](https://github.com/nickweseman/leetcode/tree/master/2551-apply-operations-to-an-array) |
 | [2698-find-the-array-concatenation-value](https://github.com/nickweseman/leetcode/tree/master/2698-find-the-array-concatenation-value) |
+| [3226-minimum-number-game](https://github.com/nickweseman/leetcode/tree/master/3226-minimum-number-game) |
 ## String Matching
 |  |
 | ------- |
@@ -466,6 +469,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/nickweseman/leetcode/tree/master/0239-sliding-window-maximum) |
 | [1127-last-stone-weight](https://github.com/nickweseman/leetcode/tree/master/1127-last-stone-weight) |
+| [3226-minimum-number-game](https://github.com/nickweseman/leetcode/tree/master/3226-minimum-number-game) |
 ## Monotonic Queue
 |  |
 | ------- |
