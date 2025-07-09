@@ -6,6 +6,5 @@ class Solution:
         for _ in range(k):
             pile = -heapq.heappop(piles)
             pile = math.ceil(pile / 2)
-            if pile > 0:
-                heapq.heappush(piles, -pile)
+            heapq.heappush(piles, -pile)
         return -sum(piles)
