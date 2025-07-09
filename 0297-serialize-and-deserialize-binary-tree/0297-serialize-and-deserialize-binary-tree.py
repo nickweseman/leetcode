@@ -20,13 +20,9 @@ class Codec:
         return ",".join(result)
 
     def deserialize(self, data):
-        values = data.split(",")
-        values_index = 0
-        
+        values = iter(data.split(","))
         def dfs() -> Optional[TreeNode]:
-            nonlocal values_index
-            curr = values[values_index]
-            values_index += 1
+            curr = next(values)
             if curr == "#":
                 return None
             node = TreeNode(curr)
@@ -34,8 +30,3 @@ class Codec:
             node.right = dfs()
             return node
         return dfs()
-
-        
-        
-        
-        return TODO
