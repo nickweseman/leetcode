@@ -9,24 +9,23 @@ class Node:
         self.bottomLeft = bottomLeft
         self.bottomRight = bottomRight
 """
-
 class Solution:
     def construct(self, grid: List[List[int]]) -> 'Node':
-        def is_uniform(x, y, size) -> bool:
-            first = grid[x][y]
-            for i in range(x, x + size):
-                for j in range(y, y + size):
+        def is_uniform(row, col, size) -> bool:
+            first = grid[row][col]
+            for i in range(row, row + size):
+                for j in range(col, col + size):
                     if grid[i][j] != first:
                         return False
             return True
-        def create_tree(x, y, size) -> 'Node':
-            if is_uniform(x, y, size):
-                return Node(val=grid[x][y], isLeaf=True, topLeft=None, topRight=None, bottomLeft=None, bottomRight=None)
-            node = Node(val=True, isLeaf=False)
+        def create_tree(row, col, size) -> 'Node':
+            if is_uniform(row, col, size):
+                return Node(val=grid[row][col], isLeaf=True)
+            node = Node(val=grid[row][col], isLeaf=False)
             half = size // 2
-            node.topLeft = create_tree(x, y, half)
-            node.topRight = create_tree(x, y + half, half)
-            node.bottomLeft = create_tree(x + half, y, half)
-            node.bottomRight = create_tree(x + half, y + half, half)
+            node.topLeft = create_tree(row, col, half)
+            node.topRight = create_tree(row, col + half, half)
+            node.bottomLeft = create_tree(row + half, col, half)
+            node.bottomRight = create_tree(row + half, col + half, half)
             return node
         return create_tree(0, 0, len(grid))
