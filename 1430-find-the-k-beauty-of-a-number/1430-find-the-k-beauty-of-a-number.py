@@ -1,14 +1,14 @@
 class Solution:
     def divisorSubstrings(self, num: int, k: int) -> int:
+        k_beauty = 0
+        left = right = 0
         s = str(num)
-        left, right = 0, 0
-        substrings = 0
 
         while right < len(s):
             if right - left + 1 > k:
                 left += 1
-            val = int(s[left: right + 1])
-            if right - left + 1 == k and val != 0 and num % val == 0:
-                substrings += 1
+            window = int(s[left:right+1])
+            if right - left + 1 == k and window != 0 and num % window == 0:
+                k_beauty += 1
             right += 1
-        return substrings
+        return k_beauty
