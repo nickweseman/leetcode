@@ -9,7 +9,7 @@ class Solution:
         if val > root.val:
             return TreeNode(val, left=root)
         curr = root
-        while curr.right and curr.right.val > val:
+        while curr.right and val < curr.right.val:
             curr = curr.right
         curr.right = TreeNode(val, left=curr.right)
         return root
