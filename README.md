@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/nickweseman/leetcode/tree/master/0455-assign-cookies) |
 | [0496-next-greater-element-i](https://github.com/nickweseman/leetcode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/nickweseman/leetcode/tree/master/0503-next-greater-element-ii) |
+| [0506-relative-ranks](https://github.com/nickweseman/leetcode/tree/master/0506-relative-ranks) |
 | [0643-maximum-average-subarray-i](https://github.com/nickweseman/leetcode/tree/master/0643-maximum-average-subarray-i) |
 | [0654-maximum-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0654-maximum-binary-tree) |
 | [0713-subarray-product-less-than-k](https://github.com/nickweseman/leetcode/tree/master/0713-subarray-product-less-than-k) |
@@ -187,6 +188,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/nickweseman/leetcode/tree/master/0268-missing-number) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/nickweseman/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0455-assign-cookies](https://github.com/nickweseman/leetcode/tree/master/0455-assign-cookies) |
+| [0506-relative-ranks](https://github.com/nickweseman/leetcode/tree/master/0506-relative-ranks) |
 | [0941-sort-array-by-parity](https://github.com/nickweseman/leetcode/tree/master/0941-sort-array-by-parity) |
 | [0958-sort-array-by-parity-ii](https://github.com/nickweseman/leetcode/tree/master/0958-sort-array-by-parity-ii) |
 | [1019-squares-of-a-sorted-array](https://github.com/nickweseman/leetcode/tree/master/1019-squares-of-a-sorted-array) |
@@ -468,6 +470,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/nickweseman/leetcode/tree/master/0239-sliding-window-maximum) |
+| [0506-relative-ranks](https://github.com/nickweseman/leetcode/tree/master/0506-relative-ranks) |
 | [1127-last-stone-weight](https://github.com/nickweseman/leetcode/tree/master/1127-last-stone-weight) |
 | [3226-minimum-number-game](https://github.com/nickweseman/leetcode/tree/master/3226-minimum-number-game) |
 ## Monotonic Queue
