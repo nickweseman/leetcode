@@ -7,21 +7,15 @@ class Solution:
         heap = [(-freq, c) for c, freq in counts.items()]
         heapq.heapify(heap)
         result = []
-        prev_count, prev_c = 0, ""
+        prev_freq, prev_c = 0, ""
 
         while heap:
-            skip_first = False
-            if result and heap[0][1] == result[-1]:
-                topfreq, topc  = heapq.heappop(heap)
-                topfreq = -topfreq
-                skip_first = True
-            freq, c = heapq.heappop(heap)
-            freq = -freq
+            neg_freq, c = heapq.heappop(heap)
+            freq = -neg_freq
             result.append(c)
-            freq -= 1
-            if freq > 0:
-                heapq.heappush(heap, (-freq, c))
-            if skip_first:
-                heapq.heappush(heap, (-topfreq, topc))
+            if prev_c and prev_freq > 0:
+                heapq.heappush(heap, (-prev_freq, prev_c))
+            prev_c = c
+            prev_freq = freq - 1
         return "".join(result)
             
