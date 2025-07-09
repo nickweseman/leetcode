@@ -9,6 +9,7 @@ class Node:
         self.bottomLeft = bottomLeft
         self.bottomRight = bottomRight
 """
+
 class Solution:
     def construct(self, grid: List[List[int]]) -> 'Node':
         def is_uniform(x, y, size) -> bool:
@@ -18,10 +19,10 @@ class Solution:
                     if grid[i][j] != first:
                         return False
             return True
-        def create_tree(x, y, size) -> Optional[Node]:
+        def create_tree(x, y, size) -> 'Node':
             if is_uniform(x, y, size):
-                return Node(val=grid[x][y], isLeaf=True)
-            node = Node(val=grid[x][y], isLeaf=False)
+                return Node(val=grid[x][y], isLeaf=True, topLeft=None, topRight=None, bottomLeft=None, bottomRight=None)
+            node = Node(val=True, isLeaf=False)
             half = size // 2
             node.topLeft = create_tree(x, y, half)
             node.topRight = create_tree(x, y + half, half)
