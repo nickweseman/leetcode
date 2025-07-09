@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0958-sort-array-by-parity-ii](https://github.com/nickweseman/leetcode/tree/master/0958-sort-array-by-parity-ii) |
 | [0966-binary-subarrays-with-sum](https://github.com/nickweseman/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0979-di-string-match](https://github.com/nickweseman/leetcode/tree/master/0979-di-string-match) |
+| [1014-k-closest-points-to-origin](https://github.com/nickweseman/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/nickweseman/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [1034-subarrays-with-k-different-integers](https://github.com/nickweseman/leetcode/tree/master/1034-subarrays-with-k-different-integers) |
 | [1046-max-consecutive-ones-iii](https://github.com/nickweseman/leetcode/tree/master/1046-max-consecutive-ones-iii) |
@@ -195,6 +196,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-reorganize-string](https://github.com/nickweseman/leetcode/tree/master/0778-reorganize-string) |
 | [0941-sort-array-by-parity](https://github.com/nickweseman/leetcode/tree/master/0941-sort-array-by-parity) |
 | [0958-sort-array-by-parity-ii](https://github.com/nickweseman/leetcode/tree/master/0958-sort-array-by-parity-ii) |
+| [1014-k-closest-points-to-origin](https://github.com/nickweseman/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/nickweseman/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/nickweseman/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/nickweseman/leetcode/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
@@ -317,6 +319,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/nickweseman/leetcode/tree/master/0268-missing-number) |
 | [0367-valid-perfect-square](https://github.com/nickweseman/leetcode/tree/master/0367-valid-perfect-square) |
 | [0441-arranging-coins](https://github.com/nickweseman/leetcode/tree/master/0441-arranging-coins) |
+| [1014-k-closest-points-to-origin](https://github.com/nickweseman/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1370-count-number-of-nice-subarrays](https://github.com/nickweseman/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1430-find-the-k-beauty-of-a-number](https://github.com/nickweseman/leetcode/tree/master/1430-find-the-k-beauty-of-a-number) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/nickweseman/leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
@@ -485,6 +488,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0239-sliding-window-maximum](https://github.com/nickweseman/leetcode/tree/master/0239-sliding-window-maximum) |
 | [0506-relative-ranks](https://github.com/nickweseman/leetcode/tree/master/0506-relative-ranks) |
 | [0778-reorganize-string](https://github.com/nickweseman/leetcode/tree/master/0778-reorganize-string) |
+| [1014-k-closest-points-to-origin](https://github.com/nickweseman/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1127-last-stone-weight](https://github.com/nickweseman/leetcode/tree/master/1127-last-stone-weight) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/nickweseman/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [1879-maximum-score-from-removing-stones](https://github.com/nickweseman/leetcode/tree/master/1879-maximum-score-from-removing-stones) |
@@ -760,4 +764,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/nickweseman/leetcode/tree/master/0109-convert-sorted-list-to-binary-search-tree) |
 | [0654-maximum-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0654-maximum-binary-tree) |
 | [0772-construct-quad-tree](https://github.com/nickweseman/leetcode/tree/master/0772-construct-quad-tree) |
+| [1014-k-closest-points-to-origin](https://github.com/nickweseman/leetcode/tree/master/1014-k-closest-points-to-origin) |
+## Geometry
+|  |
+| ------- |
+| [1014-k-closest-points-to-origin](https://github.com/nickweseman/leetcode/tree/master/1014-k-closest-points-to-origin) |
+## Quickselect
+|  |
+| ------- |
+| [1014-k-closest-points-to-origin](https://github.com/nickweseman/leetcode/tree/master/1014-k-closest-points-to-origin) |
 <!---LeetCode Topics End-->
