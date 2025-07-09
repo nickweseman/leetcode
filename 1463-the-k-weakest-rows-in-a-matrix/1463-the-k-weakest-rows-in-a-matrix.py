@@ -1,7 +1,6 @@
 class Solution:
     def kWeakestRows(self, mat: List[List[int]], k: int) -> List[int]:
         heap = []
-        result = []
         for i, row in enumerate(mat):
             left, right = 0, len(row)
             while left < right:
