@@ -252,6 +252,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/nickweseman/leetcode/tree/master/0455-assign-cookies) |
 | [0680-valid-palindrome-ii](https://github.com/nickweseman/leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0979-di-string-match](https://github.com/nickweseman/leetcode/tree/master/0979-di-string-match) |
+| [1879-maximum-score-from-removing-stones](https://github.com/nickweseman/leetcode/tree/master/1879-maximum-score-from-removing-stones) |
 | [2469-longest-subsequence-with-limited-sum](https://github.com/nickweseman/leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/nickweseman/leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2816-lexicographically-smallest-palindrome](https://github.com/nickweseman/leetcode/tree/master/2816-lexicographically-smallest-palindrome) |
@@ -311,6 +312,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1370-count-number-of-nice-subarrays](https://github.com/nickweseman/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1430-find-the-k-beauty-of-a-number](https://github.com/nickweseman/leetcode/tree/master/1430-find-the-k-beauty-of-a-number) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/nickweseman/leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
+| [1879-maximum-score-from-removing-stones](https://github.com/nickweseman/leetcode/tree/master/1879-maximum-score-from-removing-stones) |
 | [2383-add-two-integers](https://github.com/nickweseman/leetcode/tree/master/2383-add-two-integers) |
 | [2571-find-the-pivot-integer](https://github.com/nickweseman/leetcode/tree/master/2571-find-the-pivot-integer) |
 ## Matrix
@@ -472,6 +474,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0239-sliding-window-maximum](https://github.com/nickweseman/leetcode/tree/master/0239-sliding-window-maximum) |
 | [0506-relative-ranks](https://github.com/nickweseman/leetcode/tree/master/0506-relative-ranks) |
 | [1127-last-stone-weight](https://github.com/nickweseman/leetcode/tree/master/1127-last-stone-weight) |
+| [1879-maximum-score-from-removing-stones](https://github.com/nickweseman/leetcode/tree/master/1879-maximum-score-from-removing-stones) |
 | [3226-minimum-number-game](https://github.com/nickweseman/leetcode/tree/master/3226-minimum-number-game) |
 ## Monotonic Queue
 |  |
