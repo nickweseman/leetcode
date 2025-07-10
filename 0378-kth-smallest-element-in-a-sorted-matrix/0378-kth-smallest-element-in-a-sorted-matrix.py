@@ -1,15 +1,22 @@
 class Solution:
     def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
         n = len(matrix)
-        min_heap = []
-        for i in range(min(n, k)):
-            item = (matrix[i][0], i, 0)
-            heapq.heappush(min_heap, item)
-
-        for _ in range(k):
-            kth_smallest, row, col = heapq.heappop(min_heap)
-            col += 1
-            if col < n:
-                item = (matrix[row][col], row, col)
-                heapq.heappush(min_heap, item)
-        return kth_smallest
+        def check_le(mid) -> int:
+            count = 0
+            row, col = n - 1, 0
+            while row >= 0 and col < n:
+                if matrix[row][col] <= mid:
+                    count += (row + 1)
+                    col += 1
+                else:
+                    row -= 1
+            return count
+        low, high = matrix[0][0], matrix[n-1][n-1]
+        while low < high:
+            mid = (low + high) // 2
+            count = check_le(mid)
+            if count < k:
+                low = mid + 1
+            else:
+                high = mid
+        return low
