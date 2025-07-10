@@ -8,4 +8,4 @@ class Solution:
             stones = -heapq.heappop(max_heap)
             stones = math.ceil(stones / 2)
             heapq.heappush(max_heap, -stones)
-        return sum(-stone for stone in max_heap)
+        return -sum(max_heap)
