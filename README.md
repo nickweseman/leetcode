@@ -89,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/nickweseman/leetcode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2634-minimum-common-value](https://github.com/nickweseman/leetcode/tree/master/2634-minimum-common-value) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/nickweseman/leetcode/tree/master/2691-count-vowel-strings-in-ranges) |
+| [2692-take-gifts-from-the-richest-pile](https://github.com/nickweseman/leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2698-find-the-array-concatenation-value](https://github.com/nickweseman/leetcode/tree/master/2698-find-the-array-concatenation-value) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/nickweseman/leetcode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [2714-left-and-right-sum-differences](https://github.com/nickweseman/leetcode/tree/master/2714-left-and-right-sum-differences) |
@@ -382,6 +383,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0874-backspace-string-compare](https://github.com/nickweseman/leetcode/tree/master/0874-backspace-string-compare) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/nickweseman/leetcode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2551-apply-operations-to-an-array](https://github.com/nickweseman/leetcode/tree/master/2551-apply-operations-to-an-array) |
+| [2692-take-gifts-from-the-richest-pile](https://github.com/nickweseman/leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2698-find-the-array-concatenation-value](https://github.com/nickweseman/leetcode/tree/master/2698-find-the-array-concatenation-value) |
 | [3226-minimum-number-game](https://github.com/nickweseman/leetcode/tree/master/3226-minimum-number-game) |
 ## String Matching
@@ -499,6 +501,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/nickweseman/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [1879-maximum-score-from-removing-stones](https://github.com/nickweseman/leetcode/tree/master/1879-maximum-score-from-removing-stones) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/nickweseman/leetcode/tree/master/2094-remove-stones-to-minimize-the-total) |
+| [2692-take-gifts-from-the-richest-pile](https://github.com/nickweseman/leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [3226-minimum-number-game](https://github.com/nickweseman/leetcode/tree/master/3226-minimum-number-game) |
 ## Monotonic Queue
 |  |
