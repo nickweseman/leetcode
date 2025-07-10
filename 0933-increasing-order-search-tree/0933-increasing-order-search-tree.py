@@ -10,11 +10,12 @@ class Solution:
         tail = dummy
         def dfs(node) -> None:
             nonlocal tail
-            if node:
-                dfs(node.left)
-                node.left = None
-                tail.right = node
-                tail = node
-                dfs(node.right)
+            if not node:
+                return
+            dfs(node.left)
+            node.left = None
+            tail.right = node
+            tail = node
+            dfs(node.right)
         dfs(root)
         return dummy.right
