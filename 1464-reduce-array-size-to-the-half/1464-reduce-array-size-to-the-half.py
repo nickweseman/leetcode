@@ -13,4 +13,4 @@ class Solution:
                 count += 1
                 if size <= 0:
                     return count
-        return 0
+        return count
