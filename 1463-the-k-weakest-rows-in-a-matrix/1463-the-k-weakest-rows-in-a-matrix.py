@@ -1,6 +1,6 @@
 class Solution:
     def kWeakestRows(self, mat: List[List[int]], k: int) -> List[int]:
-        heap = []
+        max_heap = []
         for i, row in enumerate(mat):
             left, right = 0, len(row)
             while left < right:
@@ -10,12 +10,9 @@ class Solution:
                 else:
                     right = mid
             item = (-left, -i)
-            if len(heap) < k:
-                heapq.heappush(heap, item)
-            elif item > heap[0]:
-                heapq.heappushpop(heap, item)
-        heap.sort(reverse=True)
-        return [-item[1] for item in heap]
-
-            
-                
+            if len(max_heap) < k:
+                heapq.heappush(max_heap, item)
+            elif item > max_heap[0]:
+                heapq.heappushpop(max_heap, item)
+        max_heap.sort(reverse=True)
+        return [-item[1] for item in max_heap]
