@@ -10,22 +10,21 @@ class Solution:
             return False
         queue = collections.deque([(root, None)])
         while queue:
-            x_node = y_node = None
+            x_curr, y_curr = None, None
             for _ in range(len(queue)):
                 curr, parent = queue.popleft()
                 if curr.val == x:
                     x_parent = parent
-                    x_node = curr
+                    x_curr = curr
                 elif curr.val == y:
                     y_parent = parent
-                    y_node = curr
+                    y_curr = curr
                 if curr.left:
                     queue.append((curr.left, curr))
                 if curr.right:
                     queue.append((curr.right, curr))
-            if x_node and y_node and x_parent is not y_parent:
+            if x_curr and y_curr and x_parent is not y_parent:
                 return True
-            if x_node or y_node:
+            if x_curr or y_curr:
                 return False
-                
-        
+        return False
