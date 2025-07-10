@@ -3,9 +3,9 @@ class Solution:
         max_heap = []
         for i, point in enumerate(points):
             distance = point[0] ** 2 + point[1] ** 2
-            item = (-distance, point[0], point[1])
+            item = (-distance, point)
             if len(max_heap) < k:
                 heapq.heappush(max_heap, item)
             elif item > max_heap[0]:
                 heapq.heappushpop(max_heap, item)
-        return [[item[1], item[2]] for item in max_heap]
+        return [item[1] for item in max_heap]
