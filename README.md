@@ -60,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1435-xor-queries-of-a-subarray](https://github.com/nickweseman/leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/nickweseman/leetcode/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/nickweseman/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
+| [1464-reduce-array-size-to-the-half](https://github.com/nickweseman/leetcode/tree/master/1464-reduce-array-size-to-the-half) |
 | [1514-minimum-value-to-get-positive-step-by-step-sum](https://github.com/nickweseman/leetcode/tree/master/1514-minimum-value-to-get-positive-step-by-step-sum) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/nickweseman/leetcode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/nickweseman/leetcode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
@@ -131,6 +132,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1034-subarrays-with-k-different-integers](https://github.com/nickweseman/leetcode/tree/master/1034-subarrays-with-k-different-integers) |
 | [1370-count-number-of-nice-subarrays](https://github.com/nickweseman/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/nickweseman/leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [1464-reduce-array-size-to-the-half](https://github.com/nickweseman/leetcode/tree/master/1464-reduce-array-size-to-the-half) |
 | [1813-maximum-erasure-value](https://github.com/nickweseman/leetcode/tree/master/1813-maximum-erasure-value) |
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/nickweseman/leetcode/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/nickweseman/leetcode/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
@@ -213,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1014-k-closest-points-to-origin](https://github.com/nickweseman/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/nickweseman/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/nickweseman/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
+| [1464-reduce-array-size-to-the-half](https://github.com/nickweseman/leetcode/tree/master/1464-reduce-array-size-to-the-half) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/nickweseman/leetcode/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2113-find-the-kth-largest-integer-in-the-array](https://github.com/nickweseman/leetcode/tree/master/2113-find-the-kth-largest-integer-in-the-array) |
 | [2469-longest-subsequence-with-limited-sum](https://github.com/nickweseman/leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
@@ -278,6 +281,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/nickweseman/leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0778-reorganize-string](https://github.com/nickweseman/leetcode/tree/master/0778-reorganize-string) |
 | [0979-di-string-match](https://github.com/nickweseman/leetcode/tree/master/0979-di-string-match) |
+| [1464-reduce-array-size-to-the-half](https://github.com/nickweseman/leetcode/tree/master/1464-reduce-array-size-to-the-half) |
 | [1879-maximum-score-from-removing-stones](https://github.com/nickweseman/leetcode/tree/master/1879-maximum-score-from-removing-stones) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/nickweseman/leetcode/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2469-longest-subsequence-with-limited-sum](https://github.com/nickweseman/leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
@@ -518,6 +522,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1014-k-closest-points-to-origin](https://github.com/nickweseman/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1127-last-stone-weight](https://github.com/nickweseman/leetcode/tree/master/1127-last-stone-weight) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/nickweseman/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
+| [1464-reduce-array-size-to-the-half](https://github.com/nickweseman/leetcode/tree/master/1464-reduce-array-size-to-the-half) |
 | [1879-maximum-score-from-removing-stones](https://github.com/nickweseman/leetcode/tree/master/1879-maximum-score-from-removing-stones) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/nickweseman/leetcode/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2113-find-the-kth-largest-integer-in-the-array](https://github.com/nickweseman/leetcode/tree/master/2113-find-the-kth-largest-integer-in-the-array) |
