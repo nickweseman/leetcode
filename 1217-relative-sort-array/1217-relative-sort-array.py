@@ -8,7 +8,7 @@ class Solution:
         for num in arr2:
             result.extend([num] * buckets[num])
             buckets[num] = 0
-        for i in range(size):
-            if buckets[i]:
-                result.extend([i] * buckets[i])
+        for i, freq in enumerate(buckets):
+            if freq:
+                result.extend([i] * freq)
         return result
