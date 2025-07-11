@@ -9,6 +9,5 @@ class Solution:
             result.extend([num] * counts[num])
             counts[num] = 0 # mark used
         for i, freq in enumerate(counts):
-            if freq:
-                result.extend([i] * freq)
+            result.extend([i] * freq)
         return result
