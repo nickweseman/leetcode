@@ -8,7 +8,7 @@ class Solution:
     def widthOfBinaryTree(self, root: Optional[TreeNode]) -> int:
         if not root:
             return 0
-        queue = collections.deque([(root, 1)]) # Node, pos
+        queue = collections.deque([(root, 1)])
         max_width = -math.inf
         while queue:
             leftmost_pos = queue[0][1]
@@ -21,4 +21,3 @@ class Solution:
                 if curr.right:
                     queue.append((curr.right, 2 * pos + 1))
         return max_width
-            
