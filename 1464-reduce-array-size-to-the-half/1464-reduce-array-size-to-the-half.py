@@ -2,10 +2,10 @@ class Solution:
     def minSetSize(self, arr: List[int]) -> int:
         counter = collections.Counter(arr)
         max_freq = len(arr) + 1
-        buckets = [0] * max_freq # it doesn't matter what the actual numbers in the bucket are
+        buckets = [0] * max_freq
         for freq in counter.values():
             buckets[freq] += 1
-        size = max_freq // 2
+        size = len(arr) // 2
         count = 0
         for freq in reversed(range(max_freq)):
             for _ in range(buckets[freq]):
