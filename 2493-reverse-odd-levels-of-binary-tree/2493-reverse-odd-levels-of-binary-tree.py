@@ -7,9 +7,9 @@
 class Solution:
     def reverseOddLevels(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         if not root:
-            return []
-        queue = collections.deque([root])
+            return None
         forward = True
+        queue = collections.deque([root])
         while queue:
             level = []
             for _ in range(len(queue)):
@@ -27,4 +27,3 @@ class Solution:
                     right -= 1
             forward = not forward
         return root
-            
