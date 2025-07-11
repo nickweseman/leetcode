@@ -6,20 +6,17 @@
 #         self.right = right
 class Solution:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
-        imap = {}
-        for i, val in enumerate(inorder):
-            imap[val] = i
+        imap = {val:i for i, val in enumerate(inorder)}
         pre_index = 0
-        def create_tree(left, right) -> Optional[TreeNode]:
-            nonlocal pre_index
+        def dfs(left, right) -> Optional[TreeNode]:
             if left > right:
                 return None
-            mid_value = preorder[pre_index]
+            nonlocal pre_index
+            val = preorder[pre_index]
             pre_index += 1
-            inorder_index = imap[mid_value]
-
-            node = TreeNode(mid_value)
-            node.left = create_tree(left, inorder_index - 1)
-            node.right = create_tree(inorder_index + 1, right)
+            node = TreeNode(val)
+            in_index = imap[val]
+            node.left = dfs(left, in_index - 1)
+            node.right = dfs(in_index + 1, right)
             return node
-        return create_tree(0, len(preorder) - 1)
+        return dfs(0, len(preorder) - 1)
