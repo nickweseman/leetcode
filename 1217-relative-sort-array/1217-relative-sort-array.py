@@ -1,13 +1,14 @@
 class Solution:
     def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
-        counts = [0] * 1001 # constraint says numbers are 0-1000
+        size = 1_000 + 1
+        buckets = [0] * size
         for num in arr1:
-            counts[num] += 1
+            buckets[num] += 1
         result = []
         for num in arr2:
-            result.extend([num] * counts[num])
-            counts[num] = 0
-        for num in range(1001):
-            if counts[num] > 0:
-                result.extend([num] * counts[num])
+            result.extend([num] * buckets[num])
+            buckets[num] = 0
+        for i in range(size):
+            if buckets[i]:
+                result.extend([i] * buckets[i])
         return result
