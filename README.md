@@ -243,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1962-single-threaded-cpu](https://github.com/nickweseman/leetcode/tree/master/1962-single-threaded-cpu) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/nickweseman/leetcode/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2113-find-the-kth-largest-integer-in-the-array](https://github.com/nickweseman/leetcode/tree/master/2113-find-the-kth-largest-integer-in-the-array) |
+| [2327-largest-number-after-digit-swaps-by-parity](https://github.com/nickweseman/leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/nickweseman/leetcode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
 | [2469-longest-subsequence-with-limited-sum](https://github.com/nickweseman/leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/nickweseman/leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
@@ -572,6 +573,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1962-single-threaded-cpu](https://github.com/nickweseman/leetcode/tree/master/1962-single-threaded-cpu) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/nickweseman/leetcode/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2113-find-the-kth-largest-integer-in-the-array](https://github.com/nickweseman/leetcode/tree/master/2113-find-the-kth-largest-integer-in-the-array) |
+| [2327-largest-number-after-digit-swaps-by-parity](https://github.com/nickweseman/leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/nickweseman/leetcode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/nickweseman/leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [3226-minimum-number-game](https://github.com/nickweseman/leetcode/tree/master/3226-minimum-number-game) |
