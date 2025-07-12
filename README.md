@@ -81,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1872-can-you-eat-your-favorite-candy-on-your-favorite-day](https://github.com/nickweseman/leetcode/tree/master/1872-can-you-eat-your-favorite-candy-on-your-favorite-day) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/nickweseman/leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1962-single-threaded-cpu](https://github.com/nickweseman/leetcode/tree/master/1962-single-threaded-cpu) |
+| [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/nickweseman/leetcode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2093-check-if-string-is-a-prefix-of-array](https://github.com/nickweseman/leetcode/tree/master/2093-check-if-string-is-a-prefix-of-array) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/nickweseman/leetcode/tree/master/2094-remove-stones-to-minimize-the-total) |
@@ -378,6 +379,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1430-find-the-k-beauty-of-a-number](https://github.com/nickweseman/leetcode/tree/master/1430-find-the-k-beauty-of-a-number) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/nickweseman/leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [1879-maximum-score-from-removing-stones](https://github.com/nickweseman/leetcode/tree/master/1879-maximum-score-from-removing-stones) |
+| [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2383-add-two-integers](https://github.com/nickweseman/leetcode/tree/master/2383-add-two-integers) |
 | [2571-find-the-pivot-integer](https://github.com/nickweseman/leetcode/tree/master/2571-find-the-pivot-integer) |
 ## Matrix
@@ -427,6 +429,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0287-find-the-duplicate-number](https://github.com/nickweseman/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0861-flipping-an-image](https://github.com/nickweseman/leetcode/tree/master/0861-flipping-an-image) |
 | [1435-xor-queries-of-a-subarray](https://github.com/nickweseman/leetcode/tree/master/1435-xor-queries-of-a-subarray) |
+| [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [3381-shortest-subarray-with-or-at-least-k-i](https://github.com/nickweseman/leetcode/tree/master/3381-shortest-subarray-with-or-at-least-k-i) |
 ## Simulation
 |  |
@@ -830,6 +833,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0257-binary-tree-paths](https://github.com/nickweseman/leetcode/tree/master/0257-binary-tree-paths) |
+| [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -898,4 +902,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0948-sort-an-array](https://github.com/nickweseman/leetcode/tree/master/0948-sort-an-array) |
+## Combinatorics
+|  |
+| ------- |
+| [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
+## Enumeration
+|  |
+| ------- |
+| [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 <!---LeetCode Topics End-->
