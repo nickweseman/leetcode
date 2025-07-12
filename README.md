@@ -427,6 +427,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0222-count-complete-tree-nodes](https://github.com/nickweseman/leetcode/tree/master/0222-count-complete-tree-nodes) |
 | [0268-missing-number](https://github.com/nickweseman/leetcode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/nickweseman/leetcode/tree/master/0287-find-the-duplicate-number) |
+| [0401-binary-watch](https://github.com/nickweseman/leetcode/tree/master/0401-binary-watch) |
 | [0861-flipping-an-image](https://github.com/nickweseman/leetcode/tree/master/0861-flipping-an-image) |
 | [1435-xor-queries-of-a-subarray](https://github.com/nickweseman/leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
@@ -833,6 +834,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0257-binary-tree-paths](https://github.com/nickweseman/leetcode/tree/master/0257-binary-tree-paths) |
+| [0401-binary-watch](https://github.com/nickweseman/leetcode/tree/master/0401-binary-watch) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 ## Binary Search Tree
 |  |
