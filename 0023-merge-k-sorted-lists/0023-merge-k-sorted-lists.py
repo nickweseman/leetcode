@@ -8,13 +8,14 @@ class Solution:
         min_heap = []
         for i, node in enumerate(lists):
             if node:
-                heapq.heappush(min_heap, (node.val, i, node)) # node_value, list_index, node (list_index needed for ties)
+                min_heap.append((node.val, i, node))
+        heapq.heapify(min_heap)
         dummy = ListNode()
-        current = dummy
+        curr = dummy
         while min_heap:
-            val, i, node = heapq.heappop(min_heap)
-            current.next = node
-            current = current.next
+            _, i, node = heapq.heappop(min_heap)
+            curr.next = node
+            curr = curr.next
             if node.next:
                 heapq.heappush(min_heap, (node.next.val, i, node.next))
         return dummy.next
