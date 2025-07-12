@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0026-remove-duplicates-from-sorted-array](https://github.com/nickweseman/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/nickweseman/leetcode/tree/master/0027-remove-element) |
 | [0035-search-insert-position](https://github.com/nickweseman/leetcode/tree/master/0035-search-insert-position) |
+| [0040-combination-sum-ii](https://github.com/nickweseman/leetcode/tree/master/0040-combination-sum-ii) |
 | [0048-rotate-image](https://github.com/nickweseman/leetcode/tree/master/0048-rotate-image) |
 | [0075-sort-colors](https://github.com/nickweseman/leetcode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/nickweseman/leetcode/tree/master/0088-merge-sorted-array) |
@@ -833,6 +834,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Backtracking
 |  |
 | ------- |
+| [0040-combination-sum-ii](https://github.com/nickweseman/leetcode/tree/master/0040-combination-sum-ii) |
 | [0257-binary-tree-paths](https://github.com/nickweseman/leetcode/tree/master/0257-binary-tree-paths) |
 | [0401-binary-watch](https://github.com/nickweseman/leetcode/tree/master/0401-binary-watch) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
