@@ -17,7 +17,7 @@ class Twitter:
         heapq.heapify(max_heap)
         result = []
         while max_heap and len(result) < 10:
-            timestamp, tweet_id, user, tweet_idx = heapq.heappop(max_heap)
+            _, tweet_id, user, tweet_idx = heapq.heappop(max_heap)
             result.append(tweet_id)
             if tweet_idx + 1 < len(self.user_tweets[user]):
                 next_timestamp, next_tweet_id = self.user_tweets[user][tweet_idx + 1]
