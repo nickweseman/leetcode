@@ -13,7 +13,7 @@ class Twitter:
         for user in users:
             if self.user_tweets[user]:
                 timestamp, tweet_id = self.user_tweets[user][0]
-                max_heap.append((-timestamp, tweet_id, user, 0))
+                max_heap.append((-timestamp, tweet_id, user, 0)) # 0 is tweet_idx
         heapq.heapify(max_heap)
         result = []
         while max_heap and len(result) < 10:
