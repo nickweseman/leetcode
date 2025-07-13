@@ -13,7 +13,7 @@ class Solution:
                 return
             if node.val >= largest:
                 num_good += 1
-            largest = max(largest, node.val)
+                largest = max(largest, node.val)
             dfs(node.left, largest)
             dfs(node.right, largest)
         dfs(root, -math.inf)
