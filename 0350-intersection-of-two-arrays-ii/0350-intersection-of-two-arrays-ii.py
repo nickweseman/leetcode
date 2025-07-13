@@ -1,16 +1,9 @@
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        nums1.sort()
-        nums2.sort()
+        counter1 = collections.Counter(nums1)
+        counter2 = collections.Counter(nums2)
         result = []
-        i = j = 0
-        while i < len(nums1) and j < len(nums2):
-            if nums1[i] < nums2[j]:
-                i += 1
-            elif nums1[i] > nums2[j]:
-                j += 1
-            else:
-                result.append(nums1[i])
-                i += 1
-                j += 1
+        for num1, freq1 in counter1.items():
+            if num1 in counter2:
+                result.extend([num1] * min(freq1, counter2[num1]))
         return result
