@@ -1,17 +1,16 @@
-import itertools
-
 class Solution:
     def combine(self, n: int, k: int) -> List[List[int]]:
         result = []
-        def backtrack(start, combination):
-            if len(combination) == k:
-                result.append(combination[:])
+        comb = []
+        def dfs(i, remaining_k):
+            if remaining_k == 0:
+                result.append(comb.copy())
                 return
-            for i in range(start, n + 1):
-                if (n - i + 1) < (k - len(combination)): # purely optional pruning step
-                    break
-                combination.append(i)
-                backtrack(i + 1, combination)
-                combination.pop()
-        backtrack(1, [])
+            if i > n:
+                return
+            comb.append(i)
+            dfs(i + 1, remaining_k - 1)
+            comb.pop()
+            dfs(i + 1, remaining_k)
+        dfs(1, k)
         return result
