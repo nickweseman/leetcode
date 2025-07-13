@@ -11,10 +11,9 @@ class Solution:
             nonlocal max_path
             if not node:
                 return 0
-            left_sum = max(0, dfs(node.left))
-            right_sum = max(0, dfs(node.right))
-            max_path = max(max_path, node.val + left_sum + right_sum)
-            return node.val + max(left_sum, right_sum)
+            left = max(0, dfs(node.left))
+            right = max(0, dfs(node.right))
+            max_path = max(max_path, left + right + node.val)
+            return max(left, right) + node.val
         dfs(root)
         return max_path
-        
