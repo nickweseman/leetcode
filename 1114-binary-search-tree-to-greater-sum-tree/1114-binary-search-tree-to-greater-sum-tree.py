@@ -6,13 +6,14 @@
 #         self.right = right
 class Solution:
     def bstToGst(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        running_sum = 0
-        def dfs(node) -> None:
-            nonlocal running_sum
-            if node:
-                dfs(node.right)
-                running_sum += node.val
-                node.val = running_sum
-                dfs(node.left)
+        rolling_sum = 0
+        def dfs(node):
+            nonlocal rolling_sum
+            if not node:
+                return None
+            dfs(node.right)
+            rolling_sum += node.val
+            node.val = rolling_sum
+            dfs(node.left)
         dfs(root)
         return root
