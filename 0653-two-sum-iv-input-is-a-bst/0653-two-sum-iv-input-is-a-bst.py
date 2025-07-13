@@ -7,18 +7,11 @@
 class Solution:
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
         goals = set()
-        if not root:
-            return False
-        stack = []
-        curr = root
-        while stack or curr:
-            while curr:
-                stack.append(curr)
-                curr = curr.left
-            curr = stack.pop()
-            if k - curr.val in goals:
+        def dfs(node):
+            if not node:
+                return False
+            if k - node.val in goals:
                 return True
-            goals.add(curr.val)
-            curr = curr.right
-        return False
-        
+            goals.add(node.val)
+            return dfs(node.left) or dfs(node.right)
+        return dfs(root)
