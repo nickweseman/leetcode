@@ -116,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3226-minimum-number-game](https://github.com/nickweseman/leetcode/tree/master/3226-minimum-number-game) |
 | [3381-shortest-subarray-with-or-at-least-k-i](https://github.com/nickweseman/leetcode/tree/master/3381-shortest-subarray-with-or-at-least-k-i) |
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/nickweseman/leetcode/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
+| [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/nickweseman/leetcode/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 ## Hash Table
 |  |
 | ------- |
@@ -386,6 +387,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2383-add-two-integers](https://github.com/nickweseman/leetcode/tree/master/2383-add-two-integers) |
 | [2571-find-the-pivot-integer](https://github.com/nickweseman/leetcode/tree/master/2571-find-the-pivot-integer) |
+| [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/nickweseman/leetcode/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 ## Matrix
 |  |
 | ------- |
@@ -448,6 +450,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2692-take-gifts-from-the-richest-pile](https://github.com/nickweseman/leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2698-find-the-array-concatenation-value](https://github.com/nickweseman/leetcode/tree/master/2698-find-the-array-concatenation-value) |
 | [3226-minimum-number-game](https://github.com/nickweseman/leetcode/tree/master/3226-minimum-number-game) |
+| [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/nickweseman/leetcode/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 ## String Matching
 |  |
 | ------- |
@@ -587,6 +590,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/nickweseman/leetcode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/nickweseman/leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [3226-minimum-number-game](https://github.com/nickweseman/leetcode/tree/master/3226-minimum-number-game) |
+| [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/nickweseman/leetcode/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 ## Monotonic Queue
 |  |
 | ------- |
