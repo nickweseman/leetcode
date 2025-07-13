@@ -1,15 +1,12 @@
 class Solution:
     def carPooling(self, trips: List[List[int]], capacity: int) -> bool:
-        trips.sort(key=lambda x: x[1])
-        min_heap = []
-        time = 0
+        curr_passengers = [0] * 1_001
         for num_passengers, start, end in trips:
-            time = start
-            while min_heap and min_heap[0][0] <= time:
-                _, dropped_off_passengers = heapq.heappop(min_heap)
-                capacity += dropped_off_passengers
-            if num_passengers > capacity:
+            curr_passengers[start] -= num_passengers
+            curr_passengers[end] += num_passengers
+        simulated_passengers = capacity
+        for i in range(len(curr_passengers)):
+            simulated_passengers += curr_passengers[i]
+            if simulated_passengers < 0:
                 return False
-            capacity -= num_passengers
-            heapq.heappush(min_heap, (end, num_passengers))
         return True
