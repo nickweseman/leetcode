@@ -6,10 +6,10 @@
 #         self.right = right
 class Solution:
     def insertIntoMaxTree(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
-        if val > root.val:
+        if not root or val > root.val:
             return TreeNode(val, left=root)
         curr = root
-        while curr.right and val < curr.right.val:
+        while curr.right and curr.right.val > val:
             curr = curr.right
         curr.right = TreeNode(val, left=curr.right)
         return root
