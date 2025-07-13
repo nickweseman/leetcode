@@ -1,13 +1,12 @@
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
-        left, right = 0, len(nums) - 1
-        write = len(nums) - 1
         result = [0] * len(nums)
+        left, right = 0, len(nums) - 1
+        write = right
 
-        while left <= right:
-            left_squared = nums[left] ** 2
-            right_squared = nums[right] ** 2
-
+        while left <= right and write >= 0:
+            left_squared = nums[left] * nums[left]
+            right_squared = nums[right] * nums[right]
             if left_squared < right_squared:
                 result[write] = right_squared
                 right -= 1
