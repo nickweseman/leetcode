@@ -10,12 +10,10 @@ class Solution:
         while project_min_heap or profit_max_heap:
             while project_min_heap and project_min_heap[0][0] <= w:
                 needed_capital, profit = heapq.heappop(project_min_heap)
-                heapq.heappush(profit_max_heap, (-profit, needed_capital))
+                heapq.heappush(profit_max_heap, -profit)
             if not profit_max_heap:
                 break
-            neg_profit, needed_capital = heapq.heappop(profit_max_heap)
-            profit = -neg_profit
-            w += profit
+            w += -heapq.heappop(profit_max_heap)
             num_projects += 1
             if num_projects == k:
                 break
