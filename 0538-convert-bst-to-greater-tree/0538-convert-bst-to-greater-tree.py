@@ -6,14 +6,14 @@
 #         self.right = right
 class Solution:
     def convertBST(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        total = 0
-        def dfs(node) -> None:
-            nonlocal total
-            if node:
-                dfs(node.right)
-                total += node.val
-                node.val = total
-                dfs(node.left)
+        rolling_sum = 0
+        def dfs(node):
+            nonlocal rolling_sum
+            if not node:
+                return
+            dfs(node.right)
+            rolling_sum += node.val
+            node.val = rolling_sum
+            dfs(node.left)
         dfs(root)
         return root
-        
