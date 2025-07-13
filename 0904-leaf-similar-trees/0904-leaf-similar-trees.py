@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution:
     def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
-        def get_leaves(node) -> Iterator[int]:
+        def get_leaves(node):
             if not node:
                 return
             if not node.left and not node.right:
