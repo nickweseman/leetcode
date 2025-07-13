@@ -5,7 +5,7 @@ class Solution:
         heapq.heapify(project_min_heap)
         for _ in range(k):
             while project_min_heap and project_min_heap[0][0] <= w:
-                needed_capital, profit = heapq.heappop(project_min_heap)
+                _, profit = heapq.heappop(project_min_heap)
                 heapq.heappush(profit_max_heap, -profit)
             if not profit_max_heap:
                 break
