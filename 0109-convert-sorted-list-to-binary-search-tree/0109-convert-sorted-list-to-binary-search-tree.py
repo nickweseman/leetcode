@@ -11,13 +11,19 @@
 #         self.right = right
 class Solution:
     def sortedListToBST(self, head: Optional[ListNode]) -> Optional[TreeNode]:
-        arr = []
+        if not head:
+            return None
+        values = []
         while head:
-            arr.append(head.val)
+            values.append(head.val)
             head = head.next
-        def create_tree(left, right) -> Optional[TreeNode]:
+        def dfs(left, right):
             if left > right:
                 return None
             mid = (left + right) // 2
-            return TreeNode(val=arr[mid], left=create_tree(left, mid - 1), right=create_tree(mid + 1, right))
-        return create_tree(0, len(arr) - 1)
+            node = TreeNode(values[mid])
+            node.left = dfs(left, mid - 1)
+            node.right = dfs(mid + 1, right)
+            return node
+        return dfs(0, len(values) - 1)
+            
