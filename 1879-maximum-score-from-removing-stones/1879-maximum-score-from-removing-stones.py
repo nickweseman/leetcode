@@ -1,8 +1,14 @@
 class Solution:
     def maximumScore(self, a: int, b: int, c: int) -> int:
-        max_heap = [-a, -b, -c]
-        heapq.heapify(max_heap)
         score = 0
+        max_heap = []
+        if a > 0:
+            max_heap.append(-a)
+        if b > 0:
+            max_heap.append(-b)
+        if c > 0:
+            max_heap.append(-c)
+        heapq.heapify(max_heap)
         while len(max_heap) > 1:
             pile1 = -heapq.heappop(max_heap)
             pile2 = -heapq.heappop(max_heap)
