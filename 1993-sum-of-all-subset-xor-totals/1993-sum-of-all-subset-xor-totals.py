@@ -1,9 +1,18 @@
 class Solution:
     def subsetXORSum(self, nums: List[int]) -> int:
-        def dfs(index, current_xor_sum):
-            if index == len(nums):
-                return current_xor_sum
-            include_sum = dfs(index + 1, current_xor_sum ^ nums[index])
-            exclude_sum = dfs(index + 1, current_xor_sum)
-            return include_sum + exclude_sum
-        return dfs(0, 0)
+        total_xor_sum = 0
+        comb = []
+        def dfs(i):
+            nonlocal total_xor_sum
+            if i == len(nums):
+                local_xor = 0
+                for c in comb:
+                    local_xor ^= c
+                total_xor_sum += local_xor
+                return
+            comb.append(nums[i])
+            dfs(i + 1)
+            comb.pop()
+            dfs(i + 1)
+        dfs(0)
+        return total_xor_sum
