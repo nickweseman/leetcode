@@ -108,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2358-number-of-ways-to-split-array](https://github.com/nickweseman/leetcode/tree/master/2358-number-of-ways-to-split-array) |
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/nickweseman/leetcode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
 | [2469-longest-subsequence-with-limited-sum](https://github.com/nickweseman/leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
+| [2482-maximum-rows-covered-by-columns](https://github.com/nickweseman/leetcode/tree/master/2482-maximum-rows-covered-by-columns) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/nickweseman/leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/nickweseman/leetcode/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
 | [2551-apply-operations-to-an-array](https://github.com/nickweseman/leetcode/tree/master/2551-apply-operations-to-an-array) |
@@ -412,6 +413,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0861-flipping-an-image](https://github.com/nickweseman/leetcode/tree/master/0861-flipping-an-image) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/nickweseman/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [2145-grid-game](https://github.com/nickweseman/leetcode/tree/master/2145-grid-game) |
+| [2482-maximum-rows-covered-by-columns](https://github.com/nickweseman/leetcode/tree/master/2482-maximum-rows-covered-by-columns) |
 ## Binary Search
 |  |
 | ------- |
@@ -459,6 +461,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/nickweseman/leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2318-maximum-points-in-an-archery-competition](https://github.com/nickweseman/leetcode/tree/master/2318-maximum-points-in-an-archery-competition) |
+| [2482-maximum-rows-covered-by-columns](https://github.com/nickweseman/leetcode/tree/master/2482-maximum-rows-covered-by-columns) |
 | [3381-shortest-subarray-with-or-at-least-k-i](https://github.com/nickweseman/leetcode/tree/master/3381-shortest-subarray-with-or-at-least-k-i) |
 ## Simulation
 |  |
@@ -883,6 +886,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/nickweseman/leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2318-maximum-points-in-an-archery-competition](https://github.com/nickweseman/leetcode/tree/master/2318-maximum-points-in-an-archery-competition) |
+| [2482-maximum-rows-covered-by-columns](https://github.com/nickweseman/leetcode/tree/master/2482-maximum-rows-covered-by-columns) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -961,6 +965,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/nickweseman/leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2318-maximum-points-in-an-archery-competition](https://github.com/nickweseman/leetcode/tree/master/2318-maximum-points-in-an-archery-competition) |
+| [2482-maximum-rows-covered-by-columns](https://github.com/nickweseman/leetcode/tree/master/2482-maximum-rows-covered-by-columns) |
 ## Iterator
 |  |
 | ------- |
