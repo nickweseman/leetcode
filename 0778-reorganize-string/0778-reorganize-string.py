@@ -1,10 +1,11 @@
 class Solution:
     def reorganizeString(self, s: str) -> str:
         counts = collections.Counter(s)
-        for count in counts.values():
-            if count > (len(s) + 1) // 2:
+        heap = []
+        for c, freq in counts.items():
+            if freq > (len(s) + 1) // 2:
                 return ""
-        heap = [(-freq, c) for c, freq in counts.items()]
+            heap.append((-freq, c))
         heapq.heapify(heap)
         result = []
         prev_freq, prev_c = 0, ""
