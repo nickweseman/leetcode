@@ -72,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1217-relative-sort-array](https://github.com/nickweseman/leetcode/tree/master/1217-relative-sort-array) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/nickweseman/leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1370-count-number-of-nice-subarrays](https://github.com/nickweseman/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
+| [1418-fair-distribution-of-cookies](https://github.com/nickweseman/leetcode/tree/master/1418-fair-distribution-of-cookies) |
 | [1435-xor-queries-of-a-subarray](https://github.com/nickweseman/leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/nickweseman/leetcode/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/nickweseman/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
@@ -453,6 +454,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0491-non-decreasing-subsequences](https://github.com/nickweseman/leetcode/tree/master/0491-non-decreasing-subsequences) |
 | [0861-flipping-an-image](https://github.com/nickweseman/leetcode/tree/master/0861-flipping-an-image) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/nickweseman/leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
+| [1418-fair-distribution-of-cookies](https://github.com/nickweseman/leetcode/tree/master/1418-fair-distribution-of-cookies) |
 | [1435-xor-queries-of-a-subarray](https://github.com/nickweseman/leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/nickweseman/leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
@@ -484,6 +486,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0124-binary-tree-maximum-path-sum](https://github.com/nickweseman/leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0337-house-robber-iii](https://github.com/nickweseman/leetcode/tree/master/0337-house-robber-iii) |
 | [0392-is-subsequence](https://github.com/nickweseman/leetcode/tree/master/0392-is-subsequence) |
+| [1418-fair-distribution-of-cookies](https://github.com/nickweseman/leetcode/tree/master/1418-fair-distribution-of-cookies) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/nickweseman/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Sliding Window
 |  |
@@ -876,6 +879,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0491-non-decreasing-subsequences](https://github.com/nickweseman/leetcode/tree/master/0491-non-decreasing-subsequences) |
 | [1211-iterator-for-combination](https://github.com/nickweseman/leetcode/tree/master/1211-iterator-for-combination) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/nickweseman/leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
+| [1418-fair-distribution-of-cookies](https://github.com/nickweseman/leetcode/tree/master/1418-fair-distribution-of-cookies) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/nickweseman/leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2318-maximum-points-in-an-archery-competition](https://github.com/nickweseman/leetcode/tree/master/2318-maximum-points-in-an-archery-competition) |
@@ -961,4 +965,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1211-iterator-for-combination](https://github.com/nickweseman/leetcode/tree/master/1211-iterator-for-combination) |
+## Bitmask
+|  |
+| ------- |
+| [1418-fair-distribution-of-cookies](https://github.com/nickweseman/leetcode/tree/master/1418-fair-distribution-of-cookies) |
 <!---LeetCode Topics End-->
