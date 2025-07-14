@@ -1,9 +1,9 @@
 class Solution:
     def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:
-        result = []
+        new_image = []
         for row in image:
-            result.append(list(reversed(row)))
-        for row in result:
-            for j in range(len(row)):
-                row[j] ^= 1
-        return result
+            new_image.append(row[::-1])
+        for i, row in enumerate(new_image):
+            for j, pixel in enumerate(row):
+                new_image[i][j] ^= 1
+        return new_image
