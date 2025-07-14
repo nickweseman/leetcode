@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0035-search-insert-position](https://github.com/nickweseman/leetcode/tree/master/0035-search-insert-position) |
 | [0039-combination-sum](https://github.com/nickweseman/leetcode/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/nickweseman/leetcode/tree/master/0040-combination-sum-ii) |
+| [0046-permutations](https://github.com/nickweseman/leetcode/tree/master/0046-permutations) |
 | [0048-rotate-image](https://github.com/nickweseman/leetcode/tree/master/0048-rotate-image) |
 | [0075-sort-colors](https://github.com/nickweseman/leetcode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/nickweseman/leetcode/tree/master/0078-subsets) |
@@ -873,6 +874,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0039-combination-sum](https://github.com/nickweseman/leetcode/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/nickweseman/leetcode/tree/master/0040-combination-sum-ii) |
+| [0046-permutations](https://github.com/nickweseman/leetcode/tree/master/0046-permutations) |
 | [0077-combinations](https://github.com/nickweseman/leetcode/tree/master/0077-combinations) |
 | [0078-subsets](https://github.com/nickweseman/leetcode/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/nickweseman/leetcode/tree/master/0090-subsets-ii) |
