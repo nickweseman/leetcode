@@ -3,7 +3,7 @@ class Solution:
         counts = collections.Counter(s)
         heap = []
         for c, freq in counts.items():
-            if freq > (len(s) + 1) // 2:
+            if freq > math.ceil(len(s) / 2):
                 return ""
             heap.append((-freq, c))
         heapq.heapify(heap)
