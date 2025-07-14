@@ -11,7 +11,7 @@ class Solution:
             if i == len(unique_arr):
                 max_length = max(max_length, len(comb_char_set))
                 return
-            if not set(unique_arr[i]).intersection(comb_char_set):
+            if not set(unique_arr[i]) & comb_char_set:
                 for char in unique_arr[i]:
                     comb_char_set.add(char)
                 dfs(i + 1)
