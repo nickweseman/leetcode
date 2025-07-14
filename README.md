@@ -102,6 +102,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/nickweseman/leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/nickweseman/leetcode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/nickweseman/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
+| [2318-maximum-points-in-an-archery-competition](https://github.com/nickweseman/leetcode/tree/master/2318-maximum-points-in-an-archery-competition) |
 | [2342-minimum-average-difference](https://github.com/nickweseman/leetcode/tree/master/2342-minimum-average-difference) |
 | [2358-number-of-ways-to-split-array](https://github.com/nickweseman/leetcode/tree/master/2358-number-of-ways-to-split-array) |
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/nickweseman/leetcode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
@@ -455,6 +456,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1435-xor-queries-of-a-subarray](https://github.com/nickweseman/leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/nickweseman/leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+| [2318-maximum-points-in-an-archery-competition](https://github.com/nickweseman/leetcode/tree/master/2318-maximum-points-in-an-archery-competition) |
 | [3381-shortest-subarray-with-or-at-least-k-i](https://github.com/nickweseman/leetcode/tree/master/3381-shortest-subarray-with-or-at-least-k-i) |
 ## Simulation
 |  |
@@ -876,6 +878,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/nickweseman/leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/nickweseman/leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+| [2318-maximum-points-in-an-archery-competition](https://github.com/nickweseman/leetcode/tree/master/2318-maximum-points-in-an-archery-competition) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -953,6 +956,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/nickweseman/leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+| [2318-maximum-points-in-an-archery-competition](https://github.com/nickweseman/leetcode/tree/master/2318-maximum-points-in-an-archery-competition) |
 ## Iterator
 |  |
 | ------- |
