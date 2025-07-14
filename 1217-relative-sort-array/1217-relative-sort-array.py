@@ -1,13 +1,13 @@
 class Solution:
     def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
-        counts = [0] * (1_000 + 1) # constraint says numbers are 0-1000
-        for num in arr1:
-            counts[num] += 1
+        values = [0] * 1_001
         result = []
+        for num in arr1:
+            values[num] += 1
         for num in arr2:
-            result.extend([num] * counts[num])
-            counts[num] = 0 # mark used
-        for i, freq in enumerate(counts):
-            if freq:
-                result.extend([i] * freq)
+            result.extend([num] * values[num])
+            values[num] = 0
+        for i, num in enumerate(values):
+            if num:
+                result.extend([i] * num)
         return result
