@@ -9,11 +9,11 @@ class Solution:
         heapq.heapify(heap)
         result = []
         prev_freq, prev_c = 0, ""
-        while heap:
+        for _ in range(len(s)):
             neg_freq, c = heapq.heappop(heap)
             freq = -neg_freq
             result.append(c)
-            if prev_c and prev_freq > 0:
+            if prev_c:
                 heapq.heappush(heap, (-prev_freq, prev_c))
             prev_c = c
             prev_freq = freq - 1
