@@ -295,6 +295,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0961-long-pressed-name](https://github.com/nickweseman/leetcode/tree/master/0961-long-pressed-name) |
 | [0979-di-string-match](https://github.com/nickweseman/leetcode/tree/master/0979-di-string-match) |
 | [1078-remove-outermost-parentheses](https://github.com/nickweseman/leetcode/tree/master/1078-remove-outermost-parentheses) |
+| [1211-iterator-for-combination](https://github.com/nickweseman/leetcode/tree/master/1211-iterator-for-combination) |
 | [1304-longest-happy-string](https://github.com/nickweseman/leetcode/tree/master/1304-longest-happy-string) |
 | [1321-get-equal-substrings-within-budget](https://github.com/nickweseman/leetcode/tree/master/1321-get-equal-substrings-within-budget) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/nickweseman/leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
@@ -620,6 +621,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0355-design-twitter](https://github.com/nickweseman/leetcode/tree/master/0355-design-twitter) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/nickweseman/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0937-online-stock-span](https://github.com/nickweseman/leetcode/tree/master/0937-online-stock-span) |
+| [1211-iterator-for-combination](https://github.com/nickweseman/leetcode/tree/master/1211-iterator-for-combination) |
 ## Data Stream
 |  |
 | ------- |
@@ -868,6 +870,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0257-binary-tree-paths](https://github.com/nickweseman/leetcode/tree/master/0257-binary-tree-paths) |
 | [0401-binary-watch](https://github.com/nickweseman/leetcode/tree/master/0401-binary-watch) |
 | [0491-non-decreasing-subsequences](https://github.com/nickweseman/leetcode/tree/master/0491-non-decreasing-subsequences) |
+| [1211-iterator-for-combination](https://github.com/nickweseman/leetcode/tree/master/1211-iterator-for-combination) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/nickweseman/leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 ## Binary Search Tree
@@ -946,4 +949,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
+## Iterator
+|  |
+| ------- |
+| [1211-iterator-for-combination](https://github.com/nickweseman/leetcode/tree/master/1211-iterator-for-combination) |
 <!---LeetCode Topics End-->
