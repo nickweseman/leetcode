@@ -1,16 +1,13 @@
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
-        MIN_VAL, MAX_VAL = -50_000, 50_000
+        MIN_VAL = -50_000
+        MAX_VAL = 50_000
+        buckets = [0] * (100_000 + 1)
         offset = -MIN_VAL
-        size = MAX_VAL - MIN_VAL + 1
-        counts = [0] * size
-        for num in nums:
-            counts[num + offset] += 1
-        index = 0
-        for i, freq in enumerate(counts):
-            for _ in range(freq):
-                nums[index] = i - offset
-                index += 1
-        return nums 
-
-        
+        for i, num in enumerate(nums):
+            buckets[num + offset] += 1
+        result = []
+        for i in range(len(buckets)):
+            if buckets[i]:
+                result.extend(buckets[i] * [i - offset])
+        return result
