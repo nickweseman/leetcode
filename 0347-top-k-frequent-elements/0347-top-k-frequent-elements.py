@@ -9,7 +9,6 @@ class Solution:
         for i in reversed(range(max_freq)):
             for item in buckets[i]:
                 result.append(item)
-                k -= 1
-                if k == 0:
+                if len(result) == k:
                     return result
         return result
