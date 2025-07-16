@@ -7,23 +7,24 @@
 class Solution:
     def findMode(self, root: Optional[TreeNode]) -> List[int]:
         modes = []
-        current_value = None
-        current_count = max_freq = 0
-        def dfs(node) -> None:
-            nonlocal current_value, current_count, modes, max_freq
-            if not node:
-                return
-            dfs(node.left)
-            if node.val != current_value:
-                current_value = node.val
-                current_count = 1
-            else:
-                current_count += 1
-            if current_count > max_freq:
-                modes = [node.val]
-                max_freq = current_count
-            elif current_count == max_freq:
-                modes.append(node.val)
-            dfs(node.right)
+        max_freq = cur_freq = 0
+        cur_num = None
+        def dfs(node):
+            nonlocal max_freq, cur_freq, cur_num, modes
+            if node:
+                dfs(node.left)
+                if cur_num is not None and node.val == cur_num:
+                    cur_freq += 1
+                else:
+                    cur_freq = 1
+                print(f"{cur_freq=}{max_freq=}{cur_num=}{node.val=}")
+                cur_num = node.val
+                if cur_freq > max_freq:
+                    max_freq = cur_freq
+                    modes = [node.val]
+                elif cur_freq == max_freq and cur_num != modes[-1]:
+                    modes.append(node.val)
+                dfs(node.right)
         dfs(root)
         return modes
+        
