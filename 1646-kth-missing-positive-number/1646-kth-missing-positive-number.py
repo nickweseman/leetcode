@@ -9,3 +9,4 @@ class Solution:
             else:
                 right = mid
         return left + k
+            
