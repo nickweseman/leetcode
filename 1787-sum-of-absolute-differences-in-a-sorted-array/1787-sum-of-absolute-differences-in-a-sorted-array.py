@@ -3,13 +3,10 @@ class Solution:
         result = []
         left_sum, right_sum = 0, sum(nums)
         n = len(nums)
-
         for i, num in enumerate(nums):
             right_sum -= num
-            
             left_total = (num * i) - left_sum
-            right_total = right_sum - (num * (n - i - 1))
-            result.append(left_total + right_total)
-            
+            right_total = right_sum - (n - i - 1) * num
+            result.append(abs(left_total + right_total))
             left_sum += num
         return result
