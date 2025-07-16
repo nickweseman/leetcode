@@ -1,21 +1,22 @@
 class Solution:
     def kthLargestNumber(self, nums: List[str], k: int) -> str:
-        inums = [int(num) for num in nums]
-        k = len(nums) - k
-        def quick_select(l, r) -> int:
-            p = l
+        n = len(nums)
+        k = n - k
+        nums = [int(num) for num in nums]
+        def quick_select(l, r):
             pivot_index = random.randint(l, r)
-            inums[r], inums[pivot_index] = inums[pivot_index], inums[r]
-            pivot = inums[r]
+            nums[r], nums[pivot_index] = nums[pivot_index], nums[r]
+            pivot = nums[r]
+            p = l
             for i in range(l, r):
-                if inums[i] <= pivot:
-                    inums[i], inums[p] = inums[p], inums[i]
+                if nums[i] < pivot:
+                    nums[i], nums[p] = nums[p], nums[i]
                     p += 1
-            inums[r], inums[p] = inums[p], inums[r]
-            if p < k :
+            nums[p], nums[r] = nums[r], nums[p]
+            if p < k:
                 return quick_select(p + 1, r)
             elif p > k:
                 return quick_select(l, p - 1)
             else:
-                return inums[p]
-        return str(quick_select(0, len(inums) - 1))
+                return nums[p]
+        return str(quick_select(0, n - 1))
