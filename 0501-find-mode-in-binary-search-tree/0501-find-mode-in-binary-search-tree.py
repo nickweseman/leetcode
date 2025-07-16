@@ -13,11 +13,10 @@ class Solution:
             nonlocal max_freq, cur_freq, cur_num, modes
             if node:
                 dfs(node.left)
-                if cur_num is not None and node.val == cur_num:
+                if node.val == cur_num:
                     cur_freq += 1
                 else:
                     cur_freq = 1
-                print(f"{cur_freq=}{max_freq=}{cur_num=}{node.val=}")
                 cur_num = node.val
                 if cur_freq > max_freq:
                     max_freq = cur_freq
