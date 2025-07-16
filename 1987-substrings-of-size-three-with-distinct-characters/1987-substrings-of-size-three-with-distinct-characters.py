@@ -1,18 +1,7 @@
 class Solution:
     def countGoodSubstrings(self, s: str) -> int:
-        window = collections.defaultdict(int)
-        left = right = 0
-        substrings = 0
-
-        while right < len(s):
-            window[s[right]] += 1
-
-            if right - left + 1 > 3:
-                window[s[left]] -= 1
-                if window[s[left]] == 0:
-                    del window[s[left]]
-                left += 1
-            if right - left + 1 == 3 == len(window):
-                substrings += 1
-            right += 1
-        return substrings
+        good = 0
+        for i in range(0, len(s) - 2):
+            if len(set(s[i:i + 3])) == 3:
+                good += 1
+        return good
