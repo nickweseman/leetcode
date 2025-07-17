@@ -9,10 +9,17 @@ class Solution:
                     left = mid + 1
                 else:
                     right = mid
-            item = (-left, -i)
+            soldiers = left
             if len(max_heap) < k:
-                heapq.heappush(max_heap, item)
-            elif item > max_heap[0]:
-                heapq.heappushpop(max_heap, item)
-        max_heap.sort(reverse=True)
-        return [-item[1] for item in max_heap]
+                heapq.heappush(max_heap, (-soldiers, -i))
+            else:
+                heapq.heappushpop(max_heap, (-soldiers, -i))
+        result = []
+        for _ in range(k):
+            _, neg_i = heapq.heappop(max_heap)
+            i = -neg_i
+            result.append(i)
+        return result[::-1]
+            
+
+                
