@@ -7,6 +7,6 @@ class Solution:
         for _ in range(k):
             val, i = heapq.heappop(min_heap)
             val *= multiplier
+            nums[i] = val
             heapq.heappush(min_heap, (val, i))
-        min_heap.sort(key = lambda x: x[1])
-        return [num for num, _ in min_heap]
+        return nums
