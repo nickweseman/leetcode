@@ -1,16 +1,16 @@
 class Solution:
     def findSubsequences(self, nums: List[int]) -> List[List[int]]:
-        result_set = set()
-        comb = []
-        def dfs(i):
-            if i == len(nums):
+        path = []
+        result = set()
+        def backtrack(index):
+            if index == len(nums):
+                if len(path) > 1:
+                    result.add(tuple(path))
                 return
-            if not comb or nums[i] >= comb[-1]:
-                comb.append(nums[i])
-                if len(comb) >= 2:
-                    result_set.add(tuple(comb))
-                dfs(i + 1)
-                comb.pop()
-            dfs(i + 1)
-        dfs(0)
-        return list(result_set)
+            if not path or not nums[index] < path[-1]:
+                path.append(nums[index])
+                backtrack(index + 1)
+                path.pop()
+            backtrack(index + 1)
+        backtrack(0)
+        return list(result)
