@@ -1,16 +1,17 @@
 class Solution:
     def combinationSum3(self, k: int, n: int) -> List[List[int]]:
+        path = []
         result = []
-        comb = []
-        def dfs(i, remaining_n):
-            if len(comb) == k and remaining_n == 0:
-                result.append(comb.copy())
+        def backtrack(index, sum_so_far):
+            if sum_so_far > n or index > 10:
                 return
-            if len(comb) == k or remaining_n < 0 or i > 9:
+            if len(path) == k:
+                if sum_so_far == n:
+                    result.append(path.copy())
                 return
-            comb.append(i)
-            dfs(i + 1, remaining_n - i)
-            comb.pop()
-            dfs(i + 1, remaining_n)
-        dfs(1, n)
+            path.append(index)
+            backtrack(index + 1, sum_so_far + index)
+            path.pop()
+            backtrack(index + 1, sum_so_far)
+        backtrack(1, 0)
         return result
