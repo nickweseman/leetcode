@@ -15,9 +15,9 @@ class Solution:
         dummy = ListNode(0)
         curr = dummy
         while min_heap:
-            val, i, node = heapq.heappop(min_heap)
+            _, i, node = heapq.heappop(min_heap)
             curr.next = node
-            curr = curr.next
+            curr = node
             if curr.next:
                 heapq.heappush(min_heap, (curr.next.val, i, curr.next))
         return dummy.next
