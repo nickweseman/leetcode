@@ -5,8 +5,8 @@ class Solution:
             min_heap.append((num, i))
         heapq.heapify(min_heap)
         for _ in range(k):
-            num, i = heapq.heappop(min_heap)
-            num *= multiplier
-            nums[i] = num
-            heapq.heappush(min_heap, (num, i))
-        return nums
+            val, i = heapq.heappop(min_heap)
+            val *= multiplier
+            heapq.heappush(min_heap, (val, i))
+        min_heap.sort(key = lambda x: x[1])
+        return [num for num, _ in min_heap]
