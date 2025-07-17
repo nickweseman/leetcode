@@ -2,7 +2,7 @@ class Solution:
     def wiggleSort(self, nums: List[int]) -> None:
         n = len(nums)
         k = n // 2
-        def get_median(l, r):
+        def quick_select(l, r):
             pivot = nums[r]
             p = l
             for i in range(l, r):
@@ -10,13 +10,13 @@ class Solution:
                     nums[i], nums[p] = nums[p], nums[i]
                     p += 1
             nums[r], nums[p] = nums[p], nums[r]
-            if p < k:
-                return get_median(p + 1, r)
-            elif p > k:
-                return get_median(l, p - 1)
+            if p > k:
+                return quick_select(l, p - 1)
+            elif p < k:
+                return quick_select(p + 1, r)
             else:
                 return nums[p]
-        median = get_median(0, n - 1)
+        median = quick_select(0, n - 1)
         def map_index(i):
             return (2 * i + 1) % (n | 1)
         low, mid, high = 0, 0, n - 1
@@ -33,5 +33,4 @@ class Solution:
                 high -= 1
             else:
                 mid += 1
-                
         
