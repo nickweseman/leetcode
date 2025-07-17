@@ -1,7 +1,8 @@
 class Solution:
     def kSmallestPairs(self, nums1: List[int], nums2: List[int], k: int) -> List[List[int]]:
         min_heap = []
-        for j in range(len(nums2)):
+        end = min(k, len(nums2))
+        for j in range(end):
             min_heap.append((nums1[0] + nums2[j], 0, j))
         heapq.heapify(min_heap)
         result = []
