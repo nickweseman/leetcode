@@ -10,12 +10,14 @@ class Solution:
             if node:
                 min_heap.append((node.val, i, node))
         heapq.heapify(min_heap)
-        dummy = ListNode()
+        if not min_heap:
+            return None
+        dummy = ListNode(0)
         curr = dummy
         while min_heap:
-            _, i, node = heapq.heappop(min_heap)
+            val, i, node = heapq.heappop(min_heap)
             curr.next = node
             curr = curr.next
-            if node.next:
-                heapq.heappush(min_heap, (node.next.val, i, node.next))
+            if curr.next:
+                heapq.heappush(min_heap, (curr.next.val, i, curr.next))
         return dummy.next
