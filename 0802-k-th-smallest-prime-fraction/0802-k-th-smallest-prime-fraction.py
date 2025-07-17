@@ -2,7 +2,7 @@ class Solution:
     def kthSmallestPrimeFraction(self, arr: List[int], k: int) -> List[int]:
         min_heap = []
         n = len(arr)
-        start = 1
+        start = max(1, n - k)
         for j in range(start, n):
             min_heap.append((arr[0] / arr[j], 0, j))
         heapq.heapify(min_heap)
