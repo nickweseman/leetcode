@@ -318,6 +318,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2093-check-if-string-is-a-prefix-of-array](https://github.com/nickweseman/leetcode/tree/master/2093-check-if-string-is-a-prefix-of-array) |
 | [2113-find-the-kth-largest-integer-in-the-array](https://github.com/nickweseman/leetcode/tree/master/2113-find-the-kth-largest-integer-in-the-array) |
 | [2128-reverse-prefix-of-word](https://github.com/nickweseman/leetcode/tree/master/2128-reverse-prefix-of-word) |
+| [2130-maximum-product-of-the-length-of-two-palindromic-subsequences](https://github.com/nickweseman/leetcode/tree/master/2130-maximum-product-of-the-length-of-two-palindromic-subsequences) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/nickweseman/leetcode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/nickweseman/leetcode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/nickweseman/leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
@@ -464,6 +465,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1418-fair-distribution-of-cookies](https://github.com/nickweseman/leetcode/tree/master/1418-fair-distribution-of-cookies) |
 | [1435-xor-queries-of-a-subarray](https://github.com/nickweseman/leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
+| [2130-maximum-product-of-the-length-of-two-palindromic-subsequences](https://github.com/nickweseman/leetcode/tree/master/2130-maximum-product-of-the-length-of-two-palindromic-subsequences) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/nickweseman/leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2318-maximum-points-in-an-archery-competition](https://github.com/nickweseman/leetcode/tree/master/2318-maximum-points-in-an-archery-competition) |
 | [2482-maximum-rows-covered-by-columns](https://github.com/nickweseman/leetcode/tree/master/2482-maximum-rows-covered-by-columns) |
@@ -497,6 +499,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0526-beautiful-arrangement](https://github.com/nickweseman/leetcode/tree/master/0526-beautiful-arrangement) |
 | [1418-fair-distribution-of-cookies](https://github.com/nickweseman/leetcode/tree/master/1418-fair-distribution-of-cookies) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/nickweseman/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
+| [2130-maximum-product-of-the-length-of-two-palindromic-subsequences](https://github.com/nickweseman/leetcode/tree/master/2130-maximum-product-of-the-length-of-two-palindromic-subsequences) |
 ## Sliding Window
 |  |
 | ------- |
@@ -893,6 +896,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/nickweseman/leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1418-fair-distribution-of-cookies](https://github.com/nickweseman/leetcode/tree/master/1418-fair-distribution-of-cookies) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
+| [2130-maximum-product-of-the-length-of-two-palindromic-subsequences](https://github.com/nickweseman/leetcode/tree/master/2130-maximum-product-of-the-length-of-two-palindromic-subsequences) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/nickweseman/leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2318-maximum-points-in-an-archery-competition](https://github.com/nickweseman/leetcode/tree/master/2318-maximum-points-in-an-archery-competition) |
 | [2482-maximum-rows-covered-by-columns](https://github.com/nickweseman/leetcode/tree/master/2482-maximum-rows-covered-by-columns) |
@@ -984,4 +988,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0526-beautiful-arrangement](https://github.com/nickweseman/leetcode/tree/master/0526-beautiful-arrangement) |
 | [1418-fair-distribution-of-cookies](https://github.com/nickweseman/leetcode/tree/master/1418-fair-distribution-of-cookies) |
+| [2130-maximum-product-of-the-length-of-two-palindromic-subsequences](https://github.com/nickweseman/leetcode/tree/master/2130-maximum-product-of-the-length-of-two-palindromic-subsequences) |
 <!---LeetCode Topics End-->
