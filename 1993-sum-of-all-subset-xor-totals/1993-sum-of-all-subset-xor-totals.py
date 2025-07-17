@@ -1,12 +1,12 @@
 class Solution:
     def subsetXORSum(self, nums: List[int]) -> int:
-        total_xor_sum = 0
-        def dfs(i, current_xor):
-            nonlocal total_xor_sum
-            if i == len(nums):
-                total_xor_sum += current_xor
+        total = 0
+        def backtrack(index, subtotal):
+            nonlocal total
+            if index == len(nums):
+                total += subtotal
                 return
-            dfs(i + 1, current_xor ^ nums[i])
-            dfs(i + 1, current_xor)
-        dfs(0, 0)
-        return total_xor_sum
+            backtrack(index + 1, subtotal ^ nums[index])
+            backtrack(index + 1, subtotal)
+        backtrack(0, 0)
+        return total
