@@ -4,19 +4,19 @@ class Solution:
         for s in arr:
             if len(set(s)) == len(s):
                 unique_arr.append(s)
-        comb_char_set = set()
-        max_length = -math.inf
-        def dfs(i):
+        chars = set()
+        max_length = 0
+        def backtrack(index):
             nonlocal max_length
-            if i == len(unique_arr):
-                max_length = max(max_length, len(comb_char_set))
+            if index == len(unique_arr):
+                max_length = max(max_length, len(chars))
                 return
-            if not set(unique_arr[i]) & comb_char_set:
-                for char in unique_arr[i]:
-                    comb_char_set.add(char)
-                dfs(i + 1)
-                for char in unique_arr[i]:
-                    comb_char_set.remove(char)
-            dfs(i + 1)
-        dfs(0)
+            if not (set(unique_arr[index]) & chars):
+                for c in unique_arr[index]:
+                    chars.add(c)
+                backtrack(index + 1)
+                for c in unique_arr[index]:
+                    chars.remove(c)
+            backtrack(index + 1)
+        backtrack(0)
         return max_length
