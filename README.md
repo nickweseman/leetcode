@@ -122,6 +122,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2634-minimum-common-value](https://github.com/nickweseman/leetcode/tree/master/2634-minimum-common-value) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/nickweseman/leetcode/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/nickweseman/leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
+| [2696-the-number-of-beautiful-subsets](https://github.com/nickweseman/leetcode/tree/master/2696-the-number-of-beautiful-subsets) |
 | [2698-find-the-array-concatenation-value](https://github.com/nickweseman/leetcode/tree/master/2698-find-the-array-concatenation-value) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/nickweseman/leetcode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [2714-left-and-right-sum-differences](https://github.com/nickweseman/leetcode/tree/master/2714-left-and-right-sum-differences) |
@@ -172,6 +173,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/nickweseman/leetcode/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2561-number-of-distinct-averages](https://github.com/nickweseman/leetcode/tree/master/2561-number-of-distinct-averages) |
 | [2634-minimum-common-value](https://github.com/nickweseman/leetcode/tree/master/2634-minimum-common-value) |
+| [2696-the-number-of-beautiful-subsets](https://github.com/nickweseman/leetcode/tree/master/2696-the-number-of-beautiful-subsets) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/nickweseman/leetcode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [3349-maximum-length-substring-with-two-occurrences](https://github.com/nickweseman/leetcode/tree/master/3349-maximum-length-substring-with-two-occurrences) |
 ## Two Pointers
@@ -271,6 +273,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/nickweseman/leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/nickweseman/leetcode/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
 | [2561-number-of-distinct-averages](https://github.com/nickweseman/leetcode/tree/master/2561-number-of-distinct-averages) |
+| [2696-the-number-of-beautiful-subsets](https://github.com/nickweseman/leetcode/tree/master/2696-the-number-of-beautiful-subsets) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/nickweseman/leetcode/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3226-minimum-number-game](https://github.com/nickweseman/leetcode/tree/master/3226-minimum-number-game) |
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/nickweseman/leetcode/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
@@ -408,6 +411,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2383-add-two-integers](https://github.com/nickweseman/leetcode/tree/master/2383-add-two-integers) |
 | [2571-find-the-pivot-integer](https://github.com/nickweseman/leetcode/tree/master/2571-find-the-pivot-integer) |
+| [2696-the-number-of-beautiful-subsets](https://github.com/nickweseman/leetcode/tree/master/2696-the-number-of-beautiful-subsets) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/nickweseman/leetcode/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 ## Matrix
 |  |
@@ -500,6 +504,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1418-fair-distribution-of-cookies](https://github.com/nickweseman/leetcode/tree/master/1418-fair-distribution-of-cookies) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/nickweseman/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [2130-maximum-product-of-the-length-of-two-palindromic-subsequences](https://github.com/nickweseman/leetcode/tree/master/2130-maximum-product-of-the-length-of-two-palindromic-subsequences) |
+| [2696-the-number-of-beautiful-subsets](https://github.com/nickweseman/leetcode/tree/master/2696-the-number-of-beautiful-subsets) |
 ## Sliding Window
 |  |
 | ------- |
@@ -900,6 +905,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/nickweseman/leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2318-maximum-points-in-an-archery-competition](https://github.com/nickweseman/leetcode/tree/master/2318-maximum-points-in-an-archery-competition) |
 | [2482-maximum-rows-covered-by-columns](https://github.com/nickweseman/leetcode/tree/master/2482-maximum-rows-covered-by-columns) |
+| [2696-the-number-of-beautiful-subsets](https://github.com/nickweseman/leetcode/tree/master/2696-the-number-of-beautiful-subsets) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -972,6 +978,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/nickweseman/leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
+| [2696-the-number-of-beautiful-subsets](https://github.com/nickweseman/leetcode/tree/master/2696-the-number-of-beautiful-subsets) |
 ## Enumeration
 |  |
 | ------- |
