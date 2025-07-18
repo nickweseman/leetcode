@@ -1,33 +1,30 @@
 class Solution:
     def maximumRows(self, matrix: List[List[int]], numSelect: int) -> int:
         max_rows = 0
-        chosen_cols = set()
         num_cols = len(matrix[0])
         num_rows = len(matrix)
-        def covered_rows() -> int:
+        cols_selected = [False] * num_cols
+        def get_covered_rows():
             count = 0
-            for r in range(num_rows):
-                covered = True
-                for c in range(num_cols):
-                    if matrix[r][c] == 1 and c not in chosen_cols:
-                        covered = False
-                        break
-                if covered:
+            for i in range(num_rows):
+                row_covered = True
+                for j in range(num_cols):
+                    if matrix[i][j] == 1 and not cols_selected[j]:
+                        row_covered = False
+                if row_covered:
                     count += 1
             return count
-        def dfs(col_index, columns_left):
+        def backtrack(index, cols_left):
             nonlocal max_rows
-            if columns_left == 0:
-                count = covered_rows()
-                max_rows =  max(max_rows, count)
+            if cols_left < 0:
                 return
-            if col_index == num_cols:
+            if index == num_cols:
+                if cols_left == 0:
+                    max_rows = max(max_rows, get_covered_rows())
                 return
-            chosen_cols.add(col_index)
-            dfs(col_index + 1, columns_left - 1)
-            chosen_cols.remove(col_index)
-            dfs(col_index + 1, columns_left)
-        dfs(0, numSelect)
+            cols_selected[index] = True
+            backtrack(index + 1, cols_left - 1)
+            cols_selected[index] = False
+            backtrack(index + 1, cols_left)
+        backtrack(0, numSelect)
         return max_rows
-
-        
