@@ -1,9 +1,8 @@
 class Solution:
     def minimumDifference(self, nums: List[int], k: int) -> int:
         nums.sort()
+        min_diff = math.inf
         left = right = 0
-        min_diff = float('inf')
-
         while right < len(nums):
             if right - left + 1 > k:
                 left += 1
