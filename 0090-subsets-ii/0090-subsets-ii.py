@@ -2,18 +2,18 @@ class Solution:
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
         result = []
-        comb = []
-        n = len(nums)
-        def dfs(i):
-            if i == n:
-                result.append(comb.copy())
+        path = []
+        def backtrack(index):
+            if index == len(nums):
+                result.append(path.copy())
                 return
-            comb.append(nums[i])
-            dfs(i + 1)
-            comb.pop()
-            next_i = i + 1
-            while next_i < n and nums[next_i] == nums[i]:
-                next_i += 1
-            dfs(next_i)
-        dfs(0)
+            path.append(nums[index])
+            backtrack(index + 1)
+            path.pop()
+            next_index = index + 1
+            while next_index < len(nums) and nums[next_index] == nums[next_index - 1]:
+                next_index += 1
+            print(f"{index=}{next_index=}")
+            backtrack(next_index)
+        backtrack(0)
         return result
