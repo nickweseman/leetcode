@@ -10,8 +10,6 @@ class Solution:
         def dfs(node):
             if not node:
                 return (True, math.inf, -math.inf)
-            if not node.left and not node.right:
-                return (True, node.val, node.val)
             left_balanced, left_val_low, left_val_high = dfs(node.left)
             right_balanced, right_val_low, right_val_high = dfs(node.right)
             me_balanced = (left_balanced and right_balanced and 
