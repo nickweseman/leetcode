@@ -1,16 +1,23 @@
 class Solution:
     def countMaxOrSubsets(self, nums: List[int]) -> int:
-        count = 0
-        max_or_sum = 0
-        for num in nums:
-            max_or_sum |= num
-        def dfs(i, current_or_sum):
-            nonlocal count
-            if i == len(nums):
-                if current_or_sum == max_or_sum:
-                    count += 1
+        max_or = -math.inf
+        max_subsets = -1 #= []
+        path = []
+        def backtrack(index, or_so_far):
+            nonlocal max_or, max_subsets
+            if index == len(nums):
+                
+                if or_so_far > max_or:
+                    max_or = or_so_far
+                    max_subsets = 0 #[path.copy()]
+                if or_so_far == max_or:
+                    max_subsets += 1 #max_subsets.append(path.copy)
+                #print(f"{path=}{or_so_far=}{max_or=}{max_subsets=}")
                 return
-            dfs(i + 1, current_or_sum | nums[i])
-            dfs(i + 1, current_or_sum)
-        dfs(0, 0)
-        return count
+            path.append(nums[index])
+            backtrack(index + 1, or_so_far | nums[index])
+            path.pop()
+            backtrack(index + 1, or_so_far)
+        backtrack(0, 0)
+        return max_subsets
+            
