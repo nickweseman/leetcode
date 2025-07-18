@@ -1,16 +1,16 @@
 class Solution:
     def combine(self, n: int, k: int) -> List[List[int]]:
         result = []
-        comb = []
-        def dfs(i, remaining_k):
-            if remaining_k == 0:
-                result.append(comb.copy())
+        path = []
+        def backtrack(index):
+            if index > n + 1:
                 return
-            if i > n:
+            if len(path) == k:
+                result.append(path.copy())
                 return
-            comb.append(i)
-            dfs(i + 1, remaining_k - 1)
-            comb.pop()
-            dfs(i + 1, remaining_k)
-        dfs(1, k)
+            path.append(index)
+            backtrack(index + 1)
+            path.pop()
+            backtrack(index + 1)
+        backtrack(1)
         return result
