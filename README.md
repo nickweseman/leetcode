@@ -291,6 +291,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0020-valid-parentheses](https://github.com/nickweseman/leetcode/tree/master/0020-valid-parentheses) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/nickweseman/leetcode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0076-minimum-window-substring](https://github.com/nickweseman/leetcode/tree/master/0076-minimum-window-substring) |
+| [0093-restore-ip-addresses](https://github.com/nickweseman/leetcode/tree/master/0093-restore-ip-addresses) |
 | [0125-valid-palindrome](https://github.com/nickweseman/leetcode/tree/master/0125-valid-palindrome) |
 | [0131-palindrome-partitioning](https://github.com/nickweseman/leetcode/tree/master/0131-palindrome-partitioning) |
 | [0242-valid-anagram](https://github.com/nickweseman/leetcode/tree/master/0242-valid-anagram) |
@@ -903,6 +904,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0077-combinations](https://github.com/nickweseman/leetcode/tree/master/0077-combinations) |
 | [0078-subsets](https://github.com/nickweseman/leetcode/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/nickweseman/leetcode/tree/master/0090-subsets-ii) |
+| [0093-restore-ip-addresses](https://github.com/nickweseman/leetcode/tree/master/0093-restore-ip-addresses) |
 | [0131-palindrome-partitioning](https://github.com/nickweseman/leetcode/tree/master/0131-palindrome-partitioning) |
 | [0216-combination-sum-iii](https://github.com/nickweseman/leetcode/tree/master/0216-combination-sum-iii) |
 | [0257-binary-tree-paths](https://github.com/nickweseman/leetcode/tree/master/0257-binary-tree-paths) |
