@@ -164,6 +164,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-reorganize-string](https://github.com/nickweseman/leetcode/tree/master/0778-reorganize-string) |
 | [0966-binary-subarrays-with-sum](https://github.com/nickweseman/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1034-subarrays-with-k-different-integers](https://github.com/nickweseman/leetcode/tree/master/1034-subarrays-with-k-different-integers) |
+| [1160-letter-tile-possibilities](https://github.com/nickweseman/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1217-relative-sort-array](https://github.com/nickweseman/leetcode/tree/master/1217-relative-sort-array) |
 | [1370-count-number-of-nice-subarrays](https://github.com/nickweseman/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/nickweseman/leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
@@ -312,6 +313,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0961-long-pressed-name](https://github.com/nickweseman/leetcode/tree/master/0961-long-pressed-name) |
 | [0979-di-string-match](https://github.com/nickweseman/leetcode/tree/master/0979-di-string-match) |
 | [1078-remove-outermost-parentheses](https://github.com/nickweseman/leetcode/tree/master/1078-remove-outermost-parentheses) |
+| [1160-letter-tile-possibilities](https://github.com/nickweseman/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1211-iterator-for-combination](https://github.com/nickweseman/leetcode/tree/master/1211-iterator-for-combination) |
 | [1304-longest-happy-string](https://github.com/nickweseman/leetcode/tree/master/1304-longest-happy-string) |
 | [1321-get-equal-substrings-within-budget](https://github.com/nickweseman/leetcode/tree/master/1321-get-equal-substrings-within-budget) |
@@ -552,6 +554,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/nickweseman/leetcode/tree/master/0621-task-scheduler) |
 | [0778-reorganize-string](https://github.com/nickweseman/leetcode/tree/master/0778-reorganize-string) |
 | [1034-subarrays-with-k-different-integers](https://github.com/nickweseman/leetcode/tree/master/1034-subarrays-with-k-different-integers) |
+| [1160-letter-tile-possibilities](https://github.com/nickweseman/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/nickweseman/leetcode/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/nickweseman/leetcode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 ## Prefix Sum
@@ -903,6 +906,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0401-binary-watch](https://github.com/nickweseman/leetcode/tree/master/0401-binary-watch) |
 | [0491-non-decreasing-subsequences](https://github.com/nickweseman/leetcode/tree/master/0491-non-decreasing-subsequences) |
 | [0526-beautiful-arrangement](https://github.com/nickweseman/leetcode/tree/master/0526-beautiful-arrangement) |
+| [1160-letter-tile-possibilities](https://github.com/nickweseman/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1211-iterator-for-combination](https://github.com/nickweseman/leetcode/tree/master/1211-iterator-for-combination) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/nickweseman/leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1418-fair-distribution-of-cookies](https://github.com/nickweseman/leetcode/tree/master/1418-fair-distribution-of-cookies) |
