@@ -296,6 +296,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0131-palindrome-partitioning](https://github.com/nickweseman/leetcode/tree/master/0131-palindrome-partitioning) |
 | [0242-valid-anagram](https://github.com/nickweseman/leetcode/tree/master/0242-valid-anagram) |
 | [0257-binary-tree-paths](https://github.com/nickweseman/leetcode/tree/master/0257-binary-tree-paths) |
+| [0282-expression-add-operators](https://github.com/nickweseman/leetcode/tree/master/0282-expression-add-operators) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0344-reverse-string](https://github.com/nickweseman/leetcode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/nickweseman/leetcode/tree/master/0345-reverse-vowels-of-a-string) |
@@ -412,6 +413,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0069-sqrtx](https://github.com/nickweseman/leetcode/tree/master/0069-sqrtx) |
 | [0202-happy-number](https://github.com/nickweseman/leetcode/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/nickweseman/leetcode/tree/master/0268-missing-number) |
+| [0282-expression-add-operators](https://github.com/nickweseman/leetcode/tree/master/0282-expression-add-operators) |
 | [0367-valid-perfect-square](https://github.com/nickweseman/leetcode/tree/master/0367-valid-perfect-square) |
 | [0441-arranging-coins](https://github.com/nickweseman/leetcode/tree/master/0441-arranging-coins) |
 | [1014-k-closest-points-to-origin](https://github.com/nickweseman/leetcode/tree/master/1014-k-closest-points-to-origin) |
@@ -910,6 +912,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0131-palindrome-partitioning](https://github.com/nickweseman/leetcode/tree/master/0131-palindrome-partitioning) |
 | [0216-combination-sum-iii](https://github.com/nickweseman/leetcode/tree/master/0216-combination-sum-iii) |
 | [0257-binary-tree-paths](https://github.com/nickweseman/leetcode/tree/master/0257-binary-tree-paths) |
+| [0282-expression-add-operators](https://github.com/nickweseman/leetcode/tree/master/0282-expression-add-operators) |
 | [0401-binary-watch](https://github.com/nickweseman/leetcode/tree/master/0401-binary-watch) |
 | [0491-non-decreasing-subsequences](https://github.com/nickweseman/leetcode/tree/master/0491-non-decreasing-subsequences) |
 | [0526-beautiful-arrangement](https://github.com/nickweseman/leetcode/tree/master/0526-beautiful-arrangement) |
