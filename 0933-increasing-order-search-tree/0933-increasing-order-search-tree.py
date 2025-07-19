@@ -8,7 +8,7 @@ class Solution:
     def increasingBST(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         dummy = TreeNode()
         tail = dummy
-        def dfs(node) -> None:
+        def dfs(node):
             nonlocal tail
             if not node:
                 return
