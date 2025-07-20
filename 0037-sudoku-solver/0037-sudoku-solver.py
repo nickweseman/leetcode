@@ -1,54 +1,34 @@
-from typing import List
-from collections import defaultdict
-
 class Solution:
     def solveSudoku(self, board: List[List[str]]) -> None:
-        # Create sets to track numbers in each row, col, and 3x3 box
-        rows = defaultdict(set)
-        cols = defaultdict(set)
-        boxes = defaultdict(set)
-
+        rows = collections.defaultdict(set)
+        cols = collections.defaultdict(set)
+        boxes = collections.defaultdict(set)
+        NUM_ROWS, NUM_COLS = len(board), len(board[0])
         empty_positions = []
-
-        # Pre-process the board to populate sets and find empty cells
-        for r in range(9):
-            for c in range(9):
+        for r in range(NUM_ROWS):
+            for c in range(NUM_COLS):
                 if board[r][c] == ".":
                     empty_positions.append((r, c))
                 else:
-                    num = board[r][c]
+                    rows[r].add(board[r][c])
+                    cols[c].add(board[r][c])
+                    boxes[(r//3,c//3)].add(board[r][c])
+        def backtrack(index):
+            if index == len(empty_positions):
+                return True
+            r, c = empty_positions[index]
+            for num in "123456789":
+                if num not in rows[r] and num not in cols[c] and num not in boxes[r//3,c//3]:
+                    board[r][c] = num
                     rows[r].add(num)
                     cols[c].add(num)
-                    boxes[(r // 3, c // 3)].add(num)
-
-        def backtrack(k: int):
-            if k == len(empty_positions):
-                return True
-            
-            r, c = empty_positions[k]
-            box_id = (r // 3, c // 3)
-
-            for digit_char in "123456789":
-                # The validation is now a fast O(1) set lookup
-                if (digit_char not in rows[r] and
-                    digit_char not in cols[c] and
-                    digit_char not in boxes[box_id]):
-                    
-                    # Place
-                    board[r][c] = digit_char
-                    rows[r].add(digit_char)
-                    cols[c].add(digit_char)
-                    boxes[box_id].add(digit_char)
-
-                    if backtrack(k + 1):
+                    boxes[r//3,c//3].add(num)
+                    if backtrack(index + 1):
                         return True
-                    
-                    # Backtrack
                     board[r][c] = "."
-                    rows[r].remove(digit_char)
-                    cols[c].remove(digit_char)
-                    boxes[box_id].remove(digit_char)
-            
-            return False
-
+                    rows[r].remove(num)
+                    cols[c].remove(num)
+                    boxes[r//3,c//3].remove(num)
         backtrack(0)
+
+        
