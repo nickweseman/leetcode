@@ -1,23 +1,22 @@
 class Solution:
     def canPartitionKSubsets(self, nums: List[int], k: int) -> bool:
-        buckets = [0] * k
-        total_sum = sum(nums)
-        if total_sum % k != 0:
+        total = sum(nums)
+        if total % k != 0:
             return False
-        target_sum = sum(nums) // k
+        target_sum = total // k
+        buckets = [0] * k
         n = len(nums)
+        nums.sort(reverse=True)
         def backtrack(index):
             if index == n:
                 return True
             for i in range(k):
-                num = nums[index]
-                if num + buckets[i] <= target_sum:
-                    buckets[i] += num
+                if buckets[i] + nums[index] <= target_sum:
+                    buckets[i] += nums[index]
                     if backtrack(index + 1):
                         return True
-                    buckets[i] -= num
-                #optimization: if you tried putting in an empty bucket and it failed, no point in doing the same with the rest of the empty buckets
-                    if buckets[i] == 0: 
+                    buckets[i] -= nums[index]
+                    if buckets[i] == 0:
                         break
             return False
         return backtrack(0)
