@@ -16,7 +16,8 @@ class Solution:
                     if backtrack(index + 1):
                         return True
                     buckets[i] -= num
-                if buckets[i] == 0:
-                    break
+                #optimization: if you tried putting in an empty bucket and it failed, no point in doing the same with the rest of the empty buckets
+                    if buckets[i] == 0: 
+                        break
             return False
         return backtrack(0)
