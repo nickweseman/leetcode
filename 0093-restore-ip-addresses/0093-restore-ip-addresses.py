@@ -1,7 +1,7 @@
 class Solution:
     def restoreIpAddresses(self, s: str) -> List[str]:
-        result = []
         path = []
+        result = []
         n = len(s)
         def backtrack(index):
             if index == n:
@@ -10,17 +10,14 @@ class Solution:
                 return
             if len(path) == 4:
                 return
-            for length in range(1, 4): # explore lengths of 1, 2, or 3 characters
-                # 1. Prevent creating a slice that goes out of bounds.
-                if index + length > n:
-                    break
-                segment = s[index : index + length]
-                if len(segment) > 1 and segment[0] == '0':
+            for i in range(index, n):
+                substring = s[index: i + 1]
+                if len(substring) > 1 and substring[0] == "0":
                     continue
-                if not (0 <= int(segment) <= 255):
+                if not (0 <= int(substring) <= 255):
                     continue
-                path.append(segment)
-                backtrack(index + length)
+                path.append(substring)
+                backtrack(i + 1)
                 path.pop()
         backtrack(0)
         return result
