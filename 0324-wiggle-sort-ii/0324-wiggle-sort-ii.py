@@ -6,7 +6,7 @@ class Solution:
             pivot = nums[r]
             p = l
             for i in range(l, r):
-                if nums[i] < pivot:
+                if nums[i] <= pivot:
                     nums[i], nums[p] = nums[p], nums[i]
                     p += 1
             nums[r], nums[p] = nums[p], nums[r]
