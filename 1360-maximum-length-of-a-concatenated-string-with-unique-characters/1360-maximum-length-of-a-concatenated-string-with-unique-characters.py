@@ -12,10 +12,7 @@ class Solution:
             if index == n:
                 max_length = max(max_length, len(chosen))
                 return
-            my_set = set()
-            for c in trimmed_arr[index]:
-                my_set.add(c)
-            if not (my_set & chosen):
+            if not (set(trimmed_arr[index]) & chosen):
                 for c in trimmed_arr[index]:
                     chosen.add(c)
                 backtrack(index + 1)
