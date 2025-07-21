@@ -1,19 +1,22 @@
 class Solution:
     def beautifulSubsets(self, nums: List[int], k: int) -> int:
-        count = 0
-        path = collections.Counter()
+        result = []
+        n = len(nums)
+        counts = collections.Counter(nums)
+        path = []
         def backtrack(index):
-            nonlocal count
-            if index == len(nums):
+            if index == n:
                 if len(path) > 0:
-                    count += 1
+                    result.append(path.copy())
                 return
-            if path[nums[index] - k] == 0 and path[nums[index] + k] == 0:
-                path[nums[index]] += 1
-                backtrack(index + 1)
-                path[nums[index]] -= 1
-                if path[nums[index]] == 0:
-                    del path[nums[index]]
+            #if counts[nums[index] - k] == 0 and counts[nums[index] + k] == 0:
+            if nums[index] - k not in path and nums[index] + k not in path:
+                if counts[nums[index]] > 0:
+                    counts[nums[index]] -= 1
+                    path.append(nums[index])
+                    backtrack(index + 1)
+                    path.pop()
+                    counts[nums[index]] += 1
             backtrack(index + 1)
         backtrack(0)
-        return count
+        return len(result)
