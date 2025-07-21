@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/nickweseman/leetcode/tree/master/0048-rotate-image) |
 | [0075-sort-colors](https://github.com/nickweseman/leetcode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/nickweseman/leetcode/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/nickweseman/leetcode/tree/master/0079-word-search) |
 | [0088-merge-sorted-array](https://github.com/nickweseman/leetcode/tree/master/0088-merge-sorted-array) |
 | [0090-subsets-ii](https://github.com/nickweseman/leetcode/tree/master/0090-subsets-ii) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
@@ -305,6 +306,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0020-valid-parentheses](https://github.com/nickweseman/leetcode/tree/master/0020-valid-parentheses) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/nickweseman/leetcode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0076-minimum-window-substring](https://github.com/nickweseman/leetcode/tree/master/0076-minimum-window-substring) |
+| [0079-word-search](https://github.com/nickweseman/leetcode/tree/master/0079-word-search) |
 | [0093-restore-ip-addresses](https://github.com/nickweseman/leetcode/tree/master/0093-restore-ip-addresses) |
 | [0125-valid-palindrome](https://github.com/nickweseman/leetcode/tree/master/0125-valid-palindrome) |
 | [0131-palindrome-partitioning](https://github.com/nickweseman/leetcode/tree/master/0131-palindrome-partitioning) |
@@ -446,6 +448,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0037-sudoku-solver](https://github.com/nickweseman/leetcode/tree/master/0037-sudoku-solver) |
 | [0048-rotate-image](https://github.com/nickweseman/leetcode/tree/master/0048-rotate-image) |
+| [0079-word-search](https://github.com/nickweseman/leetcode/tree/master/0079-word-search) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/nickweseman/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0463-island-perimeter](https://github.com/nickweseman/leetcode/tree/master/0463-island-perimeter) |
 | [0772-construct-quad-tree](https://github.com/nickweseman/leetcode/tree/master/0772-construct-quad-tree) |
@@ -771,6 +774,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/nickweseman/leetcode/tree/master/0079-word-search) |
 | [0094-binary-tree-inorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/nickweseman/leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/nickweseman/leetcode/tree/master/0100-same-tree) |
@@ -938,6 +942,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0052-n-queens-ii](https://github.com/nickweseman/leetcode/tree/master/0052-n-queens-ii) |
 | [0077-combinations](https://github.com/nickweseman/leetcode/tree/master/0077-combinations) |
 | [0078-subsets](https://github.com/nickweseman/leetcode/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/nickweseman/leetcode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/nickweseman/leetcode/tree/master/0090-subsets-ii) |
 | [0093-restore-ip-addresses](https://github.com/nickweseman/leetcode/tree/master/0093-restore-ip-addresses) |
 | [0113-path-sum-ii](https://github.com/nickweseman/leetcode/tree/master/0113-path-sum-ii) |
