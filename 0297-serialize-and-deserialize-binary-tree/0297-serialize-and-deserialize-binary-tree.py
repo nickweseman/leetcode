@@ -4,29 +4,31 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
+
 class Codec:
+
     def serialize(self, root):
-        result = []
-        def dfs(node) -> None:
+        path = []
+        def dfs(node):
             if not node:
-                result.append("#")
+                path.append("#")
                 return
-            result.append(str(node.val))
+            path.append(str(node.val))
             dfs(node.left)
             dfs(node.right)
         dfs(root)
-        return ",".join(result)
+        return ",".join(path)
     def deserialize(self, data):
-        gen = iter(data.split(","))
-        def create_tree() -> TreeNode:
-            val = next(gen)
+        tree_iter = iter(data.split(","))
+        def dfs():
+            val = next(tree_iter)
             if val == "#":
                 return None
-            curr = TreeNode(val=val)
-            curr.left = create_tree()
-            curr.right = create_tree()
-            return curr
-        return create_tree()
+            node = TreeNode(val)
+            node.left = dfs()
+            node.right = dfs()
+            return node
+        return dfs()
         
 
 # Your Codec object will be instantiated and called as such:
