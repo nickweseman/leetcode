@@ -6,17 +6,14 @@
 #         self.right = right
 class Solution:
     def findTilt(self, root: Optional[TreeNode]) -> int:
-        total_tilt = 0
-        def dfs(node) -> int:
-            nonlocal total_tilt
+        total = 0
+        def dfs(node):
+            nonlocal total
             if not node:
                 return 0
-            if not node.left and not node.right:
-                return node.val
             left = dfs(node.left)
             right = dfs(node.right)
-            total_tilt += abs(left - right)
+            total += abs(left - right)
             return left + right + node.val
         dfs(root)
-        return total_tilt
-                
+        return total
