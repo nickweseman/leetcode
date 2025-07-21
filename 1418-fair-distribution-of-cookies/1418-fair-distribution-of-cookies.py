@@ -1,17 +1,19 @@
 class Solution:
     def distributeCookies(self, cookies: List[int], k: int) -> int:
-        min_unfairness = math.inf
         kids = [0] * k
+        n = len(cookies)
+        min_unfairness = math.inf
         def backtrack(index):
             nonlocal min_unfairness
-            if index == len(cookies):
+            if index == n:
                 min_unfairness = min(min_unfairness, max(kids))
                 return
             for i in range(k):
-                if kids[i] > min_unfairness:
-                    break
                 kids[i] += cookies[index]
                 backtrack(index + 1)
                 kids[i] -= cookies[index]
+                if kids[i] == 0:
+                    break
         backtrack(0)
         return min_unfairness
+        
