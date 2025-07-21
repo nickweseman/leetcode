@@ -8,19 +8,17 @@ class Solution:
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
         result = []
         path = []
-        def backtrack(node, rolling_sum):
+        def backtrack(node, sum_so_far):
             if not node:
                 return
-            my_sum = rolling_sum + node.val
-            if not node.left and not node.right:
-                path.append(node.val)
+            my_sum = sum_so_far + node.val
+            path.append(node.val)
+            if not node.right and not node.left:
                 if my_sum == targetSum:
                     result.append(path.copy())
-                path.pop()
-                return
-            path.append(node.val)
-            backtrack(node.left, my_sum)
-            backtrack(node.right, my_sum)
+            else:
+                backtrack(node.left, my_sum)
+                backtrack(node.right, my_sum)
             path.pop()
         backtrack(root, 0)
         return result
