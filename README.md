@@ -81,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1168-duplicate-zeros](https://github.com/nickweseman/leetcode/tree/master/1168-duplicate-zeros) |
 | [1184-car-pooling](https://github.com/nickweseman/leetcode/tree/master/1184-car-pooling) |
 | [1217-relative-sort-array](https://github.com/nickweseman/leetcode/tree/master/1217-relative-sort-array) |
+| [1331-path-with-maximum-gold](https://github.com/nickweseman/leetcode/tree/master/1331-path-with-maximum-gold) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/nickweseman/leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1370-count-number-of-nice-subarrays](https://github.com/nickweseman/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1418-fair-distribution-of-cookies](https://github.com/nickweseman/leetcode/tree/master/1418-fair-distribution-of-cookies) |
@@ -447,6 +448,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0463-island-perimeter](https://github.com/nickweseman/leetcode/tree/master/0463-island-perimeter) |
 | [0772-construct-quad-tree](https://github.com/nickweseman/leetcode/tree/master/0772-construct-quad-tree) |
 | [0861-flipping-an-image](https://github.com/nickweseman/leetcode/tree/master/0861-flipping-an-image) |
+| [1331-path-with-maximum-gold](https://github.com/nickweseman/leetcode/tree/master/1331-path-with-maximum-gold) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/nickweseman/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [2145-grid-game](https://github.com/nickweseman/leetcode/tree/master/2145-grid-game) |
 | [2482-maximum-rows-covered-by-columns](https://github.com/nickweseman/leetcode/tree/master/2482-maximum-rows-covered-by-columns) |
@@ -948,6 +950,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0800-letter-case-permutation](https://github.com/nickweseman/leetcode/tree/master/0800-letter-case-permutation) |
 | [1160-letter-tile-possibilities](https://github.com/nickweseman/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1211-iterator-for-combination](https://github.com/nickweseman/leetcode/tree/master/1211-iterator-for-combination) |
+| [1331-path-with-maximum-gold](https://github.com/nickweseman/leetcode/tree/master/1331-path-with-maximum-gold) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/nickweseman/leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1418-fair-distribution-of-cookies](https://github.com/nickweseman/leetcode/tree/master/1418-fair-distribution-of-cookies) |
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/nickweseman/leetcode/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
