@@ -2,12 +2,7 @@ class Solution:
     def maxLength(self, arr: List[str]) -> int:
         trimmed_arr = []
         for word in arr:
-            dont_include = False
-            counter = collections.Counter(word)
-            for freq in counter.values():
-                if freq > 1:
-                    dont_include = True
-            if not dont_include:
+            if len(word) == len(set(word)):
                 trimmed_arr.append(word)
         max_length = 0
         chosen = set()
