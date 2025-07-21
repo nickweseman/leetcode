@@ -9,7 +9,6 @@ class Solution:
                 if len(path) > 0:
                     result.append(path.copy())
                 return
-            #if counts[nums[index] - k] == 0 and counts[nums[index] + k] == 0:
             if nums[index] - k not in path and nums[index] + k not in path:
                 if counts[nums[index]] > 0:
                     counts[nums[index]] -= 1
