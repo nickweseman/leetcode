@@ -7,8 +7,8 @@ class Solution:
                 return 1
             if (r,c) in visited:
                 return 0
-            visited.add((r,c))
             perimeter = 0
+            visited.add((r,c))
             for dr, dc in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
                 perimeter += dfs(r + dr, c + dc)
             return perimeter
