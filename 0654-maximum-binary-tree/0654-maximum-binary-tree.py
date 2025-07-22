@@ -7,11 +7,11 @@
 class Solution:
     def constructMaximumBinaryTree(self, nums: List[int]) -> Optional[TreeNode]:
         stack = []
-        for num in nums:
-            curr = TreeNode(num)
+        for i, num in enumerate(nums):
+            node = TreeNode(num)
             while stack and stack[-1].val < num:
-                curr.left = stack.pop()
+                node.left = stack.pop()
             if stack:
-                stack[-1].right = curr
-            stack.append(curr)
+                stack[-1].right = node
+            stack.append(node)
         return stack[0]
