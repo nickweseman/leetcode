@@ -11,6 +11,7 @@ class Solution:
                 return (True, 0)
             left_balanced, left_height = dfs(node.left)
             right_balanced, right_height = dfs(node.right)
-            return (left_balanced and right_balanced and abs(left_height - right_height) <= 1, 
-                    max(left_height, right_height) + 1)
+            me_balanced = left_balanced and right_balanced and abs(left_height - right_height) <= 1
+            me_height = 1 + max(left_height, right_height)
+            return (me_balanced, me_height)
         return dfs(root)[0]
