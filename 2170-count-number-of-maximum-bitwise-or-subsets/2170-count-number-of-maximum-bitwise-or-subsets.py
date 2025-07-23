@@ -1,18 +1,17 @@
 class Solution:
     def countMaxOrSubsets(self, nums: List[int]) -> int:
         max_or = 0
-        num_subsets = 0
+        for num in nums:
+            max_or |= num
         n = len(nums)
+        count = 0
         def backtrack(index, or_so_far):
-            nonlocal num_subsets, max_or
+            nonlocal count
             if index == n:
-                if or_so_far > max_or:
-                    max_or = or_so_far
-                    num_subsets = 1
-                elif or_so_far == max_or:
-                    num_subsets += 1
+                if or_so_far == max_or:
+                    count += 1
                 return
             backtrack(index + 1, or_so_far | nums[index])
             backtrack(index + 1, or_so_far)
         backtrack(0, 0)
-        return num_subsets
+        return count
