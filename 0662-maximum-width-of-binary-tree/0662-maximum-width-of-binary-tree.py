@@ -11,8 +11,8 @@ class Solution:
         queue = collections.deque([(root, 1)])
         max_width = -math.inf
         while queue:
-            leftmost_pos = queue[0][1]
-            rightmost_pos = queue[-1][1]
+            leftmost_pos, rightmost_pos = queue[0][1], queue[-1][1]
+            print(leftmost_pos, rightmost_pos)
             max_width = max(max_width, rightmost_pos - leftmost_pos + 1)
             for _ in range(len(queue)):
                 curr, pos = queue.popleft()
