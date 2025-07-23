@@ -8,22 +8,21 @@ class Solution:
     def reverseOddLevels(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         if not root:
             return None
-        forward = True
-        queue = collections.deque([root])
+        queue = collections.deque([(root, 0)])
         while queue:
             level = []
             for _ in range(len(queue)):
-                curr = queue.popleft()
+                curr, depth = queue.popleft()
                 level.append(curr)
                 if curr.left:
-                    queue.append(curr.left)
+                    queue.append((curr.left, depth + 1))
                 if curr.right:
-                    queue.append(curr.right)
-            if not forward:
+                    queue.append((curr.right, depth + 1))
+            if depth & 1 == 1:
                 left, right = 0, len(level) - 1
                 while left < right:
                     level[left].val, level[right].val = level[right].val, level[left].val
                     left += 1
                     right -= 1
-            forward = not forward
         return root
+            
