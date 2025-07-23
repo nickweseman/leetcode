@@ -10,19 +10,19 @@ class Solution:
         heapq.heapify(max_heap)
         result = []
         while max_heap:
-            neg_char1, c1 = heapq.heappop(max_heap)
-            char1 = -neg_char1
-            if result[-2:] == [c1, c1]:
+            neg_freq1, ch1 = heapq.heappop(max_heap)
+            freq1 = -neg_freq1
+            freq1 -= 1
+            if result[-2:] == [ch1, ch1]:
                 if not max_heap:
                     break
-                neg_char2, c2 = heapq.heappop(max_heap)
-                char2 = -neg_char2
-                char2 -= 1
-                result.append(c2)
-                if char2 > 0:
-                    heapq.heappush(max_heap, (-char2, c2))
-            result.append(c1)
-            char1 -= 1
-            if char1 > 0:
-                heapq.heappush(max_heap, (-char1, c1))   
+                neg_freq2, ch2 = heapq.heappop(max_heap)
+                freq2 = -neg_freq2
+                freq2 -= 1
+                result.append(ch2)
+                if freq2 > 0:
+                    heapq.heappush(max_heap, (-freq2, ch2))
+            result.append(ch1)
+            if freq1 > 0:
+                heapq.heappush(max_heap, (-freq1, ch1))
         return "".join(result)
