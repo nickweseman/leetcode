@@ -1,13 +1,13 @@
 class Solution:
     def totalNQueens(self, n: int) -> int:
-        num_possible = 0
         cols = set()
         pos_diags = set() # (r - c)
         neg_diags = set() # (r + c)
+        solutions = 0
         def backtrack(r):
-            nonlocal num_possible
+            nonlocal solutions
             if r == n:
-                num_possible += 1
+                solutions += 1
                 return
             for c in range(n):
                 if c not in cols and r - c not in pos_diags and r + c not in neg_diags:
@@ -19,4 +19,4 @@ class Solution:
                     pos_diags.remove(r - c)
                     neg_diags.remove(r + c)
         backtrack(0)
-        return num_possible
+        return solutions
