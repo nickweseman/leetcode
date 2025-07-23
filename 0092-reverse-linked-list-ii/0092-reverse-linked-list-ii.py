@@ -10,13 +10,13 @@ class Solution:
         cur_position = 1
         prev = None
         curr = head
-        while curr.next and cur_position != left:
+        while curr.next and cur_position < left:
             prev = curr
             curr = curr.next
             cur_position += 1
         node_before_reverse = prev
         save_this_curr = curr
-        while curr and cur_position != right + 1:
+        while curr and cur_position <= right:
             curr.next, curr, prev = prev, curr.next, curr
             cur_position += 1
         save_this_curr.next = curr
