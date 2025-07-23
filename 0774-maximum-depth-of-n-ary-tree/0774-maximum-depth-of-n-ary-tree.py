@@ -10,4 +10,7 @@ class Solution:
     def maxDepth(self, root: 'Node') -> int:
         if not root:
             return 0
-        return 1 + max((self.maxDepth(child) for child in root.children), default=0)
+        maxx = 0
+        for child in root.children:
+            maxx = max(maxx, self.maxDepth(child))
+        return 1 + maxx
