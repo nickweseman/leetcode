@@ -14,12 +14,7 @@ class Solution:
             return 1 + get_height(node.left)
         left = get_height(root.left)
         right = get_height(root.right)
-        nodes = 1
         if left == right:
-            nodes += 2 ** left - 1
-            nodes += self.countNodes(root.right)
+            return 2 ** left + self.countNodes(root.right)
         else:
-            nodes += 2 ** (right) - 1
-            nodes += self.countNodes(root.left)
-        return nodes
-        
+            return 2 ** right + self.countNodes(root.left)
