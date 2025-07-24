@@ -3,10 +3,8 @@ class Solution:
         product = 1
         left = right = 0
         subarrays = 0
-
         while right < len(nums):
             product *= nums[right]
-
             while left <= right and product >= k:
                 product //= nums[left]
                 left += 1
