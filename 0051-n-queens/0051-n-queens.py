@@ -3,19 +3,11 @@ class Solution:
         cols = set()
         pos_diags = set() # r - c
         neg_diags = set() # r + c
-        grid = [[] for _ in range(n)]
-        for row in grid:
-            for _ in range(n):
-                row.append(".")
+        grid = [["."] * n for _ in range(n)]
         result = []
         def backtrack(r):
             if r == n:
-                grid_entry = []
-                for i in range(n):
-                    row = []
-                    for j in range(n):
-                        row.append(grid[i][j])
-                    grid_entry.append("".join(row))
+                grid_entry = ["".join(row) for row in grid]
                 result.append(grid_entry)
                 return
             for c in range(n):
