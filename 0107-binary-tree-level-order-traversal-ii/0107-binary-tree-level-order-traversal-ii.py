@@ -8,8 +8,8 @@ class Solution:
     def levelOrderBottom(self, root: Optional[TreeNode]) -> List[List[int]]:
         if not root:
             return []
-        result = collections.deque()
         queue = collections.deque([root])
+        result = collections.deque()
         while queue:
             level = []
             for _ in range(len(queue)):
@@ -21,4 +21,3 @@ class Solution:
                     queue.append(curr.right)
             result.appendleft(level)
         return list(result)
-        
