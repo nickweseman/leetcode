@@ -1,7 +1,7 @@
 class Solution:
     def addOperators(self, num: str, target: int) -> List[str]:
-        path = []
         result = []
+        path = []
         n = len(num)
         def backtrack(index, cur_eval, last_operand):
             if index == n:
@@ -11,7 +11,7 @@ class Solution:
             for i in range(index, n):
                 operand_str = num[index : i + 1]
                 operand_int = int(operand_str)
-                if len(operand_str) > 1 and operand_str[0] == "0":
+                if len(operand_str) > 1 and operand_str.startswith("0"):
                     break
                 if index == 0:
                     path.append(operand_str)
