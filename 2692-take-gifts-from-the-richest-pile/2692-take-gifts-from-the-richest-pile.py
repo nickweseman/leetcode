@@ -5,7 +5,7 @@ class Solution:
             max_heap.append(-gift)
         heapq.heapify(max_heap)
         for _ in range(k):
-            num = -heapq.heappop(max_heap)
-            num = math.floor(math.sqrt(num))
-            heapq.heappush(max_heap, -num)
+            pile = -heapq.heappop(max_heap)
+            pile = math.floor(pile ** .5)
+            heapq.heappush(max_heap, -pile)
         return -sum(max_heap)
