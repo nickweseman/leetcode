@@ -1,8 +1,8 @@
 class Solution:
     def letterCasePermutation(self, s: str) -> List[str]:
-        path = []
-        result = []
         n = len(s)
+        result = []
+        path = []
         def backtrack(index):
             if index == n:
                 result.append("".join(path))
