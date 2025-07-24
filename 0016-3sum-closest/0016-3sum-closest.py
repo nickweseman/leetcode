@@ -1,8 +1,8 @@
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
-        nums.sort()
         n = len(nums)
         closest_sum = math.inf
+        nums.sort()
         for i in range(n):
             left, right = i + 1, n - 1
             while left < right:
@@ -11,9 +11,8 @@ class Solution:
                     closest_sum = test_sum
                 if test_sum == target:
                     return test_sum
-                elif test_sum < target:
+                if test_sum < target:
                     left += 1
                 else:
                     right -= 1
         return closest_sum
-                
