@@ -18,4 +18,3 @@ class Solution:
             for child in curr.children:
                 stack.append(child)
         return result[::-1]
-        
