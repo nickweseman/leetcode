@@ -3,32 +3,34 @@ class Solution:
         rows = collections.defaultdict(set)
         cols = collections.defaultdict(set)
         boxes = collections.defaultdict(set)
-        NUM_ROWS, NUM_COLS = len(board), len(board[0])
+        num_rows, num_cols = len(board), len(board[0])
         empty_positions = []
-        for r in range(NUM_ROWS):
-            for c in range(NUM_COLS):
+        for r in range(num_rows):
+            for c in range(num_cols):
                 if board[r][c] == ".":
                     empty_positions.append((r, c))
                 else:
-                    rows[r].add(board[r][c])
-                    cols[c].add(board[r][c])
-                    boxes[(r//3,c//3)].add(board[r][c])
+                    num = board[r][c]
+                    rows[r].add(num)
+                    cols[c].add(num)
+                    boxes[(r//3,c//3)].add(num)
         def backtrack(index):
             if index == len(empty_positions):
                 return True
             r, c = empty_positions[index]
-            for num in "123456789":
-                if num not in rows[r] and num not in cols[c] and num not in boxes[r//3,c//3]:
-                    board[r][c] = num
-                    rows[r].add(num)
-                    cols[c].add(num)
-                    boxes[r//3,c//3].add(num)
+            for i in range(1, 10):
+                digit = str(i)
+                if digit not in rows[r] and digit not in cols[c] and digit not in boxes[(r//3,c//3)]:
+                    rows[r].add(digit)
+                    cols[c].add(digit)
+                    boxes[(r//3,c//3)].add(digit)
+                    board[r][c] = str(digit)
                     if backtrack(index + 1):
                         return True
+                    rows[r].remove(digit)
+                    cols[c].remove(digit)
+                    boxes[(r//3,c//3)].remove(digit)
                     board[r][c] = "."
-                    rows[r].remove(num)
-                    cols[c].remove(num)
-                    boxes[r//3,c//3].remove(num)
+            return False
         backtrack(0)
-
         
