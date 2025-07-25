@@ -11,11 +11,10 @@ class Solution:
             nonlocal diameter
             if not node:
                 return 0
-            left_height = dfs(node.left)
-            right_height = dfs(node.right)
-            with_me = left_height + right_height
-            without_me = max(left_height, right_height) + 1
+            left = dfs(node.left)
+            right = dfs(node.right)
+            with_me = left + right
             diameter = max(diameter, with_me)
-            return without_me
+            return 1 + max(left, right)
         dfs(root)
         return diameter
