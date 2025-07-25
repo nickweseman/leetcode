@@ -1,21 +1,17 @@
 class Solution:
     def findSubsequences(self, nums: List[int]) -> List[List[int]]:
+        n = len(nums)
         path = []
         result_set = set()
-        n = len(nums)
         def backtrack(index):
             if index == n:
                 return
-            num_used = set()
-            for i in range(index, n):
-                if nums[i] in num_used:
-                    continue
-                if not path or nums[i] >= path[-1]:
-                    path.append(nums[i])
-                    num_used.add(nums[i])
-                    if len(path) >= 2:
-                        result_set.add(tuple(path))
-                    backtrack(i + 1)
-                    path.pop()
+            if not path or nums[index] >= path[-1]:
+                path.append(nums[index])
+                if len(path) >= 2:
+                    result_set.add(tuple(path))
+                backtrack(index + 1)
+                path.pop()
+            backtrack(index + 1)
         backtrack(0)
-        return [list(item) for item in result_set]
+        return [list(i) for i in result_set]
