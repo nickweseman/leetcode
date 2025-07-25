@@ -18,4 +18,4 @@ class Solution:
                     backtrack(i + 1)
                     path.pop()
         backtrack(0)
-        return list(result_set)
+        return [list(item) for item in result_set]
