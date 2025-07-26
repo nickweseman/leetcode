@@ -1,8 +1,6 @@
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
-        scan = 0
-        while scan < len(haystack):
-            if haystack[scan:scan+len(needle)] == needle:
-                return scan
-            scan += 1
+        for i in range(0, len(haystack) - len(needle) + 1):
+            if haystack[i: i + len(needle)] == needle:
+                return i
         return -1
