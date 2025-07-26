@@ -6,7 +6,6 @@
 class Solution:
     def nextLargerNodes(self, head: Optional[ListNode]) -> List[int]:
         stack = []
-        result = []
         values = []
         while head:
             values.append(head.val)
