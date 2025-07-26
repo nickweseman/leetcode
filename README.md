@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0047-permutations-ii](https://github.com/nickweseman/leetcode/tree/master/0047-permutations-ii) |
 | [0048-rotate-image](https://github.com/nickweseman/leetcode/tree/master/0048-rotate-image) |
 | [0051-n-queens](https://github.com/nickweseman/leetcode/tree/master/0051-n-queens) |
+| [0066-plus-one](https://github.com/nickweseman/leetcode/tree/master/0066-plus-one) |
 | [0075-sort-colors](https://github.com/nickweseman/leetcode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/nickweseman/leetcode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/nickweseman/leetcode/tree/master/0079-word-search) |
@@ -437,6 +438,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/nickweseman/leetcode/tree/master/0048-rotate-image) |
+| [0066-plus-one](https://github.com/nickweseman/leetcode/tree/master/0066-plus-one) |
 | [0069-sqrtx](https://github.com/nickweseman/leetcode/tree/master/0069-sqrtx) |
 | [0202-happy-number](https://github.com/nickweseman/leetcode/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/nickweseman/leetcode/tree/master/0268-missing-number) |
