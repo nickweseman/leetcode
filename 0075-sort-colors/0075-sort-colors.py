@@ -6,10 +6,10 @@ class Solution:
                 nums[low], nums[mid] = nums[mid], nums[low]
                 low += 1
                 mid += 1
-            elif nums[mid] == 2:
+            elif nums[mid] == 1:
+                mid += 1
+            else:
                 nums[high], nums[mid] = nums[mid], nums[high]
                 high -= 1
-            else:
-                mid += 1
-                
+
         
