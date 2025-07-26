@@ -1,10 +1,6 @@
 class Solution:
     def numberGame(self, nums: List[int]) -> List[int]:
-        heapq.heapify(nums)
-        result = []
-        while nums:
-            alice = heapq.heappop(nums)
-            bob = heapq.heappop(nums)
-            result.append(bob)
-            result.append(alice)
-        return result
+        nums.sort()
+        for i in range(0, len(nums), 2):
+            nums[i], nums[i + 1] = nums[i + 1], nums[i]
+        return nums
