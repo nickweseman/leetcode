@@ -1,18 +1,20 @@
 class Solution:
     def maxUniqueSplit(self, s: str) -> int:
-        substrings = set()
+        path = set()
+        max_splits = 0
         n = len(s)
-        max_splits = -math.inf
         def backtrack(index):
             nonlocal max_splits
             if index == n:
-                max_splits = max(max_splits, len(substrings))
+                print(path)
+                max_splits = max(max_splits, len(path))
                 return
             for i in range(index, n):
-                substring = s[index : i + 1]
-                if substring not in substrings:
-                    substrings.add(substring)
-                    backtrack(i + 1)
-                    substrings.remove(substring)
+                substring = s[index: i + 1]
+                if substring in path:
+                    continue
+                path.add(substring)
+                backtrack(i + 1)
+                path.remove(substring)
         backtrack(0)
         return max_splits
