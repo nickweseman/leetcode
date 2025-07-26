@@ -1,20 +1,22 @@
 class Solution:
     def makesquare(self, matchsticks: List[int]) -> bool:
         total = sum(matchsticks)
-        target_length = total // 4
-        if total != target_length * 4:
+        if total % 4 != 0:
             return False
-        sides = [0] * 4
+        side = total // 4
         n = len(matchsticks)
+        sides = [0] * 4
         matchsticks.sort(reverse=True)
         def backtrack(index):
             if index == n:
                 return True
             for i in range(4):
-                if sides[i] + matchsticks[index] <= target_length:
+                if sides[i] + matchsticks[index] <= side:
                     sides[i] += matchsticks[index]
                     if backtrack(index + 1):
                         return True
                     sides[i] -= matchsticks[index]
+                    if sides[i] == 0:
+                        break
             return False
         return backtrack(0)
