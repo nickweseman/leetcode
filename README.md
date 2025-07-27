@@ -1117,6 +1117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/nickweseman/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/nickweseman/leetcode/tree/master/0210-course-schedule-ii) |
 | [0813-all-paths-from-source-to-target](https://github.com/nickweseman/leetcode/tree/master/0813-all-paths-from-source-to-target) |
+| [1661-minimum-number-of-vertices-to-reach-all-nodes](https://github.com/nickweseman/leetcode/tree/master/1661-minimum-number-of-vertices-to-reach-all-nodes) |
 ## Union Find
 |  |
 | ------- |
