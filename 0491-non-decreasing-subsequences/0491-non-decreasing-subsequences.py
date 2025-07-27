@@ -1,8 +1,8 @@
 class Solution:
     def findSubsequences(self, nums: List[int]) -> List[List[int]]:
-        n = len(nums)
         path = []
         result_set = set()
+        n = len(nums)
         def backtrack(index):
             if index == n:
                 return
@@ -14,4 +14,4 @@ class Solution:
                 path.pop()
             backtrack(index + 1)
         backtrack(0)
-        return [list(i) for i in result_set]
+        return list(result_set)
