@@ -1,20 +1,18 @@
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        prereq_map = collections.defaultdict(list)
-        for course, prereq in prerequisites:
-            prereq_map[course].append(prereq)
-        visited = set()
+        pre_map = collections.defaultdict(list)
+        for course, pre in prerequisites:
+            pre_map[course].append(pre)
+        cycle = set()
         def dfs(course):
-            if course in visited:
+            if course in cycle:
                 return False
-            if len(prereq_map[course]) == 0:
-                return True
-            visited.add(course)
-            for prereq in prereq_map[course]:
-                if not dfs(prereq):
+            cycle.add(course)
+            for pre in pre_map[course]:
+                if not dfs(pre):
                     return False
-            visited.remove(course) # why?
-            prereq_map[course] = [] # why?
+            cycle.remove(course)
+            pre_map[course] = []
             return True
         for course in range(numCourses):
             if not dfs(course):
