@@ -1,12 +1,15 @@
 class Solution:
     def subsetXORSum(self, nums: List[int]) -> int:
-        total = 0
-        def backtrack(index, subtotal):
-            nonlocal total
-            if index == len(nums):
-                total += subtotal
+        xor_total = 0
+        n = len(nums)
+        def backtrack(index, xor_so_far):
+            nonlocal xor_total
+            if index == n:
+                xor_total += xor_so_far
                 return
-            backtrack(index + 1, subtotal ^ nums[index])
-            backtrack(index + 1, subtotal)
+            backtrack(index + 1, xor_so_far ^ nums[index])
+            backtrack(index + 1, xor_so_far)
         backtrack(0, 0)
-        return total
+        return xor_total
+
+        
