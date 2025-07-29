@@ -343,6 +343,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0953-reverse-only-letters](https://github.com/nickweseman/leetcode/tree/master/0953-reverse-only-letters) |
 | [0961-long-pressed-name](https://github.com/nickweseman/leetcode/tree/master/0961-long-pressed-name) |
 | [0979-di-string-match](https://github.com/nickweseman/leetcode/tree/master/0979-di-string-match) |
+| [1058-lexicographically-smallest-equivalent-string](https://github.com/nickweseman/leetcode/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [1078-remove-outermost-parentheses](https://github.com/nickweseman/leetcode/tree/master/1078-remove-outermost-parentheses) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/nickweseman/leetcode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1160-letter-tile-possibilities](https://github.com/nickweseman/leetcode/tree/master/1160-letter-tile-possibilities) |
@@ -1137,6 +1138,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0130-surrounded-regions](https://github.com/nickweseman/leetcode/tree/master/0130-surrounded-regions) |
 | [0547-number-of-provinces](https://github.com/nickweseman/leetcode/tree/master/0547-number-of-provinces) |
+| [1058-lexicographically-smallest-equivalent-string](https://github.com/nickweseman/leetcode/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/nickweseman/leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
 ## Topological Sort
 |  |
