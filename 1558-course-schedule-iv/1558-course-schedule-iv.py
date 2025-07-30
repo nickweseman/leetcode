@@ -3,7 +3,6 @@ class Solution:
         pre_map = collections.defaultdict(set)
         graph = collections.defaultdict(list)
         for pre in prerequisites:
-            pre_map[pre[1]].add(pre[0])
             graph[pre[1]].append(pre[0])
         def dfs(course, neighbor, visited):
             if neighbor in visited:
