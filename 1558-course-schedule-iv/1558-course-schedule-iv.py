@@ -1,19 +1,21 @@
 class Solution:
     def checkIfPrerequisite(self, numCourses: int, prerequisites: List[List[int]], queries: List[List[int]]) -> List[bool]:
+        pre_map = collections.defaultdict(set)
         graph = collections.defaultdict(list)
-        for pre, course in prerequisites:
-            graph[course].append(pre)
-        def dfs(course):
-            if course not in pre_map:
-                pre_map[course] = set()
-                for pre in graph[course]:
-                    pre_map[course] |= dfs(pre) # set union
-                pre_map[course].add(course)
-            return pre_map[course]
-        pre_map = {}
+        for pre in prerequisites:
+            pre_map[pre[0]].add(pre[1])
+            graph[pre[0]].append(pre[1])
+        def dfs(course, neighbor, visited):
+            if neighbor in visited:
+                return
+            visited.add(neighbor)
+            if neighbor not in pre_map[course]:
+                pre_map[course].add(neighbor)
+            for nei in graph[neighbor]:
+                dfs(course, nei, visited)
         for course in range(numCourses):
-            dfs(course)
+            dfs(course, course, set())
         result = []
-        for u, v in queries:
-            result.append(u in pre_map[v])
+        for query in queries:
+            result.append(query[1] in pre_map[query[0]])
         return result
