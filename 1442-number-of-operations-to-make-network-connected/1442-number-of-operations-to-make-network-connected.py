@@ -1,5 +1,7 @@
 class Solution:
     def makeConnected(self, n: int, connections: List[List[int]]) -> int:
+        if len(connections) < n - 1:
+            return -1
         parent = list(range(n))
         def find(x):
             if parent[x] != x:
@@ -16,4 +18,4 @@ class Solution:
         for a, b in connections:
             if union(a, b):
                 networks -= 1
-        return networks - 1 if len(connections) >= n - 1 else -1
+        return networks - 1
