@@ -1,15 +1,19 @@
 class Solution:
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
-        n = len(isConnected)
-        visited = set()
-        def dfs(start):
-            visited.add(start)
-            for end in range(n):
-                if isConnected[start][end] == 1 and end not in visited:
-                    dfs(end)
-        provinces = 0
-        for start in range(n):
-            if start not in visited:
-                dfs(start)
-                provinces += 1
+        n = provinces = len(isConnected)
+        parent = list(range(n))
+        def find(x):
+            if parent[x] != x:
+                parent[x] = find(parent[x])
+            return parent[x]
+        def union(x, y):
+            nonlocal provinces
+            px, py = find(x), find(y)
+            if px != py:
+                parent[px] = py
+                provinces -= 1
+        for r in range(n):
+            for c in range(n):
+                if r != c and isConnected[r][c] == 1:
+                    union(r, c)
         return provinces
