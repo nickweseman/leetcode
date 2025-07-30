@@ -1,17 +1,17 @@
 class Solution:
     def minReorder(self, n: int, connections: List[List[int]]) -> int:
         graph = collections.defaultdict(list)
-        for u, v in connections:
-            graph[u].append((v, 1)) # original road
-            graph[v].append((u, 0)) # synthetic road
+        edges_changed = 0
+        for a, b in connections:
+            graph[a].append((b, 1)) # original direction
+            graph[b].append((a, 0)) # synthetic direction
         visited = set()
-        reorders = 0
         def dfs(city):
-            nonlocal reorders
+            nonlocal edges_changed
             visited.add(city)
-            for neighbor, direction in graph[city]:
-                if neighbor not in visited:
-                    reorders += direction
-                    dfs(neighbor)
+            for nei, direction in graph[city]:
+                if nei not in visited:
+                    edges_changed += direction
+                    dfs(nei)
         dfs(0)
-        return reorders
+        return edges_changed
