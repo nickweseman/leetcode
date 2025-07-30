@@ -3,19 +3,18 @@ class Solution:
         pre_map = collections.defaultdict(set)
         graph = collections.defaultdict(list)
         for pre in prerequisites:
-            pre_map[pre[0]].add(pre[1])
-            graph[pre[0]].append(pre[1])
+            pre_map[pre[1]].add(pre[0])
+            graph[pre[1]].append(pre[0])
         def dfs(course, neighbor, visited):
             if neighbor in visited:
                 return
             visited.add(neighbor)
-            if neighbor not in pre_map[course]:
-                pre_map[course].add(neighbor)
+            pre_map[course].add(neighbor)
             for nei in graph[neighbor]:
                 dfs(course, nei, visited)
         for course in range(numCourses):
             dfs(course, course, set())
         result = []
         for query in queries:
-            result.append(query[1] in pre_map[query[0]])
+            result.append(query[0] in pre_map[query[1]])
         return result
