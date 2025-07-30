@@ -1,19 +1,28 @@
 class Solution:
     def makeConnected(self, n: int, connections: List[List[int]]) -> int:
-        if len(connections) < n - 1:
-            return -1
+        networks = n
         parent = list(range(n))
-        components = n
-        def find(i):
-            if parent[i] != i:
-                parent[i] = find(parent[i])
-            return parent[i]
-        def union(i, j):
-            nonlocal components
-            pi, pj = find(i), find(j)
-            if pi != pj:
-                parent[pj] = pi
-                components -= 1
+        rank = [1] * n
+        def find(x):
+            if parent[x] != x:
+                parent[x] = find(parent[x])
+            return parent[x]
+        def union(x, y):
+            nonlocal networks
+            px, py = find(x), find(y)
+            if px == py:
+                return False
+            else:
+                networks -= 1
+                if rank[px] < rank[py]:
+                    parent[px] = py
+                    rank[py] += rank[px]
+                else:
+                    parent[py] = px
+                    rank[px] += rank[py]
+                return True
+        conn = 0
         for a, b in connections:
-            union(a, b)
-        return components - 1
+            if union(a, b):
+                conn += 1
+        return networks - 1 if len(connections) >= n - 1 else -1
