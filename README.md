@@ -845,6 +845,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0669-trim-a-binary-search-tree](https://github.com/nickweseman/leetcode/tree/master/0669-trim-a-binary-search-tree) |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0671-second-minimum-node-in-a-binary-tree) |
+| [0684-redundant-connection](https://github.com/nickweseman/leetcode/tree/master/0684-redundant-connection) |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/nickweseman/leetcode/tree/master/0774-maximum-depth-of-n-ary-tree) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0776-n-ary-tree-postorder-traversal) |
@@ -962,6 +963,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0637-average-of-levels-in-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/nickweseman/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0684-redundant-connection](https://github.com/nickweseman/leetcode/tree/master/0684-redundant-connection) |
 | [0753-open-the-lock](https://github.com/nickweseman/leetcode/tree/master/0753-open-the-lock) |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/nickweseman/leetcode/tree/master/0774-maximum-depth-of-n-ary-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/nickweseman/leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
@@ -1128,6 +1130,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/nickweseman/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/nickweseman/leetcode/tree/master/0210-course-schedule-ii) |
 | [0547-number-of-provinces](https://github.com/nickweseman/leetcode/tree/master/0547-number-of-provinces) |
+| [0684-redundant-connection](https://github.com/nickweseman/leetcode/tree/master/0684-redundant-connection) |
 | [0813-all-paths-from-source-to-target](https://github.com/nickweseman/leetcode/tree/master/0813-all-paths-from-source-to-target) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/nickweseman/leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
 | [1558-course-schedule-iv](https://github.com/nickweseman/leetcode/tree/master/1558-course-schedule-iv) |
@@ -1138,6 +1141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0130-surrounded-regions](https://github.com/nickweseman/leetcode/tree/master/0130-surrounded-regions) |
 | [0547-number-of-provinces](https://github.com/nickweseman/leetcode/tree/master/0547-number-of-provinces) |
+| [0684-redundant-connection](https://github.com/nickweseman/leetcode/tree/master/0684-redundant-connection) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/nickweseman/leetcode/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/nickweseman/leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
 ## Topological Sort
