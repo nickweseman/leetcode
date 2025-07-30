@@ -1,6 +1,5 @@
 class Solution:
     def makeConnected(self, n: int, connections: List[List[int]]) -> int:
-        networks = n
         parent = list(range(n))
         rank = [1] * n
         def find(x):
@@ -13,7 +12,6 @@ class Solution:
             if px == py:
                 return False
             else:
-                networks -= 1
                 if rank[px] < rank[py]:
                     parent[px] = py
                     rank[py] += rank[px]
@@ -21,8 +19,8 @@ class Solution:
                     parent[py] = px
                     rank[px] += rank[py]
                 return True
-        conn = 0
+        networks = n
         for a, b in connections:
             if union(a, b):
-                conn += 1
+                networks -= 1
         return networks - 1 if len(connections) >= n - 1 else -1
