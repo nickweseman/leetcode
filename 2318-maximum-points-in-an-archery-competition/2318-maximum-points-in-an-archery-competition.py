@@ -9,8 +9,7 @@ class Solution:
             if index == 0:
                 if score_so_far > max_score:
                     max_score = score_so_far
-                    if arrows_left > 0:
-                        current_bob_arrows[0] = arrows_left
+                    current_bob_arrows[0] = arrows_left
                     best_bob_arrows = current_bob_arrows.copy()
                     current_bob_arrows[0] = 0
                 return
