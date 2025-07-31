@@ -65,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0654-maximum-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0654-maximum-binary-tree) |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/nickweseman/leetcode/tree/master/0698-partition-to-k-equal-sum-subsets) |
 | [0713-subarray-product-less-than-k](https://github.com/nickweseman/leetcode/tree/master/0713-subarray-product-less-than-k) |
+| [0721-accounts-merge](https://github.com/nickweseman/leetcode/tree/master/0721-accounts-merge) |
 | [0724-find-pivot-index](https://github.com/nickweseman/leetcode/tree/master/0724-find-pivot-index) |
 | [0739-daily-temperatures](https://github.com/nickweseman/leetcode/tree/master/0739-daily-temperatures) |
 | [0745-find-smallest-letter-greater-than-target](https://github.com/nickweseman/leetcode/tree/master/0745-find-smallest-letter-greater-than-target) |
@@ -178,6 +179,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/nickweseman/leetcode/tree/master/0621-task-scheduler) |
 | [0652-find-duplicate-subtrees](https://github.com/nickweseman/leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/nickweseman/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0721-accounts-merge](https://github.com/nickweseman/leetcode/tree/master/0721-accounts-merge) |
 | [0753-open-the-lock](https://github.com/nickweseman/leetcode/tree/master/0753-open-the-lock) |
 | [0778-reorganize-string](https://github.com/nickweseman/leetcode/tree/master/0778-reorganize-string) |
 | [0966-binary-subarrays-with-sum](https://github.com/nickweseman/leetcode/tree/master/0966-binary-subarrays-with-sum) |
@@ -282,6 +284,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0502-ipo](https://github.com/nickweseman/leetcode/tree/master/0502-ipo) |
 | [0506-relative-ranks](https://github.com/nickweseman/leetcode/tree/master/0506-relative-ranks) |
 | [0621-task-scheduler](https://github.com/nickweseman/leetcode/tree/master/0621-task-scheduler) |
+| [0721-accounts-merge](https://github.com/nickweseman/leetcode/tree/master/0721-accounts-merge) |
 | [0778-reorganize-string](https://github.com/nickweseman/leetcode/tree/master/0778-reorganize-string) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/nickweseman/leetcode/tree/master/0802-k-th-smallest-prime-fraction) |
 | [0941-sort-array-by-parity](https://github.com/nickweseman/leetcode/tree/master/0941-sort-array-by-parity) |
@@ -335,6 +338,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0557-reverse-words-in-a-string-iii](https://github.com/nickweseman/leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0567-permutation-in-string](https://github.com/nickweseman/leetcode/tree/master/0567-permutation-in-string) |
 | [0680-valid-palindrome-ii](https://github.com/nickweseman/leetcode/tree/master/0680-valid-palindrome-ii) |
+| [0721-accounts-merge](https://github.com/nickweseman/leetcode/tree/master/0721-accounts-merge) |
 | [0753-open-the-lock](https://github.com/nickweseman/leetcode/tree/master/0753-open-the-lock) |
 | [0778-reorganize-string](https://github.com/nickweseman/leetcode/tree/master/0778-reorganize-string) |
 | [0800-letter-case-permutation](https://github.com/nickweseman/leetcode/tree/master/0800-letter-case-permutation) |
@@ -846,6 +850,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0669-trim-a-binary-search-tree](https://github.com/nickweseman/leetcode/tree/master/0669-trim-a-binary-search-tree) |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0671-second-minimum-node-in-a-binary-tree) |
 | [0684-redundant-connection](https://github.com/nickweseman/leetcode/tree/master/0684-redundant-connection) |
+| [0721-accounts-merge](https://github.com/nickweseman/leetcode/tree/master/0721-accounts-merge) |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/nickweseman/leetcode/tree/master/0774-maximum-depth-of-n-ary-tree) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0776-n-ary-tree-postorder-traversal) |
@@ -964,6 +969,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/nickweseman/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0684-redundant-connection](https://github.com/nickweseman/leetcode/tree/master/0684-redundant-connection) |
+| [0721-accounts-merge](https://github.com/nickweseman/leetcode/tree/master/0721-accounts-merge) |
 | [0753-open-the-lock](https://github.com/nickweseman/leetcode/tree/master/0753-open-the-lock) |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/nickweseman/leetcode/tree/master/0774-maximum-depth-of-n-ary-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/nickweseman/leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
@@ -1142,6 +1148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/nickweseman/leetcode/tree/master/0130-surrounded-regions) |
 | [0547-number-of-provinces](https://github.com/nickweseman/leetcode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/nickweseman/leetcode/tree/master/0684-redundant-connection) |
+| [0721-accounts-merge](https://github.com/nickweseman/leetcode/tree/master/0721-accounts-merge) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/nickweseman/leetcode/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/nickweseman/leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
 ## Topological Sort
