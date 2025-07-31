@@ -2,15 +2,17 @@ class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         result = []
         path = []
-        def backtrack(index, remaining_target):
-            if remaining_target == 0:
-                result.append(path.copy())
+        n = len(candidates)
+        def backtrack(index, sum_so_far):
+            if index == n:
+                if sum_so_far == target:
+                    result.append(path.copy())
                 return
-            if remaining_target < 0 or index == len(candidates):
+            if sum_so_far > target:
                 return
             path.append(candidates[index])
-            backtrack(index, remaining_target - candidates[index])
+            backtrack(index, sum_so_far + candidates[index])
             path.pop()
-            backtrack(index + 1, remaining_target)
-        backtrack(0, target)
+            backtrack(index + 1, sum_so_far)
+        backtrack(0, 0)
         return result
