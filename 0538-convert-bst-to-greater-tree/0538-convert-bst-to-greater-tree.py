@@ -9,11 +9,10 @@ class Solution:
         rolling_sum = 0
         def dfs(node):
             nonlocal rolling_sum
-            if not node:
-                return
-            dfs(node.right)
-            rolling_sum += node.val
-            node.val = rolling_sum
-            dfs(node.left)
+            if node:
+                dfs(node.right)
+                rolling_sum += node.val
+                node.val = rolling_sum
+                dfs(node.left)
         dfs(root)
         return root
