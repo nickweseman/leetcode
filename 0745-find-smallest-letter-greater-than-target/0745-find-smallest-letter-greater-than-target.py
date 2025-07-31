@@ -3,7 +3,7 @@ class Solution:
         left, right = 0, len(letters)
         while left < right:
             mid = (left + right) // 2
-            if ord(letters[mid]) <= ord(target):
+            if letters[mid] <= target:
                 left = mid + 1
             else:
                 right = mid
