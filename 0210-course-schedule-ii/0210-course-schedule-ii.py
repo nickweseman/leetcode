@@ -9,17 +9,17 @@ class Solution:
         def dfs(course):
             if course in cycle:
                 return False
+            if course in visited:
+                return True
             cycle.add(course)
             for pre in graph[course]:
-                if pre not in visited:
-                    if not dfs(pre):
-                        return False
+                if not dfs(pre):
+                    return False
             cycle.remove(course)
             visited.add(course)
             output.append(course)
             return True
         for course in range(numCourses):
-            if course not in visited:
-                if not dfs(course):
-                    return []
+            if not dfs(course):
+                return []
         return output
