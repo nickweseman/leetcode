@@ -1,5 +1,4 @@
 class Twitter:
-
     def __init__(self):
         self.follow_map = collections.defaultdict(set)
         self.tweet_map = collections.defaultdict(collections.deque)
@@ -8,21 +7,23 @@ class Twitter:
         self.tweet_map[userId].appendleft((self.time, tweetId))
         self.time += 1
     def getNewsFeed(self, userId: int) -> List[int]:
+        self.follow_map[userId].add(userId)
         max_heap = []
-        news_followers = self.follow_map[userId].copy()
-        news_followers.add(userId)
-        for user in news_followers:
-            if self.tweet_map[user]:
-                time, tweet_id = self.tweet_map[user][0]
-                max_heap.append((-time, user, tweet_id, 0))
+        for followeeId in self.follow_map[userId]:
+            if self.tweet_map[followeeId]:
+                time, tweetId = self.tweet_map[followeeId][0]
+                max_heap.append((-time, tweetId, followeeId, 0))
         heapq.heapify(max_heap)
         result = []
-        while max_heap and len(result) < 10:
-            _, user, tweet_id, tweet_idx = heapq.heappop(max_heap)
-            result.append(tweet_id)
-            if tweet_idx + 1 < len(self.tweet_map[user]):
-                time, tweet_id = self.tweet_map[user][tweet_idx + 1]
-                heapq.heappush(max_heap, (-time, user, tweet_id, tweet_idx + 1))
+        for _ in range(10):
+            if not max_heap:
+                break
+            neg_time, tweetId, user, tweetIndex = heapq.heappop(max_heap)
+            time = -neg_time
+            result.append(tweetId)
+            if tweetIndex + 1 < len(self.tweet_map[user]):
+                time, next_tweet_id = self.tweet_map[user][tweetIndex + 1]
+                heapq.heappush(max_heap, (-time, next_tweet_id, user, tweetIndex + 1))
         return result
     def follow(self, followerId: int, followeeId: int) -> None:
         self.follow_map[followerId].add(followeeId)
