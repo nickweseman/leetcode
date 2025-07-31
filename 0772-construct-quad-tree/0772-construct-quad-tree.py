@@ -12,21 +12,22 @@ class Node:
 
 class Solution:
     def construct(self, grid: List[List[int]]) -> 'Node':
-        def is_uniform(row, col, size):
-            first = grid[row][col]
-            for i in range(row, row + size):
-                for j in range(col, col + size):
-                    if grid[i][j] != first:
+        rows, cols = len(grid), len(grid[0])
+        def is_uniform(r, c, size):
+            first = grid[r][c]
+            for row in range(r, r + size):
+                for col in range(c, c + size):
+                    if grid[row][col] != first:
                         return False
             return True
-        def dfs(row, col, size):
-            if is_uniform(row, col, size):
-                return Node(grid[row][col], True)
-            node = Node(grid[row][col], False)
+        def dfs(r, c, size):
+            if is_uniform(r, c, size):
+                return Node(grid[r][c], True)
+            node = Node(grid[r][c], False)
             half = size // 2
-            node.topLeft = dfs(row, col, half)
-            node.topRight = dfs(row, col + half, half)
-            node.bottomLeft = dfs(row + half, col, half)
-            node.bottomRight= dfs(row + half, col + half, half)
+            node.topLeft = dfs(r, c, half)
+            node.bottomLeft = dfs(r + half, c, half)
+            node.topRight = dfs(r, c + half, half)
+            node.bottomRight = dfs(r + half, c + half, half)
             return node
-        return dfs(0, 0, len(grid))
+        return dfs(0, 0, rows)
