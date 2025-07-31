@@ -20,7 +20,6 @@ class Solution:
             val2 = stack2.pop() if stack2 else 0
             total = val1 + val2 + carry
             carry = total // 10
-            curr = ListNode(total % 10)
-            curr.next = result_head
-            result_head = curr
+            node = ListNode(total % 10, result_head)
+            result_head = node
         return result_head
