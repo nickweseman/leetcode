@@ -1,7 +1,7 @@
 class Solution:
     def fillCups(self, amount: List[int]) -> int:
-        small, med, large = sorted(amount)
-        if small + med < large:
+        small, medium, large = sorted(amount)
+        if small + medium < large:
             return large
         else:
-            return math.ceil((small + med + large) / 2)
+            return math.ceil((small + medium + large) / 2)
