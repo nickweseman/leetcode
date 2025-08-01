@@ -1,11 +1,11 @@
 class Solution:
     def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
-        low, med, high = [], [], []
+        low, mid, high = [], [], []
         for num in nums:
             if num < pivot:
                 low.append(num)
-            elif num == pivot:
-                med.append(num)
-            else:
+            elif num > pivot:
                 high.append(num)
-        return low + med + high
+            else:
+                mid.append(num)
+        return low + mid + high
