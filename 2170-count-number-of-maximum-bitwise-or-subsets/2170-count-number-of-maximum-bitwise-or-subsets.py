@@ -4,14 +4,14 @@ class Solution:
         for num in nums:
             max_or |= num
         n = len(nums)
-        count = 0
-        def backtrack(index, or_so_far):
-            nonlocal count
+        num_or = 0
+        def backtrack(index, or_sum):
+            nonlocal num_or
             if index == n:
-                if or_so_far == max_or:
-                    count += 1
+                if or_sum == max_or:
+                    num_or += 1
                 return
-            backtrack(index + 1, or_so_far | nums[index])
-            backtrack(index + 1, or_so_far)
+            backtrack(index + 1, or_sum | nums[index] )
+            backtrack(index + 1, or_sum)
         backtrack(0, 0)
-        return count
+        return num_or
