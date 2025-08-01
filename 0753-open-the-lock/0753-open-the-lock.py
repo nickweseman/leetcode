@@ -8,12 +8,12 @@ class Solution:
         queue.append(("0000", 0))
         def get_children(lock):
             result = []
-            for i, c in enumerate(lock):
-                digit = int(c)
-                fwd_digit = 0 if digit == 9 else digit + 1
-                bwd_digit = 9 if digit == 0 else digit - 1
-                result.append(lock[:i] + str(fwd_digit) + lock[i+1:])
-                result.append(lock[:i] + str(bwd_digit) + lock[i+1:])
+            for i in range(4):
+                digit = int(lock[i])
+                fwd_digit = digit + 1 if digit < 9 else 0
+                bwd_digit = digit - 1 if digit > 0 else 9
+                result.append(lock[:i] + str(fwd_digit) + lock[i + 1:])
+                result.append(lock[:i] + str(bwd_digit) + lock[i + 1:])
             return result
         while queue:
             for _ in range(len(queue)):
