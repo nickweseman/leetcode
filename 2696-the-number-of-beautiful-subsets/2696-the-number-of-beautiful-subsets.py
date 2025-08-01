@@ -6,10 +6,11 @@ class Solution:
         def backtrack(index):
             nonlocal num_subsets
             if index == n:
+                if len(path) > 0:
+                    num_subsets += 1
                 return
             if path[nums[index] - k] == 0 and path[nums[index] + k] == 0:
                 path[nums[index]] += 1
-                num_subsets += 1
                 backtrack(index + 1)
                 path[nums[index]] -= 1
                 if path[nums[index]] == 0:
