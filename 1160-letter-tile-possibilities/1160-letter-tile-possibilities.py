@@ -1,20 +1,20 @@
 class Solution:
     def numTilePossibilities(self, tiles: str) -> int:
         n = len(tiles)
+        used = [False] * n
         path = []
         result = set()
-        used = [False] * n
         def backtrack(index):
             if index == n:
                 return
             for i in range(n):
                 if used[i]:
                     continue
+                used[i] = True
                 path.append(tiles[i])
                 result.add(tuple(path))
-                used[i] = True
                 backtrack(index + 1)
-                used[i] = False
                 path.pop()
+                used[i] = False
         backtrack(0)
         return len(result)
