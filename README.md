@@ -87,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1019-squares-of-a-sorted-array](https://github.com/nickweseman/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [1034-subarrays-with-k-different-integers](https://github.com/nickweseman/leetcode/tree/master/1034-subarrays-with-k-different-integers) |
 | [1036-rotting-oranges](https://github.com/nickweseman/leetcode/tree/master/1036-rotting-oranges) |
+| [1039-find-the-town-judge](https://github.com/nickweseman/leetcode/tree/master/1039-find-the-town-judge) |
 | [1046-max-consecutive-ones-iii](https://github.com/nickweseman/leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1072-next-greater-node-in-linked-list](https://github.com/nickweseman/leetcode/tree/master/1072-next-greater-node-in-linked-list) |
 | [1127-last-stone-weight](https://github.com/nickweseman/leetcode/tree/master/1127-last-stone-weight) |
@@ -188,6 +189,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0966-binary-subarrays-with-sum](https://github.com/nickweseman/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0990-verifying-an-alien-dictionary](https://github.com/nickweseman/leetcode/tree/master/0990-verifying-an-alien-dictionary) |
 | [1034-subarrays-with-k-different-integers](https://github.com/nickweseman/leetcode/tree/master/1034-subarrays-with-k-different-integers) |
+| [1039-find-the-town-judge](https://github.com/nickweseman/leetcode/tree/master/1039-find-the-town-judge) |
 | [1160-letter-tile-possibilities](https://github.com/nickweseman/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1217-relative-sort-array](https://github.com/nickweseman/leetcode/tree/master/1217-relative-sort-array) |
 | [1370-count-number-of-nice-subarrays](https://github.com/nickweseman/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
@@ -1151,6 +1153,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/nickweseman/leetcode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/nickweseman/leetcode/tree/master/0684-redundant-connection) |
 | [0813-all-paths-from-source-to-target](https://github.com/nickweseman/leetcode/tree/master/0813-all-paths-from-source-to-target) |
+| [1039-find-the-town-judge](https://github.com/nickweseman/leetcode/tree/master/1039-find-the-town-judge) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/nickweseman/leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
 | [1558-course-schedule-iv](https://github.com/nickweseman/leetcode/tree/master/1558-course-schedule-iv) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/nickweseman/leetcode/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
