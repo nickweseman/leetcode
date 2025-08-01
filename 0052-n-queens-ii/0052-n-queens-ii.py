@@ -1,8 +1,8 @@
 class Solution:
     def totalNQueens(self, n: int) -> int:
         cols = set()
-        pos_diags = set() # (r - c)
-        neg_diags = set() # (r + c)
+        pos_diags = set() # r - c
+        neg_diags = set() # r + c
         solutions = 0
         def backtrack(r):
             nonlocal solutions
