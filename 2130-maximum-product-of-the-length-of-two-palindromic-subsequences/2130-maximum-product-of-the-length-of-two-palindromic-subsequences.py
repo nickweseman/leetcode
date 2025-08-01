@@ -2,8 +2,8 @@ class Solution:
     def maxProduct(self, s: str) -> int:
         s1 = []
         s2 = []
-        n = len(s)
         max_product = -math.inf
+        n = len(s)
         def backtrack(index):
             nonlocal max_product
             if index == n:
@@ -20,3 +20,4 @@ class Solution:
         backtrack(0)
         return max_product
 
+        
