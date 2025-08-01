@@ -11,8 +11,6 @@
 #         self.right = right
 class Solution:
     def sortedListToBST(self, head: Optional[ListNode]) -> Optional[TreeNode]:
-        if not head:
-            return None
         values = []
         while head:
             values.append(head.val)
@@ -26,4 +24,3 @@ class Solution:
             node.right = dfs(mid + 1, right)
             return node
         return dfs(0, len(values) - 1)
-            
