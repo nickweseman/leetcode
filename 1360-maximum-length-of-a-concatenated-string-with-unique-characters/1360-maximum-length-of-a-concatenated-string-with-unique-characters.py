@@ -1,23 +1,24 @@
 class Solution:
     def maxLength(self, arr: List[str]) -> int:
-        trimmed_arr = []
+        cleared_arr = []
         for word in arr:
             if len(word) == len(set(word)):
-                trimmed_arr.append(word)
+                cleared_arr.append(word)
+        arr = cleared_arr
+        chars = set()
         max_length = 0
-        chosen = set()
-        n = len(trimmed_arr)
+        n = len(arr)
         def backtrack(index):
             nonlocal max_length
             if index == n:
-                max_length = max(max_length, len(chosen))
+                max_length = max(max_length, len(chars))
                 return
-            if not (set(trimmed_arr[index]) & chosen):
-                for c in trimmed_arr[index]:
-                    chosen.add(c)
+            if len(set(arr[index]) & chars) == 0:
+                for c in arr[index]:
+                    chars.add(c)
                 backtrack(index + 1)
-                for c in trimmed_arr[index]:
-                    chosen.remove(c)
+                for c in arr[index]:
+                    chars.remove(c)
             backtrack(index + 1)
         backtrack(0)
         return max_length
