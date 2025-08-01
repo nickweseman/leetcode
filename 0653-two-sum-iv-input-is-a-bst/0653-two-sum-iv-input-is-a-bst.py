@@ -6,12 +6,16 @@
 #         self.right = right
 class Solution:
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
-        goals = set()
+        nums = set()
         def dfs(node):
-            if not node:
-                return False
-            if k - node.val in goals:
-                return True
-            goals.add(node.val)
-            return dfs(node.left) or dfs(node.right)
-        return dfs(root)
+            if node:
+                if dfs(node.left):
+                    return True
+                if k - node.val in nums:
+                    return True
+                nums.add(node.val)
+                if dfs(node.right):
+                    return True
+        if dfs(root):
+            return True
+        return False
