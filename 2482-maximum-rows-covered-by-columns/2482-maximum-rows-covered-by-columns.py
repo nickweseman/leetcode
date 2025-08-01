@@ -1,28 +1,28 @@
 class Solution:
     def maximumRows(self, matrix: List[List[int]], numSelect: int) -> int:
-        ROWS, COLS = len(matrix), len(matrix[0])
-        max_rows = 0
-        cols_selected = [False] * COLS
-        def get_covered_rows() -> int:
+        rows = len(matrix)
+        cols = len(matrix[0])
+        covered_cols = set()
+        max_covered = 0
+        def covered_rows():
             count = 0
-            for r in range(ROWS):
+            for r in range(rows):
                 covered = True
-                for c in range(COLS):
-                    if matrix[r][c] == 1 and not cols_selected[c]:
+                for c in range(cols):
+                    if matrix[r][c] == 1 and c not in covered_cols:
                         covered = False
+                        break
                 if covered:
                     count += 1
             return count
-        def backtrack(index, cols_left):
-            nonlocal max_rows
-            if index == COLS:
-                if cols_left == 0:
-                    max_rows = max(max_rows, get_covered_rows())
+        def backtrack(index, num_covered):
+            nonlocal max_covered
+            if index == cols or num_covered == numSelect:
+                max_covered = max(max_covered, covered_rows())
                 return
-            if cols_left > 0:
-                cols_selected[index] = True
-                backtrack(index + 1, cols_left - 1)
-                cols_selected[index] = False
-            backtrack(index + 1, cols_left)
-        backtrack(0, numSelect)
-        return max_rows
+            covered_cols.add(index)
+            backtrack(index + 1, num_covered + 1)
+            covered_cols.remove(index)
+            backtrack(index + 1, num_covered)
+        backtrack(0, 0)
+        return max_covered
