@@ -75,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0753-open-the-lock](https://github.com/nickweseman/leetcode/tree/master/0753-open-the-lock) |
 | [0772-construct-quad-tree](https://github.com/nickweseman/leetcode/tree/master/0772-construct-quad-tree) |
 | [0792-binary-search](https://github.com/nickweseman/leetcode/tree/master/0792-binary-search) |
+| [0794-swim-in-rising-water](https://github.com/nickweseman/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/nickweseman/leetcode/tree/master/0802-k-th-smallest-prime-fraction) |
 | [0861-flipping-an-image](https://github.com/nickweseman/leetcode/tree/master/0861-flipping-an-image) |
 | [0878-shifting-letters](https://github.com/nickweseman/leetcode/tree/master/0878-shifting-letters) |
@@ -503,6 +504,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0463-island-perimeter](https://github.com/nickweseman/leetcode/tree/master/0463-island-perimeter) |
 | [0695-max-area-of-island](https://github.com/nickweseman/leetcode/tree/master/0695-max-area-of-island) |
 | [0772-construct-quad-tree](https://github.com/nickweseman/leetcode/tree/master/0772-construct-quad-tree) |
+| [0794-swim-in-rising-water](https://github.com/nickweseman/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0861-flipping-an-image](https://github.com/nickweseman/leetcode/tree/master/0861-flipping-an-image) |
 | [1036-rotting-oranges](https://github.com/nickweseman/leetcode/tree/master/1036-rotting-oranges) |
 | [1331-path-with-maximum-gold](https://github.com/nickweseman/leetcode/tree/master/1331-path-with-maximum-gold) |
@@ -531,6 +533,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0713-subarray-product-less-than-k](https://github.com/nickweseman/leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0745-find-smallest-letter-greater-than-target](https://github.com/nickweseman/leetcode/tree/master/0745-find-smallest-letter-greater-than-target) |
 | [0792-binary-search](https://github.com/nickweseman/leetcode/tree/master/0792-binary-search) |
+| [0794-swim-in-rising-water](https://github.com/nickweseman/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/nickweseman/leetcode/tree/master/0802-k-th-smallest-prime-fraction) |
 | [1046-max-consecutive-ones-iii](https://github.com/nickweseman/leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1321-get-equal-substrings-within-budget](https://github.com/nickweseman/leetcode/tree/master/1321-get-equal-substrings-within-budget) |
@@ -713,6 +716,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/nickweseman/leetcode/tree/master/0621-task-scheduler) |
 | [0778-reorganize-string](https://github.com/nickweseman/leetcode/tree/master/0778-reorganize-string) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/nickweseman/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0794-swim-in-rising-water](https://github.com/nickweseman/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/nickweseman/leetcode/tree/master/0802-k-th-smallest-prime-fraction) |
 | [0948-sort-an-array](https://github.com/nickweseman/leetcode/tree/master/0948-sort-an-array) |
 | [1014-k-closest-points-to-origin](https://github.com/nickweseman/leetcode/tree/master/1014-k-closest-points-to-origin) |
@@ -885,6 +889,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/nickweseman/leetcode/tree/master/0774-maximum-depth-of-n-ary-tree) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/nickweseman/leetcode/tree/master/0776-n-ary-tree-postorder-traversal) |
+| [0794-swim-in-rising-water](https://github.com/nickweseman/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/nickweseman/leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0813-all-paths-from-source-to-target](https://github.com/nickweseman/leetcode/tree/master/0813-all-paths-from-source-to-target) |
 | [0904-leaf-similar-trees](https://github.com/nickweseman/leetcode/tree/master/0904-leaf-similar-trees) |
@@ -1010,6 +1015,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0721-accounts-merge](https://github.com/nickweseman/leetcode/tree/master/0721-accounts-merge) |
 | [0753-open-the-lock](https://github.com/nickweseman/leetcode/tree/master/0753-open-the-lock) |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/nickweseman/leetcode/tree/master/0774-maximum-depth-of-n-ary-tree) |
+| [0794-swim-in-rising-water](https://github.com/nickweseman/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/nickweseman/leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0813-all-paths-from-source-to-target](https://github.com/nickweseman/leetcode/tree/master/0813-all-paths-from-source-to-target) |
 | [1005-univalued-binary-tree](https://github.com/nickweseman/leetcode/tree/master/1005-univalued-binary-tree) |
@@ -1197,6 +1203,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0684-redundant-connection](https://github.com/nickweseman/leetcode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/nickweseman/leetcode/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/nickweseman/leetcode/tree/master/0721-accounts-merge) |
+| [0794-swim-in-rising-water](https://github.com/nickweseman/leetcode/tree/master/0794-swim-in-rising-water) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/nickweseman/leetcode/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/nickweseman/leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
 | [1706-min-cost-to-connect-all-points](https://github.com/nickweseman/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
