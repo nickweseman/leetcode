@@ -53,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/nickweseman/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/nickweseman/leetcode/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/nickweseman/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0399-evaluate-division](https://github.com/nickweseman/leetcode/tree/master/0399-evaluate-division) |
 | [0417-pacific-atlantic-water-flow](https://github.com/nickweseman/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0455-assign-cookies](https://github.com/nickweseman/leetcode/tree/master/0455-assign-cookies) |
 | [0463-island-perimeter](https://github.com/nickweseman/leetcode/tree/master/0463-island-perimeter) |
@@ -345,6 +346,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0344-reverse-string](https://github.com/nickweseman/leetcode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/nickweseman/leetcode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/nickweseman/leetcode/tree/master/0392-is-subsequence) |
+| [0399-evaluate-division](https://github.com/nickweseman/leetcode/tree/master/0399-evaluate-division) |
 | [0402-remove-k-digits](https://github.com/nickweseman/leetcode/tree/master/0402-remove-k-digits) |
 | [0424-longest-repeating-character-replacement](https://github.com/nickweseman/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/nickweseman/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
@@ -869,6 +871,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0310-minimum-height-trees](https://github.com/nickweseman/leetcode/tree/master/0310-minimum-height-trees) |
 | [0337-house-robber-iii](https://github.com/nickweseman/leetcode/tree/master/0337-house-robber-iii) |
+| [0399-evaluate-division](https://github.com/nickweseman/leetcode/tree/master/0399-evaluate-division) |
 | [0404-sum-of-left-leaves](https://github.com/nickweseman/leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0417-pacific-atlantic-water-flow](https://github.com/nickweseman/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0463-island-perimeter](https://github.com/nickweseman/leetcode/tree/master/0463-island-perimeter) |
@@ -1004,6 +1007,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0226-invert-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0310-minimum-height-trees](https://github.com/nickweseman/leetcode/tree/master/0310-minimum-height-trees) |
+| [0399-evaluate-division](https://github.com/nickweseman/leetcode/tree/master/0399-evaluate-division) |
 | [0404-sum-of-left-leaves](https://github.com/nickweseman/leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0417-pacific-atlantic-water-flow](https://github.com/nickweseman/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0463-island-perimeter](https://github.com/nickweseman/leetcode/tree/master/0463-island-perimeter) |
@@ -1188,6 +1192,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/nickweseman/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/nickweseman/leetcode/tree/master/0210-course-schedule-ii) |
 | [0310-minimum-height-trees](https://github.com/nickweseman/leetcode/tree/master/0310-minimum-height-trees) |
+| [0399-evaluate-division](https://github.com/nickweseman/leetcode/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/nickweseman/leetcode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/nickweseman/leetcode/tree/master/0684-redundant-connection) |
 | [0813-all-paths-from-source-to-target](https://github.com/nickweseman/leetcode/tree/master/0813-all-paths-from-source-to-target) |
@@ -1204,6 +1209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0130-surrounded-regions](https://github.com/nickweseman/leetcode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/nickweseman/leetcode/tree/master/0200-number-of-islands) |
+| [0399-evaluate-division](https://github.com/nickweseman/leetcode/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/nickweseman/leetcode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/nickweseman/leetcode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/nickweseman/leetcode/tree/master/0695-max-area-of-island) |
@@ -1229,4 +1235,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1706-min-cost-to-connect-all-points](https://github.com/nickweseman/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
+## Shortest Path
+|  |
+| ------- |
+| [0399-evaluate-division](https://github.com/nickweseman/leetcode/tree/master/0399-evaluate-division) |
 <!---LeetCode Topics End-->
