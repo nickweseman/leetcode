@@ -15,9 +15,9 @@ class Solution:
                 return None
             if n in old_to_new:
                 return old_to_new[n]
-            new = Node(n.val, [])
-            old_to_new[n] = new
+            copy = Node(n.val, [])
+            old_to_new[n] = copy
             for nei in n.neighbors:
-                new.neighbors.append(dfs(nei))
-            return new
+                copy.neighbors.append(dfs(nei))
+            return copy
         return dfs(node)
