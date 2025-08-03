@@ -8,26 +8,24 @@ class UnionFind:
     def union(self, x, y):
         px, py = self.find(x), self.find(y)
         if px != py:
-            self.parent[px] = py
+            self.parent[py] = px
 class Solution:
     def accountsMerge(self, accounts: List[List[str]]) -> List[List[str]]:
-        n = len(accounts)
-        uf = UnionFind(n)
-        email_to_accounts = {}
-        for account_id in range(n):
-            for email in accounts[account_id][1:]:
-                if email in email_to_accounts:
-                    uf.union(account_id, email_to_accounts[email])
+        uf = UnionFind(len(accounts))
+        email_to_account = {}
+        for i, account_entry in enumerate(accounts):
+            emails = account_entry[1:]
+            for email in emails:
+                if email in email_to_account:
+                    uf.union(email_to_account[email], i)
                 else:
-                    email_to_accounts[email] = account_id
+                    email_to_account[email] = i
         leader_to_emails = collections.defaultdict(list)
-        for email, account_id in email_to_accounts.items():
-            leader = uf.find(account_id)
-            leader_to_emails[leader].append(email)
+        for email, leader in email_to_account.items():
+            leader_to_emails[uf.find(leader)].append(email)
         result = []
-        for leader_id in leader_to_emails:
-            name = accounts[leader_id][0]
-            result.append([name] + sorted(leader_to_emails[leader_id]))
+        for leader, emails in leader_to_emails.items():
+            result.append([accounts[leader][0]] + sorted(emails))
         return result
         
         
