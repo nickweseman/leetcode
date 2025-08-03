@@ -1,11 +1,11 @@
 class Solution:
     def minStoneSum(self, piles: List[int], k: int) -> int:
-        max_heap = []
         for i in range(len(piles)):
-            max_heap.append(-piles[i])
-        heapq.heapify(max_heap)
-        for _ in range(k):
-            stones = -heapq.heappop(max_heap)
-            stones = math.ceil(stones / 2)
-            heapq.heappush(max_heap, -stones)
-        return -sum(max_heap)
+            piles[i] = -piles[i]
+        heapq.heapify(piles)
+        while k > 0:
+            pile = -heapq.heappop(piles)
+            pile = math.ceil(pile / 2)
+            heapq.heappush(piles, -pile)
+            k -= 1
+        return -sum(piles)
