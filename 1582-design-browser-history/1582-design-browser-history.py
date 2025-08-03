@@ -1,21 +1,22 @@
 class BrowserHistory:
+
     def __init__(self, homepage: str):
-        self.back_stack = []
-        self.fwd_stack = []
         self.current = homepage
-    def visit(self, url: str) -> None:
-        self.back_stack.append(self.current)
-        self.current = url
+        self.bwd_stack = []
         self.fwd_stack = []
+    def visit(self, url: str) -> None:
+        self.fwd_stack = []
+        self.bwd_stack.append(self.current)
+        self.current = url
     def back(self, steps: int) -> str:
-        while self.back_stack and steps > 0:
+        while self.bwd_stack and steps > 0:
             self.fwd_stack.append(self.current)
-            self.current = self.back_stack.pop()
+            self.current = self.bwd_stack.pop()
             steps -= 1
         return self.current
     def forward(self, steps: int) -> str:
         while self.fwd_stack and steps > 0:
-            self.back_stack.append(self.current)
+            self.bwd_stack.append(self.current)
             self.current = self.fwd_stack.pop()
             steps -= 1
         return self.current
