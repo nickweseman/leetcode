@@ -19,6 +19,5 @@ class Solution:
             total_cost += cost
             visited.add(node)
             for nei_cost, nei in adj[node]:
-                if nei not in visited:
-                    heapq.heappush(min_heap, ((nei_cost, nei)))
+                heapq.heappush(min_heap, ((nei_cost, nei)))
         return total_cost
