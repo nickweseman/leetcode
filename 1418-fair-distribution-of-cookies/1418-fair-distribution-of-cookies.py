@@ -16,4 +16,3 @@ class Solution:
                     break
         backtrack(0)
         return min_unfairness
-        
