@@ -7,5 +7,6 @@ class Solution:
             y = -heapq.heappop(stones)
             x = -heapq.heappop(stones)
             if x != y:
-                heapq.heappush(stones, -(y - x))
+                heapq.heappush(stones, -(y-x))
         return -stones[0] if stones else 0
+        
