@@ -1,6 +1,5 @@
 class Solution:
     def countArrangement(self, n: int) -> int:
-        path = []
         num_beautiful = 0
         used = [False] * (n + 1)
         def backtrack(index):
@@ -10,10 +9,8 @@ class Solution:
                 return
             for i in range(1, n + 1):
                 if (i % index == 0 or index % i == 0) and not used[i]:
-                    path.append(i)
                     used[i] = True
                     backtrack(index + 1)
-                    path.pop()
                     used[i] = False
         backtrack(1)
         return num_beautiful
