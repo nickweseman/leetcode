@@ -6,22 +6,18 @@ class Solution:
         for a, b in edges:
             adj[a].append(b)
             adj[b].append(a)
+        leaves = collections.deque()
         edge_count = {}
-        leaves_queue = collections.deque()
-        for src, neighbors in adj.items():
-            neighbors_count = len(neighbors)
-            if neighbors_count == 1:
-                leaves_queue.append(src)
-            edge_count[src] = neighbors_count
-        while leaves_queue:
-            if n <= 2:
-                return list(leaves_queue)
-            for i in range(len(leaves_queue)):
-                node = leaves_queue.popleft()
+        for node, neighbors in adj.items():
+            edge_count[node] = len(neighbors)
+            if edge_count[node] == 1:
+                leaves.append(node)
+        while n > 2:
+            for _ in range(len(leaves)):
+                node = leaves.popleft()
                 n -= 1
                 for nei in adj[node]:
                     edge_count[nei] -= 1
                     if edge_count[nei] == 1:
-                        leaves_queue.append(nei)
-        
-        
+                        leaves.append(nei)
+        return list(leaves)
