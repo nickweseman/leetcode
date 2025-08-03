@@ -1,14 +1,14 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        result = []
         path = []
+        result = []
         n = len(candidates)
         def backtrack(index, sum_so_far):
-            if index == n:
+            if sum_so_far >= target:
                 if sum_so_far == target:
                     result.append(path.copy())
                 return
-            if sum_so_far > target:
+            if index == n:
                 return
             path.append(candidates[index])
             backtrack(index, sum_so_far + candidates[index])
