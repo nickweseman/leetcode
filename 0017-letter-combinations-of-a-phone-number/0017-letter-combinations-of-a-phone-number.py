@@ -1,8 +1,5 @@
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
-        if not digits:
-            return []
-        n = len(digits)
         KEYS = {
             2:"abc",
             3:"def",
@@ -16,12 +13,14 @@ class Solution:
         result = []
         path = []
         def backtrack(index):
-            if index == n:
-                result.append("".join(path))
+            if index == len(digits):
+                if len(path) > 0:
+                    result.append("".join(path))
                 return
-            for letter in KEYS[int(digits[index])]:
-                path.append(letter)
+            for c in KEYS[int(digits[index])]:
+                path.append(c)
                 backtrack(index + 1)
                 path.pop()
         backtrack(0)
         return result
+        
