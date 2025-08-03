@@ -6,7 +6,6 @@
 #         self.right = right
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        # colorful, blue and green
         def dfs(node, low, high):
             if not node:
                 return True
@@ -16,3 +15,4 @@ class Solution:
             right = dfs(node.right, node.val, high)
             return left and right
         return dfs(root, -math.inf, math.inf)
+            
