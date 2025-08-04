@@ -319,6 +319,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1217-relative-sort-array](https://github.com/nickweseman/leetcode/tree/master/1217-relative-sort-array) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/nickweseman/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [1464-reduce-array-size-to-the-half](https://github.com/nickweseman/leetcode/tree/master/1464-reduce-array-size-to-the-half) |
+| [1613-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree](https://github.com/nickweseman/leetcode/tree/master/1613-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree) |
 | [1962-single-threaded-cpu](https://github.com/nickweseman/leetcode/tree/master/1962-single-threaded-cpu) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/nickweseman/leetcode/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2113-find-the-kth-largest-integer-in-the-array](https://github.com/nickweseman/leetcode/tree/master/2113-find-the-kth-largest-integer-in-the-array) |
@@ -1213,6 +1214,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1442-number-of-operations-to-make-network-connected](https://github.com/nickweseman/leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
 | [1558-course-schedule-iv](https://github.com/nickweseman/leetcode/tree/master/1558-course-schedule-iv) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/nickweseman/leetcode/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
+| [1613-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree](https://github.com/nickweseman/leetcode/tree/master/1613-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree) |
 | [1661-minimum-number-of-vertices-to-reach-all-nodes](https://github.com/nickweseman/leetcode/tree/master/1661-minimum-number-of-vertices-to-reach-all-nodes) |
 | [1706-min-cost-to-connect-all-points](https://github.com/nickweseman/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
 | [1916-find-center-of-star-graph](https://github.com/nickweseman/leetcode/tree/master/1916-find-center-of-star-graph) |
@@ -1230,6 +1232,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0794-swim-in-rising-water](https://github.com/nickweseman/leetcode/tree/master/0794-swim-in-rising-water) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/nickweseman/leetcode/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/nickweseman/leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
+| [1613-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree](https://github.com/nickweseman/leetcode/tree/master/1613-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree) |
 | [1706-min-cost-to-connect-all-points](https://github.com/nickweseman/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
 | [1753-path-with-minimum-effort](https://github.com/nickweseman/leetcode/tree/master/1753-path-with-minimum-effort) |
 | [2121-find-if-path-exists-in-graph](https://github.com/nickweseman/leetcode/tree/master/2121-find-if-path-exists-in-graph) |
@@ -1247,10 +1250,15 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Minimum Spanning Tree
 |  |
 | ------- |
+| [1613-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree](https://github.com/nickweseman/leetcode/tree/master/1613-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree) |
 | [1706-min-cost-to-connect-all-points](https://github.com/nickweseman/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
 ## Shortest Path
 |  |
 | ------- |
 | [0399-evaluate-division](https://github.com/nickweseman/leetcode/tree/master/0399-evaluate-division) |
 | [0744-network-delay-time](https://github.com/nickweseman/leetcode/tree/master/0744-network-delay-time) |
+## Strongly Connected Component
+|  |
+| ------- |
+| [1613-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree](https://github.com/nickweseman/leetcode/tree/master/1613-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree) |
 <!---LeetCode Topics End-->
