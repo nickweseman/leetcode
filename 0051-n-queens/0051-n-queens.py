@@ -10,7 +10,7 @@ class Solution:
                 copy = []
                 for row in range(n):
                     copy.append("".join(board[row]))
-                result.append(copy.copy())
+                result.append(copy)
                 return
             for c in range(n):
                 if c not in cols and r - c not in pos_diags and r + c not in neg_diags:
