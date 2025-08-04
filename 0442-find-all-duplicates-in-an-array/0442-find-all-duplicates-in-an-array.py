@@ -5,6 +5,6 @@ class Solution:
             num = abs(num)
             if nums[num - 1] < 0:
                 result.append(num)
-            nums[num - 1] = -nums[num - 1]
+            nums[num - 1] *= -1
         return result
         
