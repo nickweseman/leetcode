@@ -1,17 +1,17 @@
 class Solution:
     def letterCasePermutation(self, s: str) -> List[str]:
         n = len(s)
-        result = []
         path = []
+        result = []
         def backtrack(index):
             if index == n:
                 result.append("".join(path))
                 return
             if s[index].isalpha():
-                path.append(s[index].lower())
+                path.append(s[index].upper())
                 backtrack(index + 1)
                 path.pop()
-                path.append(s[index].upper())
+                path.append(s[index].lower())
                 backtrack(index + 1)
                 path.pop()
             else:
