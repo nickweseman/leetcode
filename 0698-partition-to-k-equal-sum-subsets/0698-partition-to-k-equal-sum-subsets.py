@@ -6,7 +6,6 @@ class Solution:
         target_sum = total // k
         n = len(nums)
         sums = [0] * k
-        nums.sort(reverse=True)
         def backtrack(index):
             if index == n:
                 return True
