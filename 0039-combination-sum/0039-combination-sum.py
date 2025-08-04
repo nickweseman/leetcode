@@ -4,11 +4,11 @@ class Solution:
         result = []
         n = len(candidates)
         def backtrack(index, sum_so_far):
-            if sum_so_far >= target:
+            if index == n:
                 if sum_so_far == target:
                     result.append(path.copy())
                 return
-            if index == n:
+            if sum_so_far > target:
                 return
             path.append(candidates[index])
             backtrack(index, sum_so_far + candidates[index])
