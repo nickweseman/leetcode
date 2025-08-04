@@ -3,7 +3,7 @@ class Solution:
         window = sortedcontainers.SortedList()
         left = right = 0
         while right < len(nums):
-            if right - left > indexDiff:
+            while right - left > indexDiff:
                 window.remove(nums[left])
                 left += 1
             pos = window.bisect_left(nums[right] - valueDiff)
