@@ -885,6 +885,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0257-binary-tree-paths](https://github.com/nickweseman/leetcode/tree/master/0257-binary-tree-paths) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/nickweseman/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0310-minimum-height-trees](https://github.com/nickweseman/leetcode/tree/master/0310-minimum-height-trees) |
+| [0332-reconstruct-itinerary](https://github.com/nickweseman/leetcode/tree/master/0332-reconstruct-itinerary) |
 | [0337-house-robber-iii](https://github.com/nickweseman/leetcode/tree/master/0337-house-robber-iii) |
 | [0399-evaluate-division](https://github.com/nickweseman/leetcode/tree/master/0399-evaluate-division) |
 | [0404-sum-of-left-leaves](https://github.com/nickweseman/leetcode/tree/master/0404-sum-of-left-leaves) |
@@ -1211,6 +1212,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/nickweseman/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/nickweseman/leetcode/tree/master/0210-course-schedule-ii) |
 | [0310-minimum-height-trees](https://github.com/nickweseman/leetcode/tree/master/0310-minimum-height-trees) |
+| [0332-reconstruct-itinerary](https://github.com/nickweseman/leetcode/tree/master/0332-reconstruct-itinerary) |
 | [0399-evaluate-division](https://github.com/nickweseman/leetcode/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/nickweseman/leetcode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/nickweseman/leetcode/tree/master/0684-redundant-connection) |
@@ -1274,4 +1276,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2827-greatest-common-divisor-traversal](https://github.com/nickweseman/leetcode/tree/master/2827-greatest-common-divisor-traversal) |
+## Eulerian Circuit
+|  |
+| ------- |
+| [0332-reconstruct-itinerary](https://github.com/nickweseman/leetcode/tree/master/0332-reconstruct-itinerary) |
 <!---LeetCode Topics End-->
