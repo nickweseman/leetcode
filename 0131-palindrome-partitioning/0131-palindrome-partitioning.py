@@ -1,10 +1,10 @@
 class Solution:
     def partition(self, s: str) -> List[List[str]]:
-        n = len(s)
         path = []
         result = []
+        n = len(s)
         def backtrack(index):
-            if index == n:
+            if n == index:
                 result.append(path.copy())
                 return
             for i in range(index, n):
