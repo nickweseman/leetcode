@@ -9,7 +9,7 @@ class Solution:
                 pattern = word[:i] + "*" + word[i+1:]
                 patterns[pattern].append(word)
         queue = collections.deque([beginWord])
-        visited = set()
+        visited = {beginWord}
         time = 1
         while queue:
             for _ in range(len(queue)):
