@@ -5,24 +5,22 @@ class Solution:
             a, b = equation
             adj[a].append((b, values[i]))
             adj[b].append((a, 1 / values[i]))
-        def bfs(src, target):
-            if src not in adj or target not in adj:
-                return -1
-            visited = set()
-            queue = collections.deque()
-            queue.append((src, 1))
-            visited.add(src)
+        def bfs(src, tgt):
+            if src not in adj or tgt not in adj:
+                return -1.0
+            if src == tgt:
+                return 1.0
+            queue = collections.deque([(src, 1.0)])
+            visited = {src}
             while queue:
                 for _ in range(len(queue)):
-                    node, value = queue.popleft()
-                    if node == target:
-                        return value
-                    for nei, val in adj[node]:
+                    node, val = queue.popleft()
+                    if node == tgt:
+                        return val
+                    for nei, nei_val in adj[node]:
                         if nei not in visited:
                             visited.add(nei)
-                            queue.append((nei, value * val))
-            return -1
-        result = []
-        for q in queries:
-            result.append(bfs(q[0], q[1]))
-        return result
+                            queue.append((nei, nei_val * val))
+            return -1.0
+        return [bfs(q[0], q[1]) for q in queries]
+        
