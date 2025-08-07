@@ -7,6 +7,7 @@ class Solution:
                 start = i
                 while stack and stack[-1][1] > num:
                     index, height = stack.pop()
+                    print(max_area, height, index, i)
                     max_area = max(max_area, height * (i - index))
                     start = index
                 stack.append((start, num))
@@ -21,3 +22,4 @@ class Solution:
                 heights[c] = heights[c] + 1 if matrix[r][c] == "1" else 0
             max_area = max(max_area, largest_histogram(heights))
         return max_area
+        
