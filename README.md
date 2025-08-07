@@ -101,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1039-find-the-town-judge](https://github.com/nickweseman/leetcode/tree/master/1039-find-the-town-judge) |
 | [1046-max-consecutive-ones-iii](https://github.com/nickweseman/leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1072-next-greater-node-in-linked-list](https://github.com/nickweseman/leetcode/tree/master/1072-next-greater-node-in-linked-list) |
+| [1094-matrix-cells-in-distance-order](https://github.com/nickweseman/leetcode/tree/master/1094-matrix-cells-in-distance-order) |
 | [1127-last-stone-weight](https://github.com/nickweseman/leetcode/tree/master/1127-last-stone-weight) |
 | [1168-duplicate-zeros](https://github.com/nickweseman/leetcode/tree/master/1168-duplicate-zeros) |
 | [1184-car-pooling](https://github.com/nickweseman/leetcode/tree/master/1184-car-pooling) |
@@ -320,6 +321,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0958-sort-array-by-parity-ii](https://github.com/nickweseman/leetcode/tree/master/0958-sort-array-by-parity-ii) |
 | [1014-k-closest-points-to-origin](https://github.com/nickweseman/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/nickweseman/leetcode/tree/master/1019-squares-of-a-sorted-array) |
+| [1094-matrix-cells-in-distance-order](https://github.com/nickweseman/leetcode/tree/master/1094-matrix-cells-in-distance-order) |
 | [1184-car-pooling](https://github.com/nickweseman/leetcode/tree/master/1184-car-pooling) |
 | [1217-relative-sort-array](https://github.com/nickweseman/leetcode/tree/master/1217-relative-sort-array) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/nickweseman/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
@@ -501,6 +503,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0441-arranging-coins](https://github.com/nickweseman/leetcode/tree/master/0441-arranging-coins) |
 | [0445-add-two-numbers-ii](https://github.com/nickweseman/leetcode/tree/master/0445-add-two-numbers-ii) |
 | [1014-k-closest-points-to-origin](https://github.com/nickweseman/leetcode/tree/master/1014-k-closest-points-to-origin) |
+| [1094-matrix-cells-in-distance-order](https://github.com/nickweseman/leetcode/tree/master/1094-matrix-cells-in-distance-order) |
 | [1370-count-number-of-nice-subarrays](https://github.com/nickweseman/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1430-find-the-k-beauty-of-a-number](https://github.com/nickweseman/leetcode/tree/master/1430-find-the-k-beauty-of-a-number) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/nickweseman/leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
@@ -530,6 +533,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0794-swim-in-rising-water](https://github.com/nickweseman/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0861-flipping-an-image](https://github.com/nickweseman/leetcode/tree/master/0861-flipping-an-image) |
 | [1036-rotting-oranges](https://github.com/nickweseman/leetcode/tree/master/1036-rotting-oranges) |
+| [1094-matrix-cells-in-distance-order](https://github.com/nickweseman/leetcode/tree/master/1094-matrix-cells-in-distance-order) |
 | [1331-path-with-maximum-gold](https://github.com/nickweseman/leetcode/tree/master/1331-path-with-maximum-gold) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/nickweseman/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [1753-path-with-minimum-effort](https://github.com/nickweseman/leetcode/tree/master/1753-path-with-minimum-effort) |
@@ -1159,6 +1163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1014-k-closest-points-to-origin](https://github.com/nickweseman/leetcode/tree/master/1014-k-closest-points-to-origin) |
+| [1094-matrix-cells-in-distance-order](https://github.com/nickweseman/leetcode/tree/master/1094-matrix-cells-in-distance-order) |
 ## Quickselect
 |  |
 | ------- |
