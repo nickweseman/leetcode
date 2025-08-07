@@ -10,12 +10,11 @@ class Solution:
                     result[r][c] = 0
                     queue.append((r, c))
         while queue:
-            for _ in range(len(queue)):
-                r, c = queue.popleft()
-                for dr, dc in directions:
-                    nr, nc = r + dr, c + dc
-                    if not (0 <= nr < rows and 0 <= nc < cols) or result[nr][nc] != -1:
-                        continue
-                    result[nr][nc] = result[r][c] + 1
-                    queue.append((nr, nc))
+            r, c = queue.popleft()
+            for dr, dc in directions:
+                nr, nc = r + dr, c + dc
+                if not (0 <= nr < rows and 0 <= nc < cols) or result[nr][nc] != -1:
+                    continue
+                result[nr][nc] = result[r][c] + 1
+                queue.append((nr, nc))
         return result
