@@ -13,7 +13,7 @@ class Solution:
                 item_graph[item].append(prereq)
                 if group[prereq] != group[item]:
                     group_graph[group[item]].append(group[prereq])
-        def topo_sort(num_nodes, prereq_map):
+        def topo_sort(num_nodes, prereqs):
             visited, cycle = set(), set()
             output = []
             def dfs(node):
@@ -22,8 +22,8 @@ class Solution:
                 if node in visited:
                     return True
                 cycle.add(node)
-                for prereq in prereq_map[node]:
-                    if not dfs(prereq):
+                for pre in prereqs[node]:
+                    if not dfs(pre):
                         return False
                 cycle.remove(node)
                 visited.add(node)
