@@ -9,6 +9,7 @@ class Solution:
                 max_area = max(max_area, height * (i - index))
                 start = index
             stack.append((num, start))
-        for height, index in stack:
+        while stack:
+            height, index = stack.pop()
             max_area = max(max_area, height * (len(heights) - index))
         return max_area
