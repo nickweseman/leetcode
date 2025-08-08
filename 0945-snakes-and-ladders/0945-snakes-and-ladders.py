@@ -9,18 +9,23 @@ class Solution:
             for c in cols:
                 square_to_pos[square] = (r, c)
                 square += 1
-        queue = collections.deque([(1, 0)]) # square, moves
+        queue = collections.deque([1]) # square
         visited = {1}
+        moves = 0
         while queue:
-            square, moves = queue.popleft()
-            for i in range(1, 7):
-                next_square = square + i
-                r, c = square_to_pos[next_square]
-                if board[r][c] != -1:
-                    next_square = board[r][c]
-                if next_square == n * n:
-                    return moves + 1
-                if next_square not in visited:
-                    visited.add(next_square)
-                    queue.append((next_square, moves + 1))
+            for _ in range(len(queue)):
+                square = queue.popleft()
+                if square == n * n:
+                    return moves
+                for i in range(1, 7):
+                    next_square = square + i
+                    if next_square > n * n:
+                        break # don't overshoot the board
+                    r, c = square_to_pos[next_square]
+                    if board[r][c] != -1:
+                        next_square = board[r][c]
+                    if next_square not in visited:
+                        visited.add(next_square)
+                        queue.append((next_square))
+            moves += 1
         return -1
