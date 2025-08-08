@@ -3,18 +3,12 @@ class Solution:
         n = len(board)
         square_to_pos = {}
         square = 1
+        board.reverse() # make row 0 the bottom
         for r in range(n):
             cols = range(n) if r % 2 == 0 else reversed(range(n))
             for c in cols:
                 square_to_pos[square] = (r, c)
                 square += 1
-        board.reverse() # make row 0 the bottom
-        def int_to_pos(square):
-            r = (square - 1) // n
-            c = (square - 1) % n
-            if r % 2 == 1:
-                c = n - 1 - c # flip the column index for odd rows
-            return (r, c)
         queue = collections.deque([(1, 0)]) # square, moves
         visited = {1}
         while queue:
