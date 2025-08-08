@@ -5,23 +5,21 @@
 #         self.next = next
 class Solution:
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        def k_nodes_exist(head):
+        def contains_k_nodes(node):
             for _ in range(k):
-                head = head.next
-                if not head:
+                node = node.next
+                if not node:
                     return False
             return True
         dummy = ListNode(0, next=head)
         node_before_reversal = dummy
-        reverse_tail = head
-        while k_nodes_exist(node_before_reversal):
+        while contains_k_nodes(node_before_reversal):
+            reverse_tail = node_before_reversal.next
             prev = None
-            curr = node_before_reversal.next
+            curr = reverse_tail
             for _ in range(k):
                 curr.next, curr, prev = prev, curr.next, curr
             node_before_reversal.next = prev
             reverse_tail.next = curr
             node_before_reversal = reverse_tail
-            reverse_tail = curr
         return dummy.next
-        
