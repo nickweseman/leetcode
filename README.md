@@ -89,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0861-flipping-an-image](https://github.com/nickweseman/leetcode/tree/master/0861-flipping-an-image) |
 | [0878-shifting-letters](https://github.com/nickweseman/leetcode/tree/master/0878-shifting-letters) |
 | [0941-sort-array-by-parity](https://github.com/nickweseman/leetcode/tree/master/0941-sort-array-by-parity) |
+| [0945-snakes-and-ladders](https://github.com/nickweseman/leetcode/tree/master/0945-snakes-and-ladders) |
 | [0948-sort-an-array](https://github.com/nickweseman/leetcode/tree/master/0948-sort-an-array) |
 | [0958-sort-array-by-parity-ii](https://github.com/nickweseman/leetcode/tree/master/0958-sort-array-by-parity-ii) |
 | [0966-binary-subarrays-with-sum](https://github.com/nickweseman/leetcode/tree/master/0966-binary-subarrays-with-sum) |
@@ -533,6 +534,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0772-construct-quad-tree](https://github.com/nickweseman/leetcode/tree/master/0772-construct-quad-tree) |
 | [0794-swim-in-rising-water](https://github.com/nickweseman/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0861-flipping-an-image](https://github.com/nickweseman/leetcode/tree/master/0861-flipping-an-image) |
+| [0945-snakes-and-ladders](https://github.com/nickweseman/leetcode/tree/master/0945-snakes-and-ladders) |
 | [1036-rotting-oranges](https://github.com/nickweseman/leetcode/tree/master/1036-rotting-oranges) |
 | [1094-matrix-cells-in-distance-order](https://github.com/nickweseman/leetcode/tree/master/1094-matrix-cells-in-distance-order) |
 | [1331-path-with-maximum-gold](https://github.com/nickweseman/leetcode/tree/master/1331-path-with-maximum-gold) |
@@ -1068,6 +1070,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0799-minimum-distance-between-bst-nodes](https://github.com/nickweseman/leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/nickweseman/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0813-all-paths-from-source-to-target](https://github.com/nickweseman/leetcode/tree/master/0813-all-paths-from-source-to-target) |
+| [0945-snakes-and-ladders](https://github.com/nickweseman/leetcode/tree/master/0945-snakes-and-ladders) |
 | [1005-univalued-binary-tree](https://github.com/nickweseman/leetcode/tree/master/1005-univalued-binary-tree) |
 | [1035-cousins-in-binary-tree](https://github.com/nickweseman/leetcode/tree/master/1035-cousins-in-binary-tree) |
 | [1036-rotting-oranges](https://github.com/nickweseman/leetcode/tree/master/1036-rotting-oranges) |
