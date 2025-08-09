@@ -1,5 +1,4 @@
 class Solution:
     def findMaxK(self, nums: List[int]) -> int:
-        numset = set(nums)
-        candidate_ks = [k for k in nums if -k in numset]
-        return max(candidate_ks) if candidate_ks else -1
+        candidate_ks = [k for k in nums if -k in nums]
+        return max(candidate_ks, default=-1)
