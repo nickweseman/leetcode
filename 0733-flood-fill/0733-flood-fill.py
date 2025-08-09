@@ -5,12 +5,16 @@ class Solution:
         flood_color = image[sr][sc]
         if flood_color == color:
             return image
-        def dfs(r, c):
-            if not (0 <= r < rows and 0 <= c < cols) or image[r][c] != flood_color:
-                return
-            image[r][c] = color
-            for dr, dc in directions:
-                dfs(r + dr, c + dc)
-        dfs(sr, sc)
+        queue = collections.deque([(sr, sc)])
+        visited = {(sr, sc)}
+        while queue:
+            for _ in range(len(queue)):
+                r, c = queue.popleft()
+                image[r][c] = color
+                for dr, dc in directions:
+                    nr, nc = r + dr, c + dc
+                    if not (0 <= nr < rows and 0 <= nc < cols) or (nr, nc) in visited or image[nr][nc] != flood_color:
+                        continue
+                    visited.add((nr, nc))
+                    queue.append((nr, nc))
         return image
-        
