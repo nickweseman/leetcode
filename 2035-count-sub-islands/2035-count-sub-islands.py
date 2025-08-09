@@ -7,7 +7,7 @@ class Solution:
                 return
             grid2[r][c] = 0
             for dr, dc in directions:
-                dfs(dr + r, dc + c)
+                dfs(r + dr, c + dc)
         for r in range(rows):
             for c in range(cols):
                 if grid2[r][c] == 1 and grid1[r][c] == 0:
