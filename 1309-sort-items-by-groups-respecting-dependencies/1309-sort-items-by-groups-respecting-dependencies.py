@@ -1,28 +1,31 @@
 class Solution:
     def sortItems(self, n: int, m: int, group: List[int], beforeItems: List[List[int]]) -> List[int]:
         group_id = m
+        item_graph = []
+        group_graph = []
         for i in range(n):
             if group[i] == -1:
                 group[i] = group_id
                 group_id += 1
         num_groups = group_id
-        item_graph = collections.defaultdict(list)
-        group_graph = collections.defaultdict(list)
-        for item in range(n):
-            for prereq in beforeItems[item]:
-                item_graph[item].append(prereq)
-                if group[prereq] != group[item]:
-                    group_graph[group[item]].append(group[prereq])
+        for i in range(n):
+            for before_item in beforeItems[i]:
+                item_graph.append([i, before_item])
+                if group[i] != group[before_item]:
+                    group_graph.append([group[i], group[before_item]])
         def topo_sort(num_nodes, prereqs):
-            visited, cycle = set(), set()
+            cycle, visited = set(), set()
             output = []
+            adj = collections.defaultdict(list)
+            for node, pre in prereqs:
+                adj[node].append(pre)
             def dfs(node):
                 if node in cycle:
                     return False
                 if node in visited:
                     return True
                 cycle.add(node)
-                for pre in prereqs[node]:
+                for pre in adj[node]:
                     if not dfs(pre):
                         return False
                 cycle.remove(node)
@@ -35,10 +38,13 @@ class Solution:
             return output
         sorted_items = topo_sort(n, item_graph)
         sorted_groups = topo_sort(num_groups, group_graph)
-        group_to_items = collections.defaultdict(list)
-        for item in sorted_items:
-            group_to_items[group[item]].append(item)
+        if not sorted_items or not sorted_groups:
+            return []
+        group_map = collections.defaultdict(list)
+        for i in range(n):
+            item = sorted_items[i]
+            group_map[group[item]].append(item)
         result = []
         for group_id in sorted_groups:
-            result.extend(group_to_items[group_id])
-        return result
+            result.extend(group_map[group_id])
+        return result         
