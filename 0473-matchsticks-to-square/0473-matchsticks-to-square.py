@@ -1,21 +1,21 @@
 class Solution:
     def makesquare(self, matchsticks: List[int]) -> bool:
+        sides = [0] * 4
         total = sum(matchsticks)
         if total % 4 != 0:
             return False
-        side = total // 4
+        length = total // 4
         n = len(matchsticks)
-        sides = [0] * 4
-        matchsticks.sort(reverse=True)
+        matchsticks.reverse()
         def backtrack(index):
             if index == n:
                 return True
             for i in range(4):
-                if sides[i] + matchsticks[index] <= side:
+                if sides[i] + matchsticks[index] <= length:
                     sides[i] += matchsticks[index]
                     if backtrack(index + 1):
                         return True
-                    sides[i] -= matchsticks[index]
+                    sides[i] -= matchsticks[index] 
                     if sides[i] == 0:
                         break
             return False
