@@ -5,12 +5,12 @@ class Solution:
             adj[a].append((b, 1))
             adj[b].append((a, 0))
         total_cost = 0
-        visited = {0}
+        visited = set()
         def dfs(node):
             nonlocal total_cost
+            visited.add(node)
             for nei, direction in adj[node]:
                 if nei not in visited:
-                    visited.add(nei)
                     total_cost += direction
                     dfs(nei)
         dfs(0)
