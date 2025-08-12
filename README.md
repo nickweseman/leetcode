@@ -153,6 +153,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2358-number-of-ways-to-split-array](https://github.com/nickweseman/leetcode/tree/master/2358-number-of-ways-to-split-array) |
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/nickweseman/leetcode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
 | [2469-longest-subsequence-with-limited-sum](https://github.com/nickweseman/leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
+| [2472-build-a-matrix-with-conditions](https://github.com/nickweseman/leetcode/tree/master/2472-build-a-matrix-with-conditions) |
 | [2482-maximum-rows-covered-by-columns](https://github.com/nickweseman/leetcode/tree/master/2482-maximum-rows-covered-by-columns) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/nickweseman/leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/nickweseman/leetcode/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
@@ -548,6 +549,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1876-map-of-highest-peak](https://github.com/nickweseman/leetcode/tree/master/1876-map-of-highest-peak) |
 | [2035-count-sub-islands](https://github.com/nickweseman/leetcode/tree/master/2035-count-sub-islands) |
 | [2145-grid-game](https://github.com/nickweseman/leetcode/tree/master/2145-grid-game) |
+| [2472-build-a-matrix-with-conditions](https://github.com/nickweseman/leetcode/tree/master/2472-build-a-matrix-with-conditions) |
 | [2482-maximum-rows-covered-by-columns](https://github.com/nickweseman/leetcode/tree/master/2482-maximum-rows-covered-by-columns) |
 ## Binary Search
 |  |
@@ -1273,6 +1275,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1706-min-cost-to-connect-all-points](https://github.com/nickweseman/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
 | [1916-find-center-of-star-graph](https://github.com/nickweseman/leetcode/tree/master/1916-find-center-of-star-graph) |
 | [2121-find-if-path-exists-in-graph](https://github.com/nickweseman/leetcode/tree/master/2121-find-if-path-exists-in-graph) |
+| [2472-build-a-matrix-with-conditions](https://github.com/nickweseman/leetcode/tree/master/2472-build-a-matrix-with-conditions) |
 ## Union Find
 |  |
 | ------- |
@@ -1302,6 +1305,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0820-find-eventual-safe-states](https://github.com/nickweseman/leetcode/tree/master/0820-find-eventual-safe-states) |
 | [1309-sort-items-by-groups-respecting-dependencies](https://github.com/nickweseman/leetcode/tree/master/1309-sort-items-by-groups-respecting-dependencies) |
 | [1558-course-schedule-iv](https://github.com/nickweseman/leetcode/tree/master/1558-course-schedule-iv) |
+| [2472-build-a-matrix-with-conditions](https://github.com/nickweseman/leetcode/tree/master/2472-build-a-matrix-with-conditions) |
 ## Doubly-Linked List
 |  |
 | ------- |
