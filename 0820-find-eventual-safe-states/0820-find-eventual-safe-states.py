@@ -13,6 +13,8 @@ class Solution:
                     return False
             state[node] = 2
             return True
+        result = []
         for i in range(n):
-            dfs(i)
-        return [i for i, val in enumerate(state) if val == 2]
+            if dfs(i):
+                result.append(i)
+        return result
