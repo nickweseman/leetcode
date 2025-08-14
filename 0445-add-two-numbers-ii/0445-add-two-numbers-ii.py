@@ -14,12 +14,13 @@ class Solution:
             stack2.append(l2.val)
             l2 = l2.next
         carry = 0
-        result_head = None
+        result_head = ListNode()
+        prev = None
         while stack1 or stack2 or carry:
             val1 = stack1.pop() if stack1 else 0
             val2 = stack2.pop() if stack2 else 0
             total = val1 + val2 + carry
             carry = total // 10
-            node = ListNode(total % 10, result_head)
-            result_head = node
+            result_head = ListNode(total % 10, prev)
+            prev = result_head
         return result_head
