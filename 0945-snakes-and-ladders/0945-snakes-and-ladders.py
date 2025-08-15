@@ -13,6 +13,8 @@ class Solution:
         visited = {1}
         while queue:
             square, turns = queue.popleft()
+            if square == rows * cols:
+                return turns
             for dice in range(1, 7):
                 next_square = square + dice
                 if next_square > rows * cols:
@@ -20,10 +22,7 @@ class Solution:
                 r, c = square_to_pos[next_square]
                 if board[r][c] != -1:
                     next_square = board[r][c]
-                if next_square == rows * cols:
-                    return turns + 1
                 if next_square not in visited:
                     queue.append((next_square, turns + 1))
                     visited.add(next_square)
         return -1
-                
