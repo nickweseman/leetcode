@@ -1,7 +1,7 @@
 class Solution:
     def allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:
-        result = []
         path = [0]
+        result = []
         n = len(graph)
         def backtrack(node):
             if node == n - 1:
