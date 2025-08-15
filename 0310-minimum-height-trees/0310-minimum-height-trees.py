@@ -7,12 +7,10 @@ class Solution:
             adj[a].append(b)
             adj[b].append(a)
         edge_count = collections.defaultdict(int)
-        for a, b in edges:
-            edge_count[a] += 1
-            edge_count[b] += 1
         leaves_queue = collections.deque()
-        for node, freq in edge_count.items():
-            if freq == 1:
+        for node, neighbors in adj.items():
+            edge_count[node] = len(neighbors)
+            if edge_count[node] == 1:
                 leaves_queue.append(node)
         while n > 2:
             for _ in range(len(leaves_queue)):
