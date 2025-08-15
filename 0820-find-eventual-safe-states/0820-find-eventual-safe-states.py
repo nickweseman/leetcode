@@ -1,20 +1,26 @@
 class Solution:
     def eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:
+        visited, cycle = set(), set()
         n = len(graph)
-        state = [0] * n # 0 - unvisited, 1 - visiting, 2 - visited and safe
+        output = []
+        adj = collections.defaultdict(list)
+        for i, neighbors in enumerate(graph):
+            for nei in neighbors:
+                adj[i].append(nei)
         def dfs(node):
-            if state[node] == 1:
+            if node in cycle:
                 return False
-            if state[node] == 2:
+            if node in visited:
                 return True
-            state[node] = 1
-            for nei in graph[node]:
+            cycle.add(node)
+            for nei in adj[node]:
                 if not dfs(nei):
                     return False
-            state[node] = 2
+            cycle.remove(node)
+            visited.add(node)
             return True
-        result = []
-        for i in range(n):
-            if dfs(i):
-                result.append(i)
-        return result
+        for node in range(n):
+            if dfs(node):
+                output.append(node)
+        return output
+                
