@@ -8,16 +8,14 @@ class Solution:
     def findSecondMinimumValue(self, root: Optional[TreeNode]) -> int:
         if not root:
             return -1
-        min1 = root.val
-        min2 = math.inf
-        stack = []
-        curr = root
-        while stack or curr:
-            while curr:
-                stack.append(curr)
-                curr = curr.left
-            curr = stack.pop()
-            if curr.val > min1:
-                min2 = min(min2, curr.val)
-            curr = curr.right
-        return -1 if min2 == math.inf else min2
+        first = root.val
+        second = math.inf
+        def dfs(node):
+            nonlocal second
+            if node:
+                if node.val > first:
+                    second = min(second, node.val)
+                dfs(node.left)
+                dfs(node.right)
+        dfs(root)
+        return second if second != math.inf else -1
