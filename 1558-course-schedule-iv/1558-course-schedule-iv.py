@@ -5,13 +5,15 @@ class Solution:
         for pre, course in prerequisites:
             adj[course].append(pre)
         def dfs(course):
-            if course in pre_map:
-                return pre_map[course]
-            for nei in adj[course]:
-                pre_map[course] |= dfs(nei)
-            pre_map[course] |= {course}
+            if course not in pre_map:
+                for nei in adj[course]:
+                    pre_map[course] |= dfs(nei)
+                pre_map[course].add(course)
             return pre_map[course]
-        for course in range(numCourses):
-            dfs(course)
-        return [q[0] in pre_map[q[1]] for q in queries]
+        for i in range(numCourses):
+            dfs(i)
+        result = []
+        for u, v in queries:
+            result.append(u in pre_map[v])
+        return result
         
