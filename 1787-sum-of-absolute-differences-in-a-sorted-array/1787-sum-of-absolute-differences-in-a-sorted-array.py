@@ -1,12 +1,13 @@
 class Solution:
     def getSumAbsoluteDifferences(self, nums: List[int]) -> List[int]:
-        result = []
         left_sum, right_sum = 0, sum(nums)
+        result = []
         n = len(nums)
         for i, num in enumerate(nums):
-            right_sum -= num
-            left_total = (num * i) - left_sum
-            right_total = right_sum - (n - i - 1) * num
-            result.append(abs(left_total + right_total))
             left_sum += num
+            right_sum -= num
+            curr_left = num * (i + 1) - left_sum
+            curr_right = right_sum - num * (n - (i + 1))
+            print(curr_left, curr_right)
+            result.append(curr_left + curr_right)
         return result
