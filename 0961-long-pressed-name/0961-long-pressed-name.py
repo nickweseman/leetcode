@@ -3,13 +3,11 @@ class Solution:
         i = j = 0
         while i < len(name) and j < len(typed):
             if name[i] != typed[j]:
-                if i > 0 and name[i - 1] == typed[j]:
-                    j += 1
-                else:
+                if i == 0 or name[i - 1] != typed[j]:
                     return False
             else:
                 i += 1
-                j += 1
+            j += 1
         while j < len(typed):
             if name[i - 1] != typed[j]:
                 if i > 0 and name[i - 1] == typed[j]:
